@@ -1,0 +1,71 @@
+/* Game.css */
+
+.game-container {
+    text-align: center;
+    margin-top: 2rem; /* Adjust as needed */
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .choice {
+    cursor: pointer;
+  }
+  
+  .choice img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .choice:hover img {
+    transform: scale(1.1);
+  }
+  
+  .board {
+    text-align: center;
+  }
+  
+  .reset {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .p {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+  
+  .score {
+    flex: 1;
+  }
+  
+  .msg-container {
+    margin-top: 2rem;
+  }
+  
+  #msg {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #081b31;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
