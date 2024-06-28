@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import './Style.css'; // Import your CSS file for styling
+import Header from '../../Components/Header';
+import Footer from '../../Components/Footer';
 
 const SnakeGame = () => {
   const [inputDir, setInputDir] = useState({ x: 0, y: 0 });
@@ -155,6 +157,8 @@ const SnakeGame = () => {
   }, [moveSound, musicSound]);
 
   return (
+    <>
+    <Header/>
     <div className="snake-game">
       <div className="body">
         <button onClick={showInstructions} className="instructions">
@@ -174,6 +178,8 @@ const SnakeGame = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

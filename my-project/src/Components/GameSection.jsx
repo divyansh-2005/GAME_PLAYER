@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
-import githubIcon from '../assets/images/github.png'; // Import your GitHub icon
+import { useNavigate } from 'react-router-dom';
 
 const GameSection = () => {
   const [games, setGames] = useState([
     {
       name: 'Guess the Hex',
       description: 'Description of Game A',
-      link: '../Games/GuessTheColor/GTH',
+      link: '/gth',
     },
     {
       name: 'Flip Card Game',
       description: 'Description of Game B',
-      link: '../Games/FlipCard/FlipCard',
+      link: '/flipcard',
     },
     {
       name: 'Snake Game',
       description: 'Description of Game C',
-      link: '#',
+      link: '/snakegame',
     },
     {
       name: 'Emoji Intruder',
       description: 'Description of Game D',
-      link: '#',
+      link: '/emojiintruder',
     },
     {
       name: 'RockPaper Scissors',
       description: 'Description of Game E',
-      link: '#',
+      link: '/rckpapsc',
     }
   ]);
 
@@ -39,6 +39,12 @@ const GameSection = () => {
   const filteredGames = games.filter((game) =>
     game.name.toLowerCase().includes(searchTerm)
   );
+
+  const navigate = useNavigate();
+
+  const handleNavigate = (link) => {
+    navigate(link);
+  };
 
   return (
     <div className="container" id="games">
@@ -61,12 +67,7 @@ const GameSection = () => {
               <h2>{game.name}</h2>
               <h3>{game.description}</h3>
               <div className="card-footer">
-                <a href={game.link} target="_blank" rel="noopener noreferrer">
-                  <button>Play</button>
-                </a>
-                {/* <a href={game.source} title="Source Code" target="_blank" rel="noopener noreferrer">
-                  <img src={githubIcon} alt="Source Code" />
-                </a> */}
+                <button onClick={() => handleNavigate(game.link)}>Play</button>
               </div>
             </div>
           </div>

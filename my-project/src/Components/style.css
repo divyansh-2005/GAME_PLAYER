@@ -284,6 +284,7 @@ section {
     font-family: Ubuntu;
     text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
+    background-color: transparent;
 }
 
 .comp-section .compcontainer h3 {
@@ -1606,6 +1607,7 @@ section {
     font-size: 4rem;
     text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
+    background-color: transparent;
 }
 
 .search-input-container {

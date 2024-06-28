@@ -2,6 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 
 import { generateRandomColors, chooseColor } from "./colorUtils";
 import './style.css'
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 
 const GTH = () => {
   const [colors, setColors] = useState([]);
@@ -40,6 +42,8 @@ const GTH = () => {
   };
 
   return (
+    <>
+    <Header/>
     <div className="gth-game">
       <div style={{ textAlign: "center", margin: "20px", fontSize: "30px" }}>
         <a href="https://kunjgit.github.io/GameZone/">
@@ -76,6 +80,8 @@ const GTH = () => {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
