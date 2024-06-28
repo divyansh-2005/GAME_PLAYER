@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
-import githubIcon from '../assets/images/github.png'; // Import your GitHub icon
+import { Link } from "react-router-dom";
 
 const GameSection = () => {
   const [games, setGames] = useState([
     {
       name: 'Guess the Hex',
       description: 'Description of Game A',
-      link: '../Games/GuessTheColor/GTH',
+      link: '/gth',
     },
     {
       name: 'Flip Card Game',
       description: 'Description of Game B',
-      link: '../Games/FlipCard/FlipCard',
+      link: '/flipcard',
     },
     {
       name: 'Snake Game',
       description: 'Description of Game C',
-      link: '#',
+      link: '/snakegame',
     },
     {
       name: 'Emoji Intruder',
       description: 'Description of Game D',
-      link: '#',
+      link: '/emojiintruder',
     },
     {
       name: 'RockPaper Scissors',
       description: 'Description of Game E',
-      link: '#',
+      link: '/rckpapsc',
     }
   ]);
 
@@ -61,9 +61,9 @@ const GameSection = () => {
               <h2>{game.name}</h2>
               <h3>{game.description}</h3>
               <div className="card-footer">
-                <a href={game.link} target="_blank" rel="noopener noreferrer">
+                <Link to={game.link} className="noopener noreferrer">
                   <button>Play</button>
-                </a>
+                </Link>
                 {/* <a href={game.source} title="Source Code" target="_blank" rel="noopener noreferrer">
                   <img src={githubIcon} alt="Source Code" />
                 </a> */}

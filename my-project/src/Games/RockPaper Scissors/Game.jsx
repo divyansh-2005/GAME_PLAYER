@@ -5,6 +5,8 @@ import rockImage from './Images/rock.png';
 import paperImage from './Images/paper.png';
 import scissorsImage from './Images/scissors.png';
 import './Game.css'
+import Header from '../../Components/Header';
+import Footer from '../../Components/Footer';
 
 const RockPaperScissors = () => {
   const [userScore, setUserScore] = useState(0);
@@ -49,6 +51,8 @@ const RockPaperScissors = () => {
   };
 
   return (
+    <>
+    <Header/>
     <div className="game-container">
       <div className="choices">
         <div className="choice" onClick={() => showWinner('rock')}>
@@ -83,6 +87,8 @@ const RockPaperScissors = () => {
         <p id="msg">{msg}</p>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import logo from '../assets/images/logo.png'; // Import your logo image
+import logo from '../assets/images/logo.png'; 
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -21,16 +22,16 @@ const Header = () => {
         </div>
         <ul className={`nav-menu ${menuActive ? 'active' : ''}`}>
           <li className="nav-item">
-            <a href="#home" className="nav-link"><i className="fa fa-home" aria-hidden="true"></i> Home</a>
+            <Link to={'/'} className="nav-link"><i className="fa fa-home" aria-hidden="true"></i> Home</Link>
           </li>
           <li className="nav-item">
-            <a href="#games" className="nav-link"><i className="fa-solid fa-circle-info" aria-hidden="true"></i> Games</a>
+            <Link to={'/'} className="nav-link"><i className="fa-solid fa-circle-info" aria-hidden="true"></i> Games</Link>
           </li>
           <li className="nav-item">
-            <a href="#about" className="nav-link"><i className="fa fa-calculator" aria-hidden="true"></i> About</a>
+            <Link to={'/'} className="nav-link"><i className="fa fa-calculator" aria-hidden="true"></i> About</Link>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Contact</a>
+            <Link to={'/'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Contact</Link>
           </li>
         </ul>
         <div className="hamburger" onClick={toggleMenu}>
