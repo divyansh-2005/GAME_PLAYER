@@ -2,7 +2,10 @@ import { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import './Style.css'; // Import your CSS file for styling
 import Header from '../../Components/Header';
+<<<<<<< HEAD
 import Footer from '../../Components/Footer';
+=======
+>>>>>>> 4540a337bc642ac089a3cc4fd14253e6d383c429
 
 const SnakeGame = () => {
   const [inputDir, setInputDir] = useState({ x: 0, y: 0 });
