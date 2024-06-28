@@ -32,7 +32,7 @@ const SnakeGame = () => {
     });
   };
 
-  // Function to check if snake collides with itself or walls
+  // Function to check if snake collides with itself or wall 
   const isCollide = () => {
     for (let index = 1; index < snakeArr.length; index++) {
       if (snakeArr[index].x === snakeArr[0].x && snakeArr[index].y === snakeArr[0].y) {

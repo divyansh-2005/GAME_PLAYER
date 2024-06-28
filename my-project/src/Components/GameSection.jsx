@@ -30,7 +30,8 @@ const GameSection = () => {
     }
   ]);
 
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('')
+  
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
