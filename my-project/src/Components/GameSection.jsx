@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import githubIcon from '../assets/images/github.png'; // Import your GitHub icon
+import { useNavigate } from 'react-router-dom';
 
 const GameSection = () => {
   const [games, setGames] = useState([
@@ -67,12 +67,7 @@ const GameSection = () => {
               <h2>{game.name}</h2>
               <h3>{game.description}</h3>
               <div className="card-footer">
-                <a href={game.link} target="_blank" rel="noopener noreferrer">
-                  <button>Play</button>
-                </a>
-                {/* <a href={game.source} title="Source Code" target="_blank" rel="noopener noreferrer">
-                  <img src={githubIcon} alt="Source Code" />
-                </a> */}
+                <button onClick={() => handleNavigate(game.link)}>Play</button>
               </div>
             </div>
           </div>
