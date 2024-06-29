@@ -7,7 +7,7 @@ export function TmaProvider({ children }) {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
-  async function fetchTelegramUser() {
+   function fetchTelegramUser() {
     try {
       const launchParams = retrieveLaunchParams();
       const user = launchParams?.initData?.user;
@@ -15,7 +15,7 @@ export function TmaProvider({ children }) {
         throw new Error("User not found");
       }
       setTelegramUser(user);
-      await fetchTelegramUserfromDatabes(user);
+      // await fetchTelegramUserfromDatabes(user);
     } catch (err) {
       setIsError(true);
     } finally {
@@ -23,28 +23,28 @@ export function TmaProvider({ children }) {
     }
   }
 
-  const apiUrl = import.meta.env.VITE_API_KEY;
-  const fetchTelegramUserfromDatabes = async (user) => {
-    try {
-      await axios.post(
-        `${apiUrl}user/save`,
-        {
-          name: user.firstName + " " + user.lastName,
-          telegramId: user.id,
-          username: user.firstName.toLowerCase() + user.lastName.toLowerCase(),
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          maxBodyLength: Infinity,
-        }
-      );
-    } catch (error) {
-      setIsError(true);
-      console.error("Error saving user to database:", error);
-    }
-  };
+  // const apiUrl = import.meta.env.VITE_API_KEY;
+  // const fetchTelegramUserfromDatabes = async (user) => {
+  //   try {
+  //     await axios.post(
+  //       `${apiUrl}user/save`,
+  //       {
+  //         name: user.firstName + " " + user.lastName,
+  //         telegramId: user.id,
+  //         username: user.firstName.toLowerCase() + user.lastName.toLowerCase(),
+  //       },
+  //       {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         maxBodyLength: Infinity,
+  //       }
+  //     );
+  //   } catch (error) {
+  //     setIsError(true);
+  //     console.error("Error saving user to database:", error);
+  //   }
+  // };
 
   useEffect(fetchTelegramUser, []);
 
