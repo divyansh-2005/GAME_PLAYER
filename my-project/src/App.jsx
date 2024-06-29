@@ -11,21 +11,19 @@ import RockPaperScissors from "./Games/RockPaper Scissors/Game";
 const App = () => {
   return (
     <>
-      <TmaProvider>
-        <Me />
-      </TmaProvider>
-    <Router>
-      <Routes>
-      <Route path="/" element={<HomePage />} />
-            <Route path="/flipcard" element={<FlipGame />} />
-            <Route path="/snakegame" element={<SnakeGame />} />
-            <Route path="/gth" element={<GTH />} />
-            <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
-            <Route path="/rckpapsc" element={<RockPaperScissors />} />
-      </Routes>
-    </Router>
-      
-  </>
+    
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/flipcard" element={<FlipGame />} />
+          <Route path="/snakegame" element={<SnakeGame />} />
+          <Route path="/gth" element={<GTH />} />
+          <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
+          <Route path="/rckpapsc" element={<RockPaperScissors />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+        </Routes>
+      </Router>
+</>
   );
 };
 
