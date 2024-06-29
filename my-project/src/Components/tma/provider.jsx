@@ -12,7 +12,7 @@ export function TmaProvider({ children }) {
       const launchParams = retrieveLaunchParams();
       const user = launchParams?.initData?.user;
       if (!user) {
-        throw new Error("User not found");
+        throw new Error("User is not found");
       }
       setTelegramUser(user);
       // await fetchTelegramUserfromDatabes(user);

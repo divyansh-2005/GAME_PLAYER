@@ -25,13 +25,13 @@ const Header = () => {
             <Link to={'/'} className="nav-link"><i className="fa fa-home" aria-hidden="true"></i> Home</Link>
           </li>
           <li className="nav-item">
-            <Link to={'/'} className="nav-link"><i className="fa-solid fa-circle-info" aria-hidden="true"></i> Games</Link>
+            <Link to={'/games'} className="nav-link"><i className="fa-solid fa-circle-info" aria-hidden="true"></i> Games</Link>
           </li>
           <li className="nav-item">
-            <Link to={'/'} className="nav-link"><i className="fa fa-calculator" aria-hidden="true"></i> About</Link>
+            <Link to={'/about'} className="nav-link"><i className="fa fa-calculator" aria-hidden="true"></i> About</Link>
           </li>
           <li className="nav-item">
-            <Link to={'/'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Contact</Link>
+            <Link to={'/contact'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Contact</Link>
           </li>
         </ul>
         <div className="hamburger" onClick={toggleMenu}>
