@@ -5,7 +5,7 @@ export function Me() {
 
   return (
     <pre>
-      user: {user?.firstName || "User not found"}
+      {user?.firstName}
     </pre>
   );
 }
