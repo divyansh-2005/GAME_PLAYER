@@ -11,9 +11,9 @@ import RockPaperScissors from "./Games/RockPaper Scissors/Game";
 const App = () => {
   return (
     <>
-      {/* <TmaProvider>
+      <TmaProvider>
         <Me />
-      </TmaProvider> */}
+      </TmaProvider>
     <Router>
       <Routes>
       <Route path="/" element={<HomePage />} />
