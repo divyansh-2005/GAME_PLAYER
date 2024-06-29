@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import { TmaProvider } from './tma/provider';
 import { Me } from './tma/me';
-import Dashboard from './Dashboard';
+// import Dashboard from './Dashboard';
 
 const HeroSection = () => (
   <section className="comp-section" id="home">
@@ -10,7 +10,7 @@ const HeroSection = () => (
       <h1 className='herosectionH1'>
       <TmaProvider>
           <Me />
-          <Dashboard/>
+          {/* <Dashboard/> */}
         </TmaProvider>
       </h1>
       <h2>
