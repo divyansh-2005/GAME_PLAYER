@@ -6,6 +6,7 @@ import { Me } from './tma/me';
 const HeroSection = () => (
   <section className="comp-section" id="home">
     <div className="compcontainer">
+    <p className="paragraph">Welcome</p>
       <h1 className='herosectionH1'>
       <TmaProvider>
           <Me />
@@ -14,7 +15,7 @@ const HeroSection = () => (
       <h2>
         
       </h2>
-      <h3>Instant Games, spot in a single place!!</h3>
+      
       <p className="paragraph">
         TeleGames is a collection of instant Games
       </p>
