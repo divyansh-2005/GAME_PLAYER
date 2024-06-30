@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useTma } from './tma/hook';
 
 const HeroSection = ({ scrollToGameSection }) => {
-  const { user } = useTma();
+  const { user, isLoading, isError } = useTma();
   return (
   <section className="comp-section" id="home">
     <div className="compcontainer">

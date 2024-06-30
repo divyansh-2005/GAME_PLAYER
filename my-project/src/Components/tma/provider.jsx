@@ -1,74 +1,77 @@
-import { useEffect, useState } from "react";
-import { TmaContext } from "./context";
+import React, { useState, useEffect, createContext, useContext } from "react";
 import { retrieveLaunchParams, SDKProvider } from "@tma.js/sdk-react";
 import axios from "axios";
 
-export function TmaProvider({ children }) {
-  const [telegramUser, setTelegramUser] = useState({});
-  const [user, setUser] = useState(null);
+// Create a context
+const TmaContext = createContext();
+
+// Create a provider component
+export const TmaProvider = ({ children }) => {
+  const [telegramUser, setTelegramUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
-  const fetchTelegramUser = async () => {
+  useEffect(() => {
+    fetchTelegramUserData();
+  }, []);
+
+  const fetchTelegramUserData = async () => {
+    setIsLoading(true);
     try {
       const launchParams = retrieveLaunchParams();
-      const telegramUser = launchParams?.initData?.user;
-      if (!telegramUser) {
+      const user = launchParams?.initData?.user;
+      if (!user) {
         throw new Error("User not found");
       }
-      setTelegramUser(telegramUser);
-      await fetchUserFromDatabase(telegramUser);
-    } catch (err) {
+      setTelegramUser(user);
+      await saveTelegramUserToDatabase(user);
+    } catch (error) {
       setIsError(true);
     } finally {
       setIsLoading(false);
     }
   };
 
-  const fetchUserFromDatabase = async (telegramUser) => {
+  const saveTelegramUserToDatabase = async (user) => {
     try {
-      const response = await axios.post(
-        "http://localhost:3000/api/user/fetch",
-        { telegramId: telegramUser.id },
+      await axios.post(
+        "http://localhost:3000/api/user/save",
+        {
+          name: `${user.firstName} ${user.lastName}`,
+          telegramId: user.id,
+          username: `${user.firstName.toLowerCase()}${user.lastName.toLowerCase()}`,
+        },
         {
           headers: {
             "Content-Type": "application/json",
-          }
+          },
+          maxBodyLength: Infinity,
         }
       );
-      setUser(response.data);
-      console.log("User fetched from database:", response.data);
     } catch (error) {
-      console.error("Error fetching user from database:", error);
       setIsError(true);
+      console.error("Error saving user to database:", error);
     }
   };
 
-  useEffect(() => {
-    fetchTelegramUser();
-  }, []);
-
-  if (isLoading) {
-    return <TheLoadingComponent />;
-  }
-
-  if (isError) {
-    return <TheErrorComponent />;
-  }
-
   return (
     <SDKProvider>
-      <TmaContext.Provider value={{ user }}>
+      <TmaContext.Provider value={{ user: telegramUser, isLoading, isError }}>
         {children}
       </TmaContext.Provider>
     </SDKProvider>
   );
-}
+};
 
-function TheLoadingComponent() {
+// Custom hook to use the TmaContext
+export const useTma = () => useContext(TmaContext);
+
+// TheLoadingComponent
+const TheLoadingComponent = () => {
   return <div>Loading...</div>;
-}
+};
 
-function TheErrorComponent() {
+// TheErrorComponent
+const TheErrorComponent = () => {
   return <div>This app opens only in Telegram mini app</div>;
-}
+};
