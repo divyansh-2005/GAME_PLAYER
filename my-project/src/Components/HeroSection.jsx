@@ -7,7 +7,7 @@ const HeroSection = ({ scrollToGameSection }) => {
   <section className="comp-section" id="home">
     <div className="compcontainer">
       <h1 className='herosectionH1'>
-        {user?.firstname}
+        {user?.firstName}
       </h1>
       <h3>Instant Games, spot in a single place!!</h3>
       <p className="paragraph">
