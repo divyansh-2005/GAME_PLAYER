@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import LoaderWrapper from './LoaderWrapper';
 import Header from './Header';
 import HeroSection from './HeroSection';
 import GameSection from './GameSection';
 import ScrollToTopButton from './ScrollToTopButton';
 import Footer from './Footer';
-import './style.css'; // Import your CSS file
+import './style.css';
 
 const calcScrollValue = () => {
   const scrollProgress = document.getElementById('progress');
@@ -27,6 +27,12 @@ const calcScrollValue = () => {
 };
 
 const HomePage = () => {
+  const gameSectionRef = useRef(null);
+
+  const scrollToGameSection = () => {
+    gameSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => {
       document.body.classList.add('loaded');
@@ -44,8 +50,8 @@ const HomePage = () => {
     <>
       <LoaderWrapper />
       <Header />
-      <HeroSection />
-      <GameSection />
+      <HeroSection scrollToGameSection={scrollToGameSection} />
+      <GameSection ref={gameSectionRef} />
       <ScrollToTopButton />
       <Footer />
     </>

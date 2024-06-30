@@ -2,7 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const connection = require("./config/connection");
-const PORT=3000;
+const userRouter = require("./routes/userRoutes"); // Correct path
+const PORT = 3000;
 
 const app = express();
 
@@ -11,12 +12,12 @@ app.use(bodyParser.json());
 
 connection();
 
-app.use( require("./routers/userRouter"));
+app.use("/api", userRouter); // Prefix your routes with /api for better structure
 
-app.use("/", (req, res) => { 
-    res.send("started");
+app.get("/", (req, res) => {
+  res.send("Server started");
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

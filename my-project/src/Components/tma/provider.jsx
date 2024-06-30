@@ -1,52 +1,52 @@
 import { useEffect, useState } from "react";
 import { TmaContext } from "./context";
 import { retrieveLaunchParams, SDKProvider } from "@tma.js/sdk-react";
+import axios from "axios";
 
 export function TmaProvider({ children }) {
   const [telegramUser, setTelegramUser] = useState({});
+  const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
-   function fetchTelegramUser() {
+  const fetchTelegramUser = async () => {
     try {
       const launchParams = retrieveLaunchParams();
-      const user = launchParams?.initData?.user;
-      if (!user) {
-        throw new Error("User is not found");
+      const telegramUser = launchParams?.initData?.user;
+      if (!telegramUser) {
+        throw new Error("User not found");
       }
-      setTelegramUser(user);
-      // await fetchTelegramUserfromDatabes(user);
+      setTelegramUser(telegramUser);
+      await fetchUserFromDatabase(telegramUser);
     } catch (err) {
       setIsError(true);
     } finally {
       setIsLoading(false);
     }
-  }
+  };
 
-  // const apiUrl = import.meta.env.VITE_API_KEY;
-  // const fetchTelegramUserfromDatabes = async (user) => {
-  //   try {
-  //     await axios.post(
-  //       `${apiUrl}user/save`,
-  //       {
-  //         name: user.firstName + " " + user.lastName,
-  //         telegramId: user.id,
-  //         username: user.firstName.toLowerCase() + user.lastName.toLowerCase(),
-  //       },
-  //       {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         maxBodyLength: Infinity,
-  //       }
-  //     );
-  //   } catch (error) {
-  //     setIsError(true);
-  //     console.error("Error saving user to database:", error);
-  //   }
-  // };
+  const fetchUserFromDatabase = async (telegramUser) => {
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/api/user/fetch",
+        { telegramId: telegramUser.id },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          }
+        }
+      );
+      setUser(response.data);
+      console.log("User fetched from database:", response.data);
+    } catch (error) {
+      console.error("Error fetching user from database:", error);
+      setIsError(true);
+    }
+  };
 
-  useEffect(fetchTelegramUser, []);
+  useEffect(() => {
+    fetchTelegramUser();
+  }, []);
 
   if (isLoading) {
     return <TheLoadingComponent />;
@@ -58,7 +58,7 @@ export function TmaProvider({ children }) {
 
   return (
     <SDKProvider>
-      <TmaContext.Provider value={{ user: telegramUser }}>
+      <TmaContext.Provider value={{ user }}>
         {children}
       </TmaContext.Provider>
     </SDKProvider>

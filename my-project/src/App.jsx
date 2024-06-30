@@ -7,6 +7,14 @@ import SnakeGame from "./Games/SnakeGame/SnakeGame";
 import GTH from "./Games/GuessTheColor/GTH";
 import EmojiIntruderHunt from "./Games/EmojiIntruder/EmojiIntruder";
 import RockPaperScissors from "./Games/RockPaper Scissors/Game";
+import GameSection from "./Components/GameSection";
+import Dashboard from "./Components/Dashboard";
+
+const TestComponent = () => {
+  return <div style={{ color: 'white' }}>Test Component</div>;
+};
+
+
 
 const App = () => {
   return (
@@ -15,12 +23,13 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/game" element={<GameSection />} />
           <Route path="/flipcard" element={<FlipGame />} />
           <Route path="/snakegame" element={<SnakeGame />} />
           <Route path="/gth" element={<GTH />} />
           <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
           <Route path="/rckpapsc" element={<RockPaperScissors />} />
-          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         </Routes>
       </Router>
 </>
