@@ -47,7 +47,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <>
+    <>  
       <LoaderWrapper />
       <Header />
       <HeroSection scrollToGameSection={scrollToGameSection} />

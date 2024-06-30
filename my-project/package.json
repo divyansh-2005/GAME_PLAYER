@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.1.2",
+    "@tanstack/react-query": "^5.49.2",
     "@tma.js/sdk": "^2.5.1",
     "@tma.js/sdk-react": "^2.2.5",
     "axios": "^1.7.2",
@@ -19,7 +21,9 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
-    "sweetalert2": "^11.12.0"
+    "sweetalert2": "^11.12.0",
+    "viem": "^2.16.5",
+    "wagmi": "^2.10.8"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

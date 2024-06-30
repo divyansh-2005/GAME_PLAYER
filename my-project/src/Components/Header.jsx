@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.png'; 
 import {Link} from 'react-router-dom';
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -34,10 +35,13 @@ const Header = () => {
             <Link to={'/contact'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Contact</Link>
           </li>
           <li className="nav-item">
-            <Link to={'/dashboard'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Dashboard</Link>
+            <Link to={'/addgame'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Add Games</Link>
+          </li>
+          <li className="nav-item">
+            <ConnectButton />
           </li>
         </ul>
-        <div className="hamburger" onClick={toggleMenu}>
+        <div className="hamburger" onClick={toggleMenu}>  
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
