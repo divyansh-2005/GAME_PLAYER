@@ -21,7 +21,7 @@ const HeroSection = () => {
       <p className="paragraph">
         TeleGames is a collection of instant Games
       </p>
-      <Link to={'/'} href="#games">
+      <Link to={'/games'} >
         <button className="started">Explore Games &gt;&gt;</button>
       </Link>
     </div>

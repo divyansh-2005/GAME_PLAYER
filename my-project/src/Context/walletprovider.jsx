@@ -6,8 +6,8 @@ import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import React, { useState, useEffect, createContext, useContext } from "react";
 
 const config = getDefaultConfig({
-  appName: "Knowledge Ninjas",
-  projectId: "071be6c40c4dfc2798e6870132184cd4",
+  appName: "My RainbowKit App",
+  projectId: "384f4d284ce7c0be6ef44925f84f6b49",
   chains: [mainnet, polygon, optimism, arbitrum, base],
   ssr: true,
 });
