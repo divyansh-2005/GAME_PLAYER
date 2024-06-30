@@ -33,6 +33,9 @@ const Header = () => {
           <li className="nav-item">
             <Link to={'/contact'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Contact</Link>
           </li>
+          <li className="nav-item">
+            <Link to={'/dashboard'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Dashboard</Link>
+          </li>
         </ul>
         <div className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>
