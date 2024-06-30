@@ -1,14 +1,13 @@
 import React, { useRef } from 'react';
-import { TmaProvider } from './tma/provider';
-import { Me } from './tma/me';
+import { useTma } from './tma/hook';
 
-const HeroSection = ({ scrollToGameSection }) => (
+const HeroSection = ({ scrollToGameSection }) => {
+  const { user } = useTma();
+  return (
   <section className="comp-section" id="home">
     <div className="compcontainer">
       <h1 className='herosectionH1'>
-        <TmaProvider>
-          <Me />
-        </TmaProvider>
+        {user?.firstname}
       </h1>
       <h3>Instant Games, spot in a single place!!</h3>
       <p className="paragraph">
@@ -19,6 +18,7 @@ const HeroSection = ({ scrollToGameSection }) => (
       </div>
     </div>
   </section>
-);
+  );
+}
 
 export default HeroSection;
