@@ -1,6 +1,6 @@
-import React, { useState, useEffect, createContext, useContext } from "react";
+// provider.jsx
+import React, { useState, useEffect, createContext } from "react";
 import { retrieveLaunchParams, SDKProvider } from "@tma.js/sdk-react";
-import axios from "axios";
 
 // Create a context
 const TmaContext = createContext();
@@ -24,7 +24,6 @@ export const TmaProvider = ({ children }) => {
         throw new Error("User not found");
       }
       setTelegramUser(user);
-      await saveTelegramUserToDatabase(user);
     } catch (error) {
       setIsError(true);
     } finally {
@@ -32,46 +31,19 @@ export const TmaProvider = ({ children }) => {
     }
   };
 
-  const saveTelegramUserToDatabase = async (user) => {
-    try {
-      await axios.post(
-        "http://localhost:3000/api/user/save",
-        {
-          name: `${user.firstName} ${user.lastName}`,
-          telegramId: user.id,
-          username: `${user.firstName.toLowerCase()}${user.lastName.toLowerCase()}`,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          maxBodyLength: Infinity,
-        }
-      );
-    } catch (error) {
-      setIsError(true);
-      console.error("Error saving user to database:", error);
-    }
-  };
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div>Error loading user data</div>;
+  }
 
   return (
     <SDKProvider>
-      <TmaContext.Provider value={{ user: telegramUser, isLoading, isError }}>
+      <TmaContext.Provider value={{ user: telegramUser }}>
         {children}
       </TmaContext.Provider>
     </SDKProvider>
   );
-};
-
-// Custom hook to use the TmaContext
-export const useTma = () => useContext(TmaContext);
-
-// TheLoadingComponent
-const TheLoadingComponent = () => {
-  return <div>Loading...</div>;
-};
-
-// TheErrorComponent
-const TheErrorComponent = () => {
-  return <div>This app opens only in Telegram mini app</div>;
 };
