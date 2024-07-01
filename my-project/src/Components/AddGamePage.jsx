@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import styles from './AddGamePage.module.css'; 
+// import styles from './AddGamePage.module.css'; 
 import Header from './Header';
 import video from '../assets/background-video.mp4';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
