@@ -29,14 +29,15 @@ const Header = () => {
             <Link to={'/games'} className="nav-link"><i className="fa-solid fa-circle-info" aria-hidden="true"></i> Games</Link>
           </li>
           <li className="nav-item">
+            <Link to={'/addgame'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Add Games</Link>
+          </li>
+          <li className="nav-item">
             <Link to={'/about'} className="nav-link"><i className="fa fa-calculator" aria-hidden="true"></i> About</Link>
           </li>
           <li className="nav-item">
             <Link to={'/contact'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Contact</Link>
           </li>
-          <li className="nav-item">
-            <Link to={'/addgame'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Add Games</Link>
-          </li>
+          
           <li className="nav-item">
             <ConnectButton />
           </li>
