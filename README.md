@@ -1,0 +1,49 @@
+# Instant Games Platform
+
+Welcome to the Instant Games Platform! This project is a fun and interactive platform that allows users to play various games instantly on our website or through Telegram. The project is built on the MERN stack and integrates with crypto wallets using RainbowKit.
+
+## Features
+
+- **Play Games**: Enjoy a selection of games that can be played instantly on the website.
+- **Telegram Integration**: Play games directly on Telegram using the Telegram SDK.
+- **Wallet Connect**: Connect various crypto wallets easily using RainbowKit.
+- **Current Games**: The platform currently features 5 games, with plans for more in the future.
+
+## Technologies Used
+
+- **Frontend**: React.js
+- **Backend**: Node.js and Express.js
+- **Database**: MongoDB
+- **Telegram SDK**: For Telegram integration
+- **Wallet Connect**: RainbowKit for connecting crypto wallets
+
+## Getting Started
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/divyansh-2005/GAME_PLAYER.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd GAME_PLAYER
+   ```
+
+3. Install the necessary dependencies for both the client and server:
+   ```bash
+   cd my-project
+   npm install
+   
+   cd BACKEND
+   npm install
+   ```
+
+## Current Status
+
+The project is currently a work in progress. The homepage and wallet connect functionalities are completed, along with five games available for play. Further development is planned to enhance the user experience and add more features.
+
+## Contribution
+
+Contributions are welcome! If you would like to contribute to this project, please feel free to open an issue or submit a pull request.
