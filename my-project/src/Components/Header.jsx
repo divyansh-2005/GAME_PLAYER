@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import logo from '../assets/images/logo.png'; 
-import {Link} from 'react-router-dom';
+import React, { useState } from "react";
+import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Header = () => {
@@ -14,35 +14,48 @@ const Header = () => {
     <header>
       <nav className="navbar">
         <div className="image-logo">
-          <a href="./index.html">
+          <a href="#">
             <img src={logo} alt="Logo" height="36px" width="36px" />
           </a>
-          <a href="./index.html">
+          <a href="#">
             <span className="logo">TeleGames</span>
           </a>
         </div>
-        <ul className={`nav-menu ${menuActive ? 'active' : ''}`}>
+        <ul
+          className={`nav-menu ${menuActive ? "active" : ""} items-center px-4`}
+        >
           <li className="nav-item">
-            <Link to={'/'} className="nav-link"><i className="fa fa-home" aria-hidden="true"></i> Home</Link>
+            <Link to={"/"} className="nav-link">
+              <i className="fa fa-home" aria-hidden="true"></i> Home
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to={'/games'} className="nav-link"><i className="fa-solid fa-circle-info" aria-hidden="true"></i> Games</Link>
+            <Link to={"/games"} className="nav-link">
+              <i className="fa-solid fa-circle-info" aria-hidden="true"></i>{" "}
+              Games
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to={'/addgame'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Add Games</Link>
+            <Link to={"/addgame"} className="nav-link">
+              <i className="fa fa-phone" aria-hidden="true"></i> Add Games
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to={'/about'} className="nav-link"><i className="fa fa-calculator" aria-hidden="true"></i> About</Link>
+            <Link to={"/about"} className="nav-link">
+              <i className="fa fa-calculator" aria-hidden="true"></i> About
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to={'/contact'} className="nav-link"><i className="fa fa-phone" aria-hidden="true"></i> Contact</Link>
+            <Link to={"/contact"} className="nav-link">
+              <i className="fa fa-phone" aria-hidden="true"></i> Contact
+            </Link>
           </li>
-          
-          <li className="nav-item">
+
+          <li className="nav-item" style={{ fontSize: "1.5rem" }}>
             <ConnectButton />
           </li>
         </ul>
-        <div className="hamburger" onClick={toggleMenu}>  
+        <div className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>

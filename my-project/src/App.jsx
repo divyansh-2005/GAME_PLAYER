@@ -1,4 +1,4 @@
-import {Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import FlipGame from "./Games/FlipCard/FlipCard";
 import SnakeGame from "./Games/SnakeGame/SnakeGame";
@@ -13,12 +13,12 @@ import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
 
+
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
-    
-      
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -33,6 +33,7 @@ const App = () => {
           <Route path="/contact" element={<ContactPage/>}/>
         </Routes>      
 </>
+
   );
 };
 
