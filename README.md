@@ -55,3 +55,4 @@ The project is currently a work in progress. The homepage and wallet connect fun
 ## Contribution
 
 Contributions are welcome! If you would like to contribute to this project, please feel free to open an issue or submit a pull request.
+refer contibution.md for steps
