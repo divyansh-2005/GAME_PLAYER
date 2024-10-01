@@ -2,6 +2,10 @@
 
 Welcome to the Instant Games Platform! This project is a fun and interactive platform that allows users to play various games instantly on our website or through Telegram. The project is built on the MERN stack and integrates with crypto wallets using RainbowKit.
 
+# Telegram Link
+https://t.me/TeleGames29_bot
+click start button
+
 ## Features
 
 - **Play Games**: Enjoy a selection of games that can be played instantly on the website.
@@ -35,9 +39,13 @@ To run the project locally, follow these steps:
    ```bash
    cd my-project
    npm install
+   Add `.env` VITE_API_KEY=http://localhost:5000/
+   npm run dev
    
    cd BACKEND
    npm install
+   Add `.env` MONGO_URI=your-mongodb-connection-uri
+   npm start
    ```
 
 ## Current Status
@@ -47,3 +55,4 @@ The project is currently a work in progress. The homepage and wallet connect fun
 ## Contribution
 
 Contributions are welcome! If you would like to contribute to this project, please feel free to open an issue or submit a pull request.
+refer contibution.md for steps
