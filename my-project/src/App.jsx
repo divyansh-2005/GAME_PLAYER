@@ -10,23 +10,30 @@ import Dashboard from "./Components/Dashboard";
 import AddGamePage from "./Components/AddGamePage";
 import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
+import AboutPage from "./Components/AboutPage";
+import ContactPage from "./Components/ContactPage";
+
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/games" element={<Games />} />
-        <Route path="/flipcard" element={<FlipGame />} />
-        <Route path="/snakegame" element={<SnakeGame />} />
-        <Route path="/gth" element={<GTH />} />
-        <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
-        <Route path="/rckpapsc" element={<RockPaperScissors />} />
-        <Route path="/addgame" element={<AddGamePage />} />
-      </Routes>
-    </>
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/flipcard" element={<FlipGame />} />
+          <Route path="/snakegame" element={<SnakeGame />} />
+          <Route path="/gth" element={<GTH />} />
+          <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
+          <Route path="/rckpapsc" element={<RockPaperScissors />} />
+          <Route path="/addgame" element={<AddGamePage />} />
+          <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
+        </Routes>      
+</>
+
   );
 };
 
