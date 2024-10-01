@@ -78,8 +78,8 @@ img {
 }
 
 @font-face {
-  font-family: 'Norse Bold';
-  src: url('../assets/Norse-Bold.otf') format('opentype');
+  font-family: "Norse Bold";
+  src: url("../assets/Norse-Bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -95,7 +95,7 @@ input {
 }
 
 #head {
-  font-family: 'Norse Bold', sans-serif;
+  font-family: "Norse Bold", sans-serif;
   font-size: 10rem;
   color: white;
 }
@@ -141,7 +141,7 @@ form > div {
 }
 
 .wrapper > h2 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 300;
   color: rgb(255, 255, 255);
   position: relative;
@@ -156,7 +156,7 @@ form > div {
   height: 80%;
   align-items: center;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   flex-wrap: wrap;
   position: relative;
   bottom: 1.5rem;
@@ -168,7 +168,7 @@ form > div {
   color: white;
   margin-top: 1rem;
   gap: 5px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   margin-bottom: 3rem;
 }
 
@@ -201,19 +201,19 @@ input:focus {
   outline: none;
 }
 
-input[type='password']:invalid {
+input[type="password"]:invalid {
   border: 2px solid #ff0000;
   /* Red border for invalid input */
   box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
   /* Optional: add a red box shadow */
 }
 
-.password:hover input[type='password']:invalid {
+.password:hover input[type="password"]:invalid {
   /* Styles applied to password input when parent .formgroup is hovered and input is invalid */
   box-shadow: 0 0 25px rgb(255, 0, 0);
 }
 
-form > .Signin > input[type='submit'] {
+form > .Signin > input[type="submit"] {
   width: 25%;
   height: 40px;
   margin-top: 15px;
@@ -222,7 +222,7 @@ form > .Signin > input[type='submit'] {
   font-size: 17px;
 }
 
-form > .Signin > input[type='submit']:hover {
+form > .Signin > input[type="submit"]:hover {
   background-color: #ed969c;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* Example box shadow */
@@ -230,6 +230,6 @@ form > .Signin > input[type='submit']:hover {
   border: 1px solid crimson;
 }
 
-.submitButton{
-    margin-bottom: 15px;
+.submitButton {
+  margin-bottom: 15px;
 }
