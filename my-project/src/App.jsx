@@ -10,7 +10,8 @@ import Dashboard from "./Components/Dashboard";
 import AddGamePage from "./Components/AddGamePage";
 import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
-
+import AboutPage from "./Components/AboutPage";
+import ContactPage from "./Components/ContactPage";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -28,10 +29,9 @@ const App = () => {
           <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
           <Route path="/rckpapsc" element={<RockPaperScissors />} />
           <Route path="/addgame" element={<AddGamePage />} />
-          
-
-        </Routes>
-      
+          <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
+        </Routes>      
 </>
   );
 };
