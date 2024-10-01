@@ -2,6 +2,10 @@
 
 Welcome to the Instant Games Platform! This project is a fun and interactive platform that allows users to play various games instantly on our website or through Telegram. The project is built on the MERN stack and integrates with crypto wallets using RainbowKit.
 
+# Telegram Link
+https://t.me/TeleGames29_bot
+click start button
+
 ## Features
 
 - **Play Games**: Enjoy a selection of games that can be played instantly on the website.
