@@ -7,7 +7,7 @@ export function TmaProvider({ children }) {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
-   function fetchTelegramUser() {
+  function fetchTelegramUser() {
     try {
       const launchParams = retrieveLaunchParams();
       const user = launchParams?.initData?.user;
