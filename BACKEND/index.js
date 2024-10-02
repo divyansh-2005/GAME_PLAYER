@@ -3,12 +3,23 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const connection = require("./config/connection");
 const userRouter = require("./routes/userRoutes"); // Correct path
-require("dotenv").config(); 
+const cookieParser = require("cookie-parser");
+
+require("dotenv").config();
+
 const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-app.use(cors());
+const frontend_url = process.env.FRONTEND_URL;
+
+app.use(cookieParser());
+app.use(
+  cors({
+    origin: frontend_url,
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
 
 connection();
