@@ -44,7 +44,7 @@ To run the project locally, follow these steps:
    
    cd BACKEND
    npm install
-   Add `.env` MONGO_URI=your-mongodb-connection-uri
+   Add `.env` MONGO_URI=your-mongodb-connection-uri FRONTEND_URL=your-frontent-url
    npm start
    ```
 
