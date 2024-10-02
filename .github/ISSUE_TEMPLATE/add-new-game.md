@@ -2,7 +2,7 @@
 name: Add new game
 about: 'Add a new instant play game '
 title: ''
-labels: enhancement, gssoc-ext, level 3
+labels: enhancement, gssoc-ext,hacktoberfest, level 3
 assignees: divyansh-2005
 
 ---
