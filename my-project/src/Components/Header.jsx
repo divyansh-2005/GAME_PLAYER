@@ -1,10 +1,54 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import axios from "axios";
 
+const API_BASE_URL = import.meta.env.VITE_API_KEY;
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const navigate = useNavigate();
+
+  // Check if the user is logged in by making a request to the backend
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        const res = await axios.get(`${API_BASE_URL}/api/user/dashboard`, {
+          withCredentials: true, // Include cookies in the request
+        });
+        if (res.data.valid) {
+          setIsLoggedIn(true);
+        }
+      } catch (error) {
+        setIsLoggedIn(false);
+      }
+    };
+    checkAuth();
+  }, [isLoggedIn]);
+
+  // loggint out api req
+  const handleLogout = async () => {
+    try {
+      const res = await axios.post(
+        `${API_BASE_URL}/api/user/logout`,
+        {},
+        {
+          withCredentials: true, // Include cookies in the request
+        }
+      );
+
+      if (res.status === 200) {
+        alert("Logout successful!");
+        setIsLoggedIn(false);
+        navigate("/"); // Redirect to home or login page after logout
+      }
+    } catch (error) {
+      console.error("Logout failed:", error);
+      // Optionally, show an error message to the user
+    }
+  };
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
@@ -50,6 +94,22 @@ const Header = () => {
               <i className="fa fa-phone" aria-hidden="true"></i> Contact
             </Link>
           </li>
+
+          {/* Conditionally render login/register or logout */}
+          {isLoggedIn ? (
+            <li className="nav-item">
+              <Link onClick={handleLogout} className="nav-link">
+                <i className="fa fa-phone" aria-hidden="true"></i> Logout
+              </Link>
+            </li>
+          ) : (
+            <li className="nav-item">
+              <Link to={"/register"} className="nav-link">
+                <i className="fa fa-phone" aria-hidden="true"></i>{" "}
+                Login/Register
+              </Link>
+            </li>
+          )}
 
           <li className="nav-item" style={{ fontSize: "1.5rem" }}>
             <ConnectButton />

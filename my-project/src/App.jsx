@@ -10,6 +10,8 @@ import Dashboard from "./Components/Dashboard";
 import AddGamePage from "./Components/AddGamePage";
 import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
+import Registration from "./Components/Registration";
+import Login from "./Components/Login";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -17,6 +19,8 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/register" element={<Registration />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/games" element={<Games />} />
         <Route path="/flipcard" element={<FlipGame />} />
