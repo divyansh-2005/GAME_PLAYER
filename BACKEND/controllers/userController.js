@@ -36,7 +36,7 @@ const fetchUser = async (req, res) => {
         const accessToken = jwt.sign(
           { email: email },
           "jwt-access-token-secret-key",
-          { expiresIn: "1m" }
+          { expiresIn: "10m" }
         );
         const refreshToken = jwt.sign(
           { email: email },
@@ -44,7 +44,7 @@ const fetchUser = async (req, res) => {
           { expiresIn: "2h" }
         );
 
-        res.cookie("accessToken", accessToken, { maxAge: 60000 });
+        res.cookie("accessToken", accessToken, { maxAge: 600000 });
 
         res.cookie("refreshToken", refreshToken, {
           maxAge: 7200000, // 2 hours
@@ -95,8 +95,22 @@ const logoutUser = (req, res) => {
   }
 };
 
-const authorizeDashboard = (req, res) => {
-  return res.json({ valid: true, message: "authorized" });
+const authorizeDashboard = async (req, res) => {
+  try {
+    // Assuming you store the user's email in the request object during authentication
+    const userEmail = req.email; // This should be set during authentication
+
+    // Fetch user details from the database
+    const user = await User.findOne({ email: userEmail });
+
+    // Return user details along with authorization message
+    return res.json({ valid: true, message: "authorized", user });
+  } catch (error) {
+    console.error(error);
+    return res
+      .status(500)
+      .json({ valid: false, message: "Internal Server Error" });
+  }
 };
 
 module.exports = {

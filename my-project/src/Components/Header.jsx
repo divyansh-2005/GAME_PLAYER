@@ -95,6 +95,12 @@ const Header = () => {
             </Link>
           </li>
 
+          <li className="nav-item">
+            <Link to={"/dashboard"} className="nav-link">
+              <i className="fa fa-phone" aria-hidden="true"></i> Dashboard
+            </Link>
+          </li>
+
           {/* Conditionally render login/register or logout */}
           {isLoggedIn ? (
             <li className="nav-item">

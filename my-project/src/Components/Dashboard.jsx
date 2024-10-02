@@ -10,6 +10,7 @@ const Dashboard = () => {
   const { user, isLoading, isError } = useTma();
   const navigate = useNavigate();
   const [message, setMessage] = useState();
+  const [currentUser, setCurrentUser] = useState(null);
 
   axios.defaults.withCredentials = true;
   useEffect(() => {
@@ -19,12 +20,14 @@ const Dashboard = () => {
         // console.log(res);
         if (res.data.valid) {
           setMessage(res.data.valid);
+          setCurrentUser(res.data.user);
+          // console.log(res.data.user);
         } else {
           navigate("/");
         }
       })
       .catch((err) => console.log(err));
-  });
+  }, [currentUser, message]);
 
   // if (isLoading) {
   //   return <div style={{ color: "white" }}>Loading...</div>;
@@ -45,20 +48,22 @@ const Dashboard = () => {
   return (
     <>
       <Header />
-      <div className="text-white text-4xl">logged in successfully</div>
-      <span className="text-white text-xl">
-        <Link to="/">go to home</Link>
-      </span>
+      {currentUser ? (
+        <div>
+          <center>
+            {" "}
+            <p style={{ color: "white" }} className="text-6xl m-4">
+              Dashboard
+            </p>
+          </center>
+          <p style={{ color: "white" }}>Name: {currentUser.name}</p>
+          <p style={{ color: "white" }}>Username: {currentUser.username}</p>
+          <p style={{ color: "white" }}>Points: {currentUser.points}</p>
+        </div>
+      ) : (
+        <span>Loading...</span>
+      )}
     </>
-
-    // <div>
-    //   <h1 style={{ color: "white" }}>Dashboard</h1>
-    //   <p style={{ color: "white" }}>
-    //     Name: {user.firstName} {user.lastName}
-    //   </p>
-    //   <p style={{ color: "white" }}>Username: {user.username}</p>
-    //   <p style={{ color: "white" }}>Points: {user.points}</p>
-    // </div>
   );
 };
 
