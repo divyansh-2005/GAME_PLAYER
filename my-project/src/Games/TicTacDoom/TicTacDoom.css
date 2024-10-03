@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #FDE3A7;
+    transition-duration: 0.5s;
+  }
+  
+  #container {
+  }
+  
+  .game-narrative {
+    margin: 0 auto;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .game-narrative-text {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 2em;
+    margin: 10px;
+  }
+  
+  .game-btn {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 2em;
+    margin: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #d35400;
+    padding: 10px 20px;
+    border: solid #F89406 2px;
+    text-decoration: none;
+  }
+  
+  .game-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  .game-btn:focus {
+    outline: 0;
+  }
+  
+  #narrative-three-btns {
+    display: flex;
+    flex-flow: row;
+  }
+  
+  .dramatic-text {
+    font-family: 'Trade Winds', cursive;
+    font-size: 3em;
+  }
+  
+  .computer-threat {
+    font-family: 'Trade Winds', cursive;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #c0392b;
+  }
+  
+  #header {
+    text-align: center;
+    margin: 10px;
+    margin-top: 30px;
+    color: #c0392b;
+  }
+  
+  #game-configuration {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #identity-selection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .identity {
+    margin: 0px 20px;
+  }
+  
+  #identity-label {
+    color: #FFF;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #game-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 2px solid #7f8c8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 4em;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #ecf0f1;
+  }
+  
+  .cell-selected {
+    background-color: #7f8c8d;
+  }
+  
+  #game-over {
+    position: absolute;
+    top: 30%;
+    left: 0; right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  

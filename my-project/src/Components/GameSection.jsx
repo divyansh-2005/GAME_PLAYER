@@ -28,6 +28,16 @@ const GameSection = () => {
       description: "Description of Game E",
       link: "/rckpapsc",
     },
+    {
+      name: "Click Defender",
+      description: "Description of Game F",
+      link: "/shootergame",
+    },
+    {
+      name: "Tic Tac Doom",
+      description: "Description of Game G",
+      link: "/tictacdoom",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

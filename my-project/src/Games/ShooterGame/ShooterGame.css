@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #00ff00;
+    --secondary-color: #ff00ff;
+    --background-color: #000033;
+    --text-color: #ffffff;
+    --enemy-color: #ff0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+#game-controls {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+#game-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#game-area {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.enemy {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--enemy-color);
+    border-radius: 50%;
+    cursor: crosshair;
+    transition: all 0.2s ease;
+}
+
+.enemy:hover {
+    transform: scale(1.1);
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#game-over h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#game-over p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #game-area {
+        width: 90vw;
+        height: 60vw;
+    }
+}

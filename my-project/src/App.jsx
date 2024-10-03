@@ -31,6 +31,8 @@ const App = () => {
           <Route path="/addgame" element={<AddGamePage />} />
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
+          <Route path="/shootergame" element={<ShooterGame />} />
+          <Route path="/tictacdoom" element={<TicTacDoom />} />
         </Routes>      
 </>
 
