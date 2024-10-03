@@ -1605,9 +1605,10 @@ section {
 
 #searchBar h1 {
     font-family: Ubuntu;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
+    margin-left: 7.2rem;
     background-color: transparent;
 }
 
