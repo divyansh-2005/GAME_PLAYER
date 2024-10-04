@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Prosto One', cursive;
+  background-color: #f3f3f3;
+}
+
+.snake-game {
+  text-align: center;
+  padding-top: 20px; /* Adjust as needed */
+}
+
+.body {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column; /* Ensures buttons and score are aligned vertically */
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px); /* Adjust for header height */
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: 'Prosto One', cursive;
+  border-radius: 0.6rem;
+  background-color: #ffcd6e;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #8b491c;
+  color: white;
+}
+
+#scoreBox,
+#HiScore {
+  margin: 10px 0;
+  border-radius: 1rem;
+  border: 2px solid #9e9e9e;
+  font-size: 1.5rem;
+  font-family: 'Prosto One', cursive;
+  padding: 8px 16px;
+}
+
+#board {
+  margin-top: 20px;
+  border-radius: 1rem;
+  background: #cd853f;
+  width: 75vmin;
+  height: 75vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+  background: #ffcd6e;
+  border: 4px solid white;
+  border-radius: 45%;
+}
+
+.snake {
+  background: #fffbaa !important;
+  border-radius: 45%;
+  border: 1px solid white;
+}
+
+.food {
+  background: #8b491c;
+  border-radius: 8px;
+}
+
+/* Adjustments for Mobile View */
+@media (max-width: 768px) {
+  .body {
+    padding: 10px;
+  }
+
+  #board {
+    width: 90vmin;
+    height: 90vmin;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 8px;
+  }
+
+  #scoreBox,
+  #HiScore {
+    font-size: 1.2rem;
+    padding: 6px 12px;
+    margin: 8px 0;
+  }
+
+  .instructions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .snake-game {
+    position: relative;
+  }
+
+  #board {
+    margin-top: 60px; /* Adjust to create space for instructions */
+  }
+}

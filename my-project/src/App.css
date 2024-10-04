@@ -1,0 +1,91 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for entire app */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.bg-gradient {
+  background: linear-gradient(
+    to right,
+    #3f87a6,
+    #ebf8e1
+  ); /* Example gradient colors */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.header nav {
+  display: flex;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+.main-content {
+  margin-top: 20px;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header nav {
+    margin-top: 10px;
+  }
+
+  .header nav a {
+    margin: 5px 0;
+    display: block;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
