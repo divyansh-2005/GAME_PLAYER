@@ -12,6 +12,8 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import Tetris from "./Games/Tetris/tetris";
+
 
 
 const App = () => {
