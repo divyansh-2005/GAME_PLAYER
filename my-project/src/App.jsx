@@ -12,6 +12,8 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import RocketBoost from "./Games/Rocket Boost/RocketBoost";
+
 
 
 const App = () => {
@@ -28,6 +30,7 @@ const App = () => {
           <Route path="/gth" element={<GTH />} />
           <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
           <Route path="/rckpapsc" element={<RockPaperScissors />} />
+          <Route path="/rocketboost" element={<RocketBoost />} />
           <Route path="/addgame" element={<AddGamePage />} />
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
