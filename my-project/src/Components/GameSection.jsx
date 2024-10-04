@@ -28,6 +28,11 @@ const GameSection = () => {
       description: "Description of Game E",
       link: "/rckpapsc",
     },
+    {
+      name: "Ball Shooting",
+      description: "Description of Game F",
+      link: "/ballshooting",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

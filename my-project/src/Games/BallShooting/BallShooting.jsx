@@ -2,6 +2,7 @@ import React from "react";
 import CanvasComponent from "./CanvasComponent";
 import "./BallShooting.css";
 
+
 function BallShooting() {
   return (
     <>

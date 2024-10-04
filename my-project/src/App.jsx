@@ -6,12 +6,14 @@ import GTH from "./Games/GuessTheColor/GTH";
 import EmojiIntruderHunt from "./Games/EmojiIntruder/EmojiIntruder";
 import RockPaperScissors from "./Games/RockPaper Scissors/Game";
 import GameSection from "./Components/GameSection";
+import BallShooting from "./Games/BallShooting/BallShooting";
 import Dashboard from "./Components/Dashboard";
 import AddGamePage from "./Components/AddGamePage";
 import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+
 
 
 const App = () => {
@@ -25,6 +27,7 @@ const App = () => {
           <Route path="/games" element={<Games />} />
           <Route path="/flipcard" element={<FlipGame />} />
           <Route path="/snakegame" element={<SnakeGame />} />
+          <Route path="/ballshooting" element={<BallShooting />} />
           <Route path="/gth" element={<GTH />} />
           <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
           <Route path="/rckpapsc" element={<RockPaperScissors />} />

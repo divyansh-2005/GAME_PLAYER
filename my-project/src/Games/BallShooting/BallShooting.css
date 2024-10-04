@@ -1,3 +1,4 @@
+/* Canvas Styles */
 .BallShootingCanvas {
   margin: auto;
   max-width: 100%;
@@ -9,97 +10,81 @@
   margin: 10px;
 }
 
-.BallShootingStats h1 p {
-  color: black !important;
-}
-
+/* Modal styling */
 #modalEl {
-  position: absolute;
-  left: 37%;
-  top: 39%;
+  position: fixed; /* Ensures the modal stays in the center of the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the modal */
   display: flex;
   flex-direction: column;
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 20px; /* Increased padding for better spacing */
+  border-radius: 10px; /* Rounded corners for modern look */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+  z-index: 10;
+  max-width: 90%; /* Responsive max width */
+  width: 400px; /* Default modal width */
 }
 
-@media screen and (min-width: 768px) {
-  .BallShootingCanvas {
-    min-height: 100%;
-    margin: auto;
+.BallShootingStats h1 {
+  font-size: 4rem; /* Large score display */
+  color: #4caf50; /* Green color for score */
+  margin-bottom: 10px;
+}
+
+.BallShootingStats p {
+  font-size: 16px;
+  color: #555;
+}
+
+.BallShootingStats button {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.BallShootingStats button:hover {
+  background-color: #e64a19;
+}
+
+/* Modal Responsiveness */
+@media (max-width: 768px) {
+  #modalEl {
+    width: 90%; /* Adjust modal width for tablets and smaller screens */
+    padding: 15px;
   }
 }
-/* modalEl responsiveness  */
-@media (max-width:778px) {
-    #modalEl{
-    position: absolute;
-    left: 29%;
-    top: 39%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
+
+@media (max-width: 550px) {
+  #modalEl {
+    width: 80%; /* Narrow the modal further on mobile */
     padding: 10px;
   }
-}
-@media (max-width:644px) {
-    #modalEl{
-    position: absolute;
-    left: 25%;
-    top: 39%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-    padding: 10px;
+
+  .BallShootingStats h1 {
+    font-size: 3rem; /* Reduce font size on smaller screens */
+  }
+
+  .BallShootingStats button {
+    font-size: 16px;
+    padding: 10px 15px;
   }
 }
-@media (max-width:550px) {
-    #modalEl{
-    position: absolute;
-    left: 20%;
-    top: 39%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-    padding: 10px;
+
+@media (max-width: 400px) {
+  #modalEl {
+    width: 75%; /* Further adjust modal for very small screens */
+    padding: 8px;
   }
-}
-@media (max-width:489px) {
-    #modalEl{
-    position: absolute;
-    left: 14%;
-    top: 39%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-    padding: 10px;
-  }
-}
-@media (max-width:442px) {
-    #modalEl{
-    position: absolute;
-    left: 8%;
-    top: 39%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-    padding: 10px;
-  }
-}
-@media (max-width:418px) {
-    #modalEl{
-      position: absolute;
-      left: 7%;
-      top: 32%;
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      color: black;
-      padding: 5px;
+
+  .BallShootingStats h1 {
+    font-size: 2.5rem;
   }
 }

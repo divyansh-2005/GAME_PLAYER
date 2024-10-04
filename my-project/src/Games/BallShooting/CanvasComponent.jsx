@@ -1,6 +1,9 @@
 import React, { useRef, useEffect } from "react";
+
 import { gsap } from "gsap";
 import "./BallShooting.css";
+import Footer from '../../Components/Footer';
+import Header from '../../Components/Header';
 
 const CanvasComponent = () => {
   const canvasRef = useRef(null);
