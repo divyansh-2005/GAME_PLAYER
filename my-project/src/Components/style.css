@@ -1410,16 +1410,23 @@ section {
     position: fixed;
     bottom: 20px;
     right: 10px;
-    height: 50px;
-    width: 50px;
     z-index: 10;
-    display: none;
-    place-items: center;
-    border-radius: 50%;
-    transition: opacity 0.3s, background-color 0.3s;
-    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3), -4px -4px 6px 0 rgba(116, 125, 136, .2), inset -4px -4px 6px 0 rgba(255, 255, 255, .2), inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    display: none; /* Initially hidden */
     cursor: pointer;
+    width: 0; /* Set width to 0 to create a triangle */
+    height: 0; /* Set height to 0 to create a triangle */
+    border-left: 15px solid transparent; /* Left side of the triangle */
+    border-right: 15px solid transparent; /* Right side of the triangle */
+    border-bottom: 30px solid #000; /* Default triangle color (height of triangle) */
+    transition: opacity 0.3s; /* Optional: Add a transition effect */
 }
+
+/* Optional: Hover Effect for Triangle */
+#progress:hover {
+    border-bottom-color: #03cc65; /* Change color on hover */
+}
+
+
 
 
 #progress-value {

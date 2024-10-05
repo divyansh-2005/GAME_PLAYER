@@ -14,16 +14,14 @@ const calcScrollValue = () => {
   const scrollValue = Math.round((pos * 100) / calcHeight);
 
   if (pos > 100) {
-    scrollProgress.style.display = 'grid';
+    scrollProgress.style.display = 'flex'; // Show the triangle
   } else {
-    scrollProgress.style.display = 'none';
+    scrollProgress.style.display = 'none'; // Hide the triangle
   }
-
-  scrollProgress.addEventListener('click', () => {
-    document.documentElement.scrollTop = 0;
-  });
-
-  scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+    // Set the triangle color based on scroll value (white to green)
+  const hue = Math.round(120 * (scrollValue / 100)); // Gradient from white (hue 0) to green (hue 120)
+  scrollProgress.style.borderBottomColor = `hsl(${hue}, 100%, 50%)`; // Transition from white to green
+  scrollProgress.style.pointerEvents = 'auto'; // Ensure it can be c
 };
 
 const HomePage = () => {
