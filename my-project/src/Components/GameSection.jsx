@@ -28,6 +28,11 @@ const GameSection = () => {
       description: "Challenge the computer in the classic game of Rock, Paper, Scissors! Make your move and see if you can outsmart the machine.",
       link: "/rckpapsc",
     },
+    {
+      name: "Rocket Boost",
+      description: "Description of Game F",
+      link: "/rocketboost",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
