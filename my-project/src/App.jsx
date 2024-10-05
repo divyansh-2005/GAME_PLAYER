@@ -4,6 +4,7 @@ import HomePage from "./Components/HomePage";
 import FlipGame from "./Games/FlipCard/FlipCard";
 import SnakeGame from "./Games/SnakeGame/SnakeGame";
 import GTH from "./Games/GuessTheColor/GTH";
+import PongGame from "./Games/PingPongGame/PongGame";
 import EmojiIntruderHunt from "./Games/EmojiIntruder/EmojiIntruder";
 import RockPaperScissors from "./Games/RockPaper Scissors/Game";
 import GameSection from "./Components/GameSection";
@@ -19,6 +20,7 @@ const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -28,12 +30,17 @@ const App = () => {
         <Route path="/gth" element={<GTH />} />
         <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
         <Route path="/rckpapsc" element={<RockPaperScissors />} />
+        <Route path="/PingPong" element={<PongGame/>} />
         <Route path="/tetris" element={<TetrisGame />} /> {/* Add the new route */}
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
+
+        
+
+
   );
 };
 
