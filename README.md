@@ -52,7 +52,18 @@ To run the project locally, follow these steps:
 
 The project is currently a work in progress. The homepage and wallet connect functionalities are completed, along with five games available for play. Further development is planned to enhance the user experience and add more features.
 
-## Contribution
+
+## 👀 Our Contributors
+
+- We extend our heartfelt gratitude for your invaluable contribution to our project! Your efforts play a pivotal role in elevating Ratna-Supermarket to greater heights.
+- Make sure you show some love by giving ⭐ to our repository.
+
+<div align="center">
+
+  <a href="https://github.com/divyansh-2005/GAME_PLAYER/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=divyansh-2005/GAME_PLAYER&&max=1000" />
+  </a>
+</div>
 
 Contributions are welcome! If you would like to contribute to this project, please feel free to open an issue or submit a pull request.
 refer contibution.md for steps
