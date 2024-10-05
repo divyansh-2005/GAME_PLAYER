@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const ScrollToTopButton = () => {
+  const [isVisible, setIsVisible] = useState(false); // State to control visibility
+
   useEffect(() => {
-    const scrollToTopButton = document.getElementById('progress');
     const handleScroll = () => {
-      if (window.pageYOffset > 200) {
-        scrollToTopButton.style.display = 'block';
-      } else {
-        scrollToTopButton.style.display = 'none';
-      }
+      const pos = window.pageYOffset;
+      setIsVisible(pos > 200); // Set visibility based on scroll position
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -16,10 +14,19 @@ const ScrollToTopButton = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   return (
-    <div id="progress" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-      <span id="progress-value" className="bi bi-arrow-up-short"></span>
+    <div
+      id="progress"
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      style={{
+        position: 'fixed',
+        bottom: '50px',
+        right: '50px',
+        display: isVisible ? 'flex' : 'none', // Use state to control visibility
+        cursor: 'pointer',
+        zIndex: 1000,
+      }}
+    >
     </div>
   );
 };
