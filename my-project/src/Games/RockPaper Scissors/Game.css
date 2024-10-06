@@ -45,6 +45,7 @@
   .p {
     font-size: 2rem;
     margin: 1rem 0;
+    padding: 8px;
   }
   
   .score-board {
@@ -59,6 +60,7 @@
   
   .msg-container {
     margin-top: 2rem;
+    margin-bottom:8rem;
   }
   
   #msg {
@@ -68,4 +70,6 @@
     color: #fff;
     border-radius: 10px;
   }
-  
+  .footer-basic{
+    margin-top:90px;
+  }
