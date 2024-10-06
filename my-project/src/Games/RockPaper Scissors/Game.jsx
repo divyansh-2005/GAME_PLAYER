@@ -66,10 +66,11 @@ const RockPaperScissors = () => {
         </div>
       </div>
 
+
+      
       <div className="board">
-        <button className="reset" onClick={() => updateScore(0, 0)}>
-          Reset Score
-        </button>
+      
+        <p id="msg">{msg}</p>
         <p className="p">Wins</p>
         <div className="score-board">
           <div className="score">
@@ -84,7 +85,10 @@ const RockPaperScissors = () => {
       </div>
 
       <div className="msg-container">
-        <p id="msg">{msg}</p>
+      <button className="reset" onClick={() => updateScore(0, 0)}>
+          Reset Score
+        </button>
+       
       </div>
     </div>
     <Footer/>

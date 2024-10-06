@@ -102,7 +102,7 @@ const EmojiIntruderHunt = () => {
     <Header/>
     <div className="emoji-intruder-hunt">
       <div className="header">
-        <h1>Emoji Intruder Hunt</h1>
+        <h1 className='emoji-heading' >Emoji Intruder Hunt</h1>
         <div id="timer">Time left: <span id="timeLeft">{timeLeft}</span>s</div>
       </div>
       <div id="gridContainer" className={disabled ? 'disabled' : ''}>
