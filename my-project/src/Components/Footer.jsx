@@ -9,6 +9,7 @@ const Footer = () => (
         <li className="list-inline-item"><Link to={'/'}><i className="fa-solid fa-circle-info" aria-hidden="true"></i> Games</Link></li>
         <li className="list-inline-item"><Link to={'/'}><i className="fa fa-calculator" aria-hidden="true"></i> About</Link></li>
         <li className="list-inline-item"><Link to={'/'}><i className="fa fa-users" aria-hidden="true"></i> Contact</Link></li>
+        <li className="list-inline-item"><Link to={"/faq's"}><i className="fa fa-users" aria-hidden="true"></i> FAQ's</Link></li>
       </ul>
       <p className="copyright">TeleGames &copy; 2024</p>
     </footer>

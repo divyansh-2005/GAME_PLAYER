@@ -12,6 +12,7 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import FAQ from "./Components/FAQ";
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/addgame" element={<AddGamePage />} />
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
+          <Route path="/faq's" element={<FAQ/>}/>
         </Routes>      
 </>
 
