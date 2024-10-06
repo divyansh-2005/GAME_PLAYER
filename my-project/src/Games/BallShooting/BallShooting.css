@@ -12,7 +12,7 @@
 
 /* Modal styling */
 #modalEl {
-  position: fixed; /* Ensures the modal stays in the center of the viewport */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centers the modal */
@@ -23,7 +23,7 @@
   padding: 20px; /* Increased padding for better spacing */
   border-radius: 10px; /* Rounded corners for modern look */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
-  z-index: 10;
+  z-index: 1;
   max-width: 90%; /* Responsive max width */
   width: 400px; /* Default modal width */
 }
