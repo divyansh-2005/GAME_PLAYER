@@ -33,6 +33,18 @@ const GameSection = () => {
       description:"Description of Game F",
       link: "PingPong",
     },
+    
+    {
+      name: "Tetris",
+      description:"Description of Game F",
+      link: "./tetris",
+    },
+    
+    {
+      name: "TicTacToe",
+      description:"The classic game of tic-tac-toe",
+      link: "/tictactoe",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

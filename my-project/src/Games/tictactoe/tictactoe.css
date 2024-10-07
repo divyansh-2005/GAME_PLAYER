@@ -1,0 +1,66 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .game-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .square:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .game-info {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  .winner-message, .turn-message {
+    margin-bottom: 15px;
+    color:white;
+    font-weight: 500;
+    font-size: larger;
+  }
+  
+  .reset-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-btn:hover {
+    background-color: #0056b3;
+  }
+  
