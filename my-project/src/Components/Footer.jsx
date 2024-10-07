@@ -28,6 +28,11 @@ const Footer = () => (
             <i className="fa fa-users" aria-hidden="true"></i> Contact
           </Link>
         </li>
+        <li className="list-inline-item">
+          <Link to={"/faq's"}>
+            <i className="fa fa-users" aria-hidden="true"></i> FAQ's
+          </Link>
+        </li>
       </ul>
       <p className="copyright">TeleGames &copy; 2024</p>
     </footer>
