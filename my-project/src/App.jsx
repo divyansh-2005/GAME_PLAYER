@@ -14,7 +14,7 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
-import TetrisGame from "./Games/TetrisGame"; // Import your new TetrisGame component
+import TetrisGame from "./Games/Tetris/TetrisGame"; // Import your new TetrisGame component
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
