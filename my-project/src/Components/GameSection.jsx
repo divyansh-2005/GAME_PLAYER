@@ -33,6 +33,11 @@ const GameSection = () => {
       description:"Description of Game F",
       link: "PingPong",
     },
+    {
+      name: "Reaction Time",
+      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      link: "/reaction",
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
