@@ -13,7 +13,10 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import TetrisGame from "./Games/Tetris/TetrisGame"; // Import your new TetrisGame component
+import NumberGuessing from "./Games/NumberGuessing/NumberGuessing";
 import SimonSays from "./Games/SimonSays/SimonSays";
+
 
 
 const App = () => {
@@ -30,13 +33,16 @@ const App = () => {
         <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
         <Route path="/rckpapsc" element={<RockPaperScissors />} />
         <Route path="/PingPong" element={<PongGame />} />
+        <Route path="/tetris" element={<TetrisGame />} />
+        <Route path="/number-guessing" element={<NumberGuessing />} />
+        {/* Add the new route */}
         <Route path="/simon-says" element={<SimonSays />} />
+
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
-  
   );
 };
 
