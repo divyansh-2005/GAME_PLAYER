@@ -1,4 +1,3 @@
-// src/App.jsx
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import FlipGame from "./Games/FlipCard/FlipCard";
@@ -19,7 +18,6 @@ const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -37,8 +35,6 @@ const App = () => {
     </>
 
         
-
-
   );
 };
 
