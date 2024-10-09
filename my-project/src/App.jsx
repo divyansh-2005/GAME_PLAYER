@@ -6,8 +6,8 @@ import GTH from "./Games/GuessTheColor/GTH";
 import PongGame from "./Games/PingPongGame/PongGame";
 import EmojiIntruderHunt from "./Games/EmojiIntruder/EmojiIntruder";
 import RockPaperScissors from "./Games/RockPaper Scissors/Game";
-import GameSection from "./Components/GameSection";
 import Dashboard from "./Components/Dashboard";
+import PianoTiles from "./Games/Pianotiles/PianoTiles"
 import AddGamePage from "./Components/AddGamePage";
 import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
@@ -19,7 +19,6 @@ const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
