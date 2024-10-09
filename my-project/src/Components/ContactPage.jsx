@@ -24,9 +24,9 @@ function ContactPage() {
           <p className={styles.pPara}>
             <strong>Follow us on social media:</strong>
             <br />
-            <a href="https://twitter.com/telegames" target="_blank" rel="noopener noreferrer">Twitter</a> | 
-            <a href="https://facebook.com/telegames" target="_blank" rel="noopener noreferrer">Facebook</a> | 
-            <a href="https://instagram.com/telegames" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+            <a href="" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+            <a href="" target="_blank" rel="noopener noreferrer">Instagram</a>
           </p>
           
         </div>
