@@ -1,0 +1,71 @@
+/* src/ReactionTimeGame.css */
+
+body {
+  font-family: 'Arial', sans-serif; /* Use a modern font */
+}
+
+.reaction-game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.reaction-card {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 350px; /* Width of the card */
+  height: 200px; /* Height of the card */
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  cursor: pointer;
+  text-align: center; /* Center text inside the card */
+  font-size: 1.8rem; /* Font size for the text */
+  color: white; /* Text color */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.reaction-card.waiting {
+  background-color: #e74c3c; /* Red */
+}
+
+.reaction-card.ready {
+  background-color: #f39c12; /* Orange */
+}
+
+.reaction-card.go {
+  background-color: #2ecc71; /* Green */
+  transform: scale(1.05); /* Slightly scale up when active */
+}
+
+.reaction-time {
+  margin-top: 10px;
+  font-size: 2.5rem; /* Larger font size for reaction time */
+  color: white; /* White text color */
+  text-align: center; /* Center align text */
+  font-weight: bold; /* Make the text bold */
+}
+
+.restart-button {
+  padding: 15px 30px; /* Adjust padding for button size */
+  font-size: 1.2rem; /* Larger font size for the button */
+  color: white;
+  background-color: #3498db; /* Blue */
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Button shadow */
+  max-width: 200px; /* Set a max width for the button */
+  width: auto; /* Use auto width to prevent full length */
+  display: inline-block; /* Make the button only take the width of its content */
+  margin-top: 20px; /* Add some margin to separate from the text */
+}
+
+.restart-button:hover {
+  background-color: #2980b9; /* Darker Blue */
+  transform: scale(1.05); /* Scale up on hover */
+}

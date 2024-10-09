@@ -44,6 +44,11 @@ const GameSection = () => {
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
       link: "/simon-says",
     },
+    {
+      name: "Reaction Time",
+      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      link: "/reaction",
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
