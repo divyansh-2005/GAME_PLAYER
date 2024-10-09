@@ -1,4 +1,3 @@
-// src/App.jsx
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import FlipGame from "./Games/FlipCard/FlipCard";
@@ -16,6 +15,9 @@ import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
 import TetrisGame from "./Games/Tetris/TetrisGame"; // Import your new TetrisGame component
 import NumberGuessing from "./Games/NumberGuessing/NumberGuessing";
+import SimonSays from "./Games/SimonSays/SimonSays";
+
+
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -34,6 +36,8 @@ const App = () => {
         <Route path="/tetris" element={<TetrisGame />} />
         <Route path="/number-guessing" element={<NumberGuessing />} />
         {/* Add the new route */}
+        <Route path="/simon-says" element={<SimonSays />} />
+
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
