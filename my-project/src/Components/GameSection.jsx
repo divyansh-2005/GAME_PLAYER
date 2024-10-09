@@ -29,12 +29,6 @@ const GameSection = () => {
       link: "/rckpapsc",
     },
     {
-      name: "Piano Tiles",
-      description: "Experience the thrill of music at your fingertips with Piano Tiles! Tap to the rhythm of your favorite tunes, challenge your speed, and enjoy endless fun.",
-       link: "/pianotiles",
-    },
-    
-    {
       name: "PingPong Game",
       description:"Description of Game F",
       link: "PingPong",
