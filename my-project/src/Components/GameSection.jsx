@@ -29,6 +29,16 @@ const GameSection = () => {
       link: "/rckpapsc",
     },
     {
+      name: "Piano Tiles",
+      description: "Experience the thrill of music at your fingertips with Piano Tiles! Tap to the rhythm of your favorite tunes, challenge your speed, and enjoy endless fun.",
+       link: "/pianotiles",
+    },
+    {
+      name: "Egg Catcher",
+      description: "Eggs are randomly falling from the hen at the bottom, there's one basket to catch eggs and scores are displayed on right of the frame while lives on the left",
+      link: "/eggc",
+    },
+    {
       name: "PingPong Game",
       description:"Description of Game F",
       link: "PingPong",

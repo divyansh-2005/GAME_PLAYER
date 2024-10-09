@@ -16,6 +16,8 @@
     "@tma.js/sdk-react": "^2.2.5",
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
+    "howler": "^2.2.4",
+    "jquery": "^3.7.1",
     "my-project": "file:",
     "proptypes": "^1.1.0",
     "react": "^18.3.1",
