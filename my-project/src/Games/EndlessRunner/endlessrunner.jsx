@@ -68,16 +68,14 @@ const EndlessRunner = () => {
         <div id="chicken">
           <img
             src={chickenImage}
-            width="60px"
-            height="60px"
+           
             alt="chicken"
           />
         </div>
         <div id="obstacle">
           <img
             src={obstacleImage}
-            width="50px"
-            height="50px"
+            
             alt="obstacle"
           />
         </div>
@@ -85,8 +83,7 @@ const EndlessRunner = () => {
       <div id="ground">
         <img
           src={groundImage}
-          width="700px"
-          height="60px"
+          className="ground"
           alt="ground"
         />
       </div>

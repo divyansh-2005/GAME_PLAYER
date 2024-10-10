@@ -47,7 +47,7 @@ body {
   #chicken {
     width: 60px;
     height: 60px;
-    background: red;
+ 
     position: absolute;
     top: 190px;
     left: 100px;
@@ -65,11 +65,20 @@ body {
   
   #ground {
     
-    background: blue;
+    
+    width:700px;
+    height:60px;
+    background-position: center;
+    background-size: cover;
  
-    z-index: 9999px;
+   
   }
-  
+  .ground{
+    background-size: cover;
+    height:60px;
+    width: 700px;
+    background-position: end;
+  }
   .animate {
     animation: jump 0.5s linear;
   }
