@@ -12,13 +12,13 @@ const GameSection = () => {
     {
       name: "Flip Card Game",
       description:
-        "Challenge your memory in this flip card game! Flip two cards at a time, and see if you can find the matching pair. ",
+        "Challenge your memory in this flip card game! Flip two cards at a time, and see if you can find the matching pair.",
       link: "/flipcard",
     },
     {
       name: "Snake Game",
       description:
-        "Guide the hungry snake with the arrow keys in a race to gobble up as many boxes as you can!ach box boosts your score—how many can you collect without letting the snake crash?",
+        "Guide the hungry snake with the arrow keys in a race to gobble up as many boxes as you can! Each box boosts your score—how many can you collect without letting the snake crash?",
       link: "/snakegame",
     },
     {
@@ -28,15 +28,15 @@ const GameSection = () => {
       link: "/emojiintruder",
     },
     {
-      name: "RockPaper Scissors",
+      name: "Rock Paper Scissors",
       description:
         "Challenge the computer in the classic game of Rock, Paper, Scissors! Make your move and see if you can outsmart the machine.",
       link: "/rckpapsc",
     },
     {
-      name: "PingPong Game",
-      description: "Description of Game F",
-      link: "/PingPong",
+      name: "Ping Pong Game",
+      description: "Challenge your reflexes in this fast-paced ping pong game!",
+      link: "/pingpong",
     },
     {
       name: "Simon Says",
@@ -47,6 +47,12 @@ const GameSection = () => {
       name:"Space shooter",
       description:"",
       link:"/space-shooter"
+    },
+    {
+      name: "Hangman",
+      description:
+        "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
+      link: "/word-guessing-game",
     }
   ]);
 
@@ -63,7 +69,7 @@ const GameSection = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (link) => {
-    navigate(link);
+    navigate(link); // Navigate directly to the game's route
   };
 
   return (
