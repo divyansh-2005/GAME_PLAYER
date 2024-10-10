@@ -41,13 +41,13 @@ body {
   .bg-img-2 {
     left: 350px;
     width: 350px;
-    height: 270px;
+    height: 250px;
   }
   
   #chicken {
-    width: 60px;
-    height: 60px;
- 
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
     position: absolute;
     top: 190px;
     left: 100px;
