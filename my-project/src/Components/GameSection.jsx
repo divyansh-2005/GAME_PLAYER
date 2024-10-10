@@ -45,6 +45,12 @@ const GameSection = () => {
       link: "/simon-says",
     },
     {
+
+      name: "Endless Runner",
+      description:
+        "The game ends when the chicken collides with an obstacle. ",
+      link: "/endlessrunner",
+    },{
       name: "Hangman",
       description:
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
