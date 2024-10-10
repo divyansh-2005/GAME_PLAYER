@@ -11,7 +11,7 @@ import dice6 from './dice_6.png';
 
 const DiceRoller = () => {
   const diceImages = [dice1, dice2, dice3, dice4, dice5, dice6];
-  const colors = ['bg-red-500', 'bg-orange-500', 'bg-yellow-500', 'bg-green-500', 'bg-blue-500', 'bg-purple-500', 'bg-pink-500'];
+  const colors = ['bg-red-500', 'bg-orange-500', 'bg-yellow-500', 'bg-green-500', 'bg-blue-500', 'bg-purple-500', 'bg-pink-500',"bg-blue-900","bg-purple-800"];
 
   const [dice1Image, setDice1Image] = useState(dice1);
   const [dice2Image, setDice2Image] = useState(dice1);
@@ -50,7 +50,7 @@ const DiceRoller = () => {
       </div>
       <button
         onClick={diceRoll}
-        className="mt-10 h-[100px] w-[100px] bg-green-500 text-white px-6 py-3 text-xl font-bold rounded-lg hover:bg-green-600 transition duration-300"
+        className="mt-10 h-[60px] w-[100px] bg-violet-500 text-white px-6 py-3 text-xl font-bold rounded-lg hover:bg-green-600 transition duration-300"
       >
         ROLL
       </button>
