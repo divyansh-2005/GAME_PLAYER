@@ -54,10 +54,11 @@ button:hover {
 
 #board {
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 1rem;
   background: #cd853f;
   width: 75vmin;
-  height: 75vmin;
+  height: 35vmin;
   border: 2px solid black;
   display: grid;
   grid-template-rows: repeat(18, 1fr);
@@ -80,7 +81,11 @@ button:hover {
   background: #8b491c;
   border-radius: 8px;
 }
-
+.instructions{
+  height: 80px;
+  width: 200px;
+  font-size: 20px;
+}
 /* Adjustments for Mobile View */
 @media (max-width: 768px) {
   .body {
