@@ -45,6 +45,11 @@ const GameSection = () => {
       link: "/simon-says",
     },
     {
+      name: "Dice roller",
+      description:
+        "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
+      link: "/diceroller",
+    }
       name: "Hangman",
       description:
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
