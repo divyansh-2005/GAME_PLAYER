@@ -50,6 +50,11 @@ const GameSection = () => {
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
       link: "/word-guessing-game",
     },
+    {
+      name: "Chess Game",
+      description: "Play a classic game of Chess against the computer or a friend!",
+      link: "/chessgame", 
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
