@@ -1,0 +1,125 @@
+/* .game-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .keyboard-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .key {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .key.blue {
+    background-color: #3498db; 
+    color: white;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  }
+  
+  .key.green {
+    background-color: #2ecc71; 
+    color: white;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+  }
+  
+  .key.red {
+    background-color: #e74c3c; 
+    color: white;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+  }
+  
+  .key:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  button {
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+     */
+
+
+     .keyboard-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        width: 100%; /* Make keyboard full width */
+    }
+    
+    .key {
+        width: 60px; /* Increased width */
+        height: 60px; /* Increased height */
+        margin: 5px;
+        font-size: 24px; /* Increased font size */
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .key.blue {
+        background-color: #3498db; /* Blue color */
+        color: white;
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    }
+    
+    .key.green {
+        background-color: #2ecc71; /* Green color */
+        color: white;
+        box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+    }
+    
+    .key.red {
+        background-color: #e74c3c; /* Red color */
+        color: white;
+        box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+    }
+    
+    .key:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+    
+    button {
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    
+    button:disabled {
+        cursor: not-allowed;
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+      
+      @keyframes shake {
+        0% { transform: translate(1px, 0); }
+        25% { transform: translate(-1px, 0); }
+        50% { transform: translate(1px, 0); }
+        75% { transform: translate(-1px, 0); }
+        100% { transform: translate(0, 0); }
+      }
+        
