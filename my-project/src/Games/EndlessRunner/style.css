@@ -1,20 +1,119 @@
-@keyframes jump {
-    0% { top: 150px; }
-    30% { top: 100px; }
-    70% { top: 100px; }
-    100% { top: 150px; }
+/* Body and Container styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: url("./images/one-piece-desktop-kids-running-b5b3kgp79e5rebgg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
-  @keyframes block {
-    0% { left: 680px; }
-    100% { left: -50px; }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
-  .animate-chicken {
+  /* Game and Chicken styling */
+  #game {
+    width: 700px;
+    height: 250px;
+    position: relative;
+    background-color: #111;
+  }
+  
+  .bg-img, .bg-img-2 {
+    position: absolute;
+    opacity: 0.6;
+  }
+  
+  .bg-img {
+    width: 350px;
+    height: 250px;
+  }
+  
+  .bg-img-2 {
+    left: 350px;
+    width: 350px;
+    height: 270px;
+  }
+  
+  #chicken {
+    width: 60px;
+    height: 60px;
+    background: red;
+    position: absolute;
+    top: 190px;
+    left: 100px;
+  }
+  
+  #obstacle {
+    width: 50px;
+    height: 50px;
+    background: none;
+    position: absolute;
+    top: 150px;
+    left: 100%;
+    animation: block 1.3s infinite linear;
+  }
+  
+  #ground {
+    
+    background: blue;
+ 
+    z-index: 9999px;
+  }
+  
+  .animate {
     animation: jump 0.5s linear;
   }
   
-  .animate-obstacle {
-    animation: block 1.3s infinite linear;
+  @keyframes jump {
+    0% {
+      top: 150px;
+    }
+    30% {
+      top: 100px;
+    }
+    70% {
+      top: 100px;
+    }
+    100% {
+      top: 150px;
+    }
+  }
+  
+  @keyframes block {
+    0% {
+      left: 680px;
+    }
+    100% {
+      left: -50px;
+    }
+  }
+  
+  /* Text and Footer styling */
+  h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(45deg, #b7d605, #f09d03);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: aliceblue;
+    font-size: larger;
+    margin-top: 100px;
   }
   
