@@ -55,6 +55,12 @@ const GameSection = () => {
       description: "Challenge to Controll rocket with speed boost!",
       link: "/rocketboost",
     },
+    {
+        name: "Arkanoid",
+        description:
+           "Controlling a paddle-like craft known as the Vaus, the player is tasked with clearing a formation of colorful blocks by deflecting a ball towards it without letting the ball leave the bottom edge of the playfield.",
+        link: "/arkanoid",
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
