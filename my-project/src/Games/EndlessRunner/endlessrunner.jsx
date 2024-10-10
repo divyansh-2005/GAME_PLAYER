@@ -13,12 +13,7 @@ const EndlessRunner = () => {
 
   useEffect(() => {
     const tl = gsap.timeline();
-    tl.from("h1", {
-      y: -50,
-      opacity: 0,
-      delay: 0.4,
-      duration: 0.8,
-    });
+   
     tl.from("p", {
       y: 60,
       opacity: 0,
@@ -86,11 +81,12 @@ const EndlessRunner = () => {
       >
         <h1
           style={{
-            color: "#fff",
+            color: "white",
             fontSize: "50px",
             fontFamily: "'Arial', sans-serif",
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
-            background: "linear-gradient(45deg, #b7d605, #f09d03)",
+            // background: "linear-gradient(45deg, #b7d605, #f09d03)",
+            backgroundColor:"black",
             padding: "10px 20px",
             borderRadius: "10px",
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
@@ -154,7 +150,7 @@ const EndlessRunner = () => {
               height: "50px",
               background: "none",
               position: "absolute",
-              top: "150px",
+              top: "200px",
               left: "100%",
               animation: "block 1.3s infinite linear",
             }}
