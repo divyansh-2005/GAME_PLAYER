@@ -14,6 +14,7 @@ import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
 import SimonSays from "./Games/SimonSays/SimonSays";
+import SpaceShooterGame from "./Games/Space Shooter Game/SpaceShooter";
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/rckpapsc" element={<RockPaperScissors />} />
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
+        <Route path="/space-shooter" element={<SpaceShooterGame />} />
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />

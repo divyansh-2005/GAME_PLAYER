@@ -43,7 +43,11 @@ const GameSection = () => {
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
       link: "/simon-says",
-    },
+    },{
+      name:"Space shooter",
+      description:"",
+      link:"/space-shooter"
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
