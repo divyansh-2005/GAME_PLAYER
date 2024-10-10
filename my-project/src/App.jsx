@@ -16,6 +16,7 @@ import ContactPage from "./Components/ContactPage";
 import SimonSays from "./Games/SimonSays/SimonSays";
 // Import the Word Guessing Game component
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
+import ArkanoidGame from "./Games/Arkanoid/ArkanoidGame";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -32,7 +33,9 @@ const App = () => {
         <Route path="/rckpapsc" element={<RockPaperScissors />} />
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
-        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
+        <Route path="/word-guessing-game" element={<WordGuessingGame />} />
+        <Route path="/arkanoid" element={<ArkanoidGame />} />
+        {/* Add the new route here */}
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />

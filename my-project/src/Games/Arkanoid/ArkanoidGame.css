@@ -1,0 +1,61 @@
+.arkanoid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: white; /* Set background to white */
+
+  }
+
+  .start-screen {
+    text-align: center;
+  }
+
+  .start-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .start-button:hover {
+    background-color: #ff4500;
+  }
+
+  .game-area {
+    position: relative;
+  }
+
+  .score,
+  .lives {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .game-over {
+    font-size: 24px;
+    color: red;
+    margin-top: 10px;
+  }
+
+  /* Styles for the bricks */
+  .canvas {
+    border: 2px solid #0095DD; /* Border around the canvas */
+  }
+
+  .brick {
+    background: linear-gradient(to bottom right, #ffcc00, #ff9900);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Styles for the paddle */
+  .paddle {
+    background: linear-gradient(to right, #0095DD, #00aaff);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }

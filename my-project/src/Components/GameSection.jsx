@@ -50,6 +50,12 @@ const GameSection = () => {
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
       link: "/word-guessing-game",
     },
+    {
+        name: "Arkanoid",
+        description:
+          "Controlling a paddle-like craft known as the Vaus, the player is tasked with clearing a formation of colorful blocks by deflecting a ball towards it.",
+        link: "/arkanoid",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
