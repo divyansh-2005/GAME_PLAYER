@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import "./style.css"; // Ensure you have the CSS file
 
-// Import images directly
+
 import sky from "./images/sky.jpg";
 import sky2 from "./images/sky2.jpg";
 import chickenImage from "./images/chicken.png";
@@ -60,34 +59,172 @@ const EndlessRunner = () => {
   }, [counter]);
 
   return (
-    <div className="container" onClick={jump}>
-      <h1>Endless Runner</h1>
-      <div id="game">
-        <img className="bg-img" src={sky2} alt="background" />
-        <img className="bg-img-2" src={sky} alt="background2" />
-        <div id="chicken">
+    <div
+      style={{
+        margin: 0,
+        padding: 0,
+        background: `url(./images/one-piece-desktop-kids-running-b5b3kgp79e5rebgg.jpg)`,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "black",
+      }}
+      onClick={jump}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <h1
+          style={{
+            color: "#fff",
+            fontSize: "50px",
+            fontFamily: "'Arial', sans-serif",
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+            background: "linear-gradient(45deg, #b7d605, #f09d03)",
+            padding: "10px 20px",
+            borderRadius: "10px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+            marginBottom: "20px",
+          }}
+        >
+          Endless Runner
+        </h1>
+
+        <div
+          id="game"
+          style={{
+            width: "700px",
+            height: "250px",
+            position: "relative",
+            backgroundColor: "#111",
+          }}
+        >
           <img
-            src={chickenImage}
-           
-            alt="chicken"
+            className="bg-img"
+            src={sky2}
+            alt="background"
+            style={{
+              position: "absolute",
+              width: "350px",
+              height: "250px",
+              opacity: 0.6,
+            }}
+          />
+          <img
+            className="bg-img-2"
+            src={sky}
+            alt="background2"
+            style={{
+              position: "absolute",
+              left: "350px",
+              width: "350px",
+              height: "250px",
+              opacity: 0.6,
+            }}
+          />
+
+          <div
+            id="chicken"
+            style={{
+              width: "105px",
+              height: "105px",
+              borderRadius: "50%",
+              position: "absolute",
+              top: "190px",
+              left: "100px",
+            }}
+          >
+            <img src={chickenImage} alt="chicken" />
+          </div>
+
+          <div
+            id="obstacle"
+            style={{
+              width: "50px",
+              height: "50px",
+              background: "none",
+              position: "absolute",
+              top: "150px",
+              left: "100%",
+              animation: "block 1.3s infinite linear",
+            }}
+          >
+            <img src={obstacleImage} alt="obstacle" />
+          </div>
+        </div>
+
+        <div
+          id="ground"
+          style={{
+            width: "700px",
+            height: "60px",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
+          <img
+            src={groundImage}
+            className="ground"
+            alt="ground"
+            style={{
+              backgroundSize: "cover",
+              height: "60px",
+              width: "700px",
+              backgroundPosition: "end",
+            }}
           />
         </div>
-        <div id="obstacle">
-          <img
-            src={obstacleImage}
-            
-            alt="obstacle"
-          />
-        </div>
+
+        <p
+          style={{
+            color: "aliceblue",
+            fontSize: "larger",
+            marginTop: "100px",
+          }}
+        >
+          © 2024 Priya Ashu.
+        </p>
       </div>
-      <div id="ground">
-        <img
-          src={groundImage}
-          className="ground"
-          alt="ground"
-        />
-      </div>
-      <p>© 2024 Priya Ashu.</p>
+
+      <style>{`
+        .animate {
+          animation: jump 0.5s linear;
+        }
+        
+        @keyframes jump {
+          0% {
+            top: 150px;
+          }
+          30% {
+            top: 100px;
+          }
+          70% {
+            top: 100px;
+          }
+          100% {
+            top: 150px;
+          }
+        }
+        
+        @keyframes block {
+          0% {
+            left: 680px;
+          }
+          100% {
+            left: -50px;
+          }
+        }
+      `}</style>
     </div>
   );
 };
