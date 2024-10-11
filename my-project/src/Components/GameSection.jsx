@@ -43,13 +43,17 @@ const GameSection = () => {
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
       link: "/simon-says",
+    },{
+      name:"Space Shooter: Galactic Defender",
+      description:"Space Shooter: Galactic Defender is a fast-paced arcade game where you battle waves of alien enemies, upgrade your starfighter, and defend the galaxy.",
+      link:"/space-shooter"
     },
     {
       name: "Hangman",
       description:
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
       link: "/word-guessing-game",
-    },
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
