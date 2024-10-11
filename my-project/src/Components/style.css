@@ -372,6 +372,9 @@ section {
     margin-top: 18px;
     padding: 10px;
     color: rgb(244 239 240 / 91%);
+
+    z-index: 10;
+    position: relative;
 }
 
 .comp-section {

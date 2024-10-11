@@ -5,30 +5,36 @@ const GameSection = () => {
   const [games, setGames] = useState([
     {
       name: "Guess the Hex",
-      description: "Description of Game A",
+      description:
+        "Put your color-matching skills to the test! Match the Hex code to its perfect color card and become the ultimate shade master!",
       link: "/gth",
     },
     {
       name: "Flip Card Game",
-      description: "Description of Game B",
+      description:
+        "Challenge your memory in this flip card game! Flip two cards at a time, and see if you can find the matching pair.",
       link: "/flipcard",
     },
     {
       name: "Snake Game",
-      description: "Description of Game C",
+      description:
+        "Guide the hungry snake with the arrow keys in a race to gobble up as many boxes as you can! Each box boosts your score—how many can you collect without letting the snake crash?",
       link: "/snakegame",
     },
     {
       name: "Emoji Intruder",
-      description: "Description of Game D",
+      description:
+        "Test your observation skills in this emoji intruder game! Spot the one sneaky, different emoji hiding among a sea of identical faces.",
       link: "/emojiintruder",
     },
     {
-      name: "RockPaper Scissors",
-      description: "Description of Game E",
+      name: "Rock Paper Scissors",
+      description:
+        "Challenge the computer in the classic game of Rock, Paper, Scissors! Make your move and see if you can outsmart the machine.",
       link: "/rckpapsc",
     },
     {
+<<<<<<< HEAD
       name: "Rocket Boost",
       description: "Description of Game F",
       link: "/rocketboost",
@@ -37,6 +43,23 @@ const GameSection = () => {
       name: "PingPong Game",
       description: "Description of Game F",
       link: "PingPong",
+=======
+      name: "Ping Pong Game",
+      description: "Challenge your reflexes in this fast-paced ping pong game!",
+      link: "/pingpong",
+    },
+    {
+      name: "Simon Says",
+      description:
+        "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
+      link: "/simon-says",
+    },
+    {
+      name: "Hangman",
+      description:
+        "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
+      link: "/word-guessing-game",
+>>>>>>> 3f15938ce67aa9c413035e90c9cc38679defb7f5
     },
   ]);
 
@@ -53,7 +76,7 @@ const GameSection = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (link) => {
-    navigate(link);
+    navigate(link); // Navigate directly to the game's route
   };
 
   return (
