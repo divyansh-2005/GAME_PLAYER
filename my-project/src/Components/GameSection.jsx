@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,forwardRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-const GameSection = () => {
+const GameSection = ((props, ref) => {
   const [games, setGames] = useState([
     {
       name: "Guess the Hex",
@@ -50,6 +50,12 @@ const GameSection = () => {
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
       link: "/word-guessing-game",
     },
+    
+    {
+      name: "LightsOut Game",
+      description: "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
+      link: "/LightsOut", 
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -65,7 +71,7 @@ const GameSection = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (link) => {
-    navigate(link); // Navigate directly to the game's route
+    navigate(link); 
   };
 
   return (
@@ -101,6 +107,7 @@ const GameSection = () => {
       )}
     </div>
   );
-};
+
+});
 
 export default GameSection;
