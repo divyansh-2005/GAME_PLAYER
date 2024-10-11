@@ -98,19 +98,19 @@ const RocketBoost = () => {
       <Header />
       <div
         id="unity-container"
-        className="flex flex-col justify-center items-center min-h-screen w-screen bg-gray-900 p-4"
+        className="flex flex-col justify-center items-center min-h-screen w-screen bg-gray-900 p-4 pt-[64px]" // Adjusted padding
       >
-        <h1 className="text-4xl md:text-6xl text-center text-white font-bold mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6">
           Rocket Boost
         </h1>
         <canvas
           id="unity-canvas"
-          className="w-full max-w-[960px] h-auto max-h-[600px] border-2 border-gray-300"
+          className="w-full max-w-[320px] sm:max-w-[600px] md:max-w-[960px] h-auto max-h-[200px] sm:max-h-[400px] md:max-h-[600px] border-2 border-gray-300"
           tabIndex="-1"
         ></canvas>
         <div
           id="unity-loading-bar"
-          className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-4"
+          className="relative w-full max-w-[320px] sm:max-w-[600px] md:max-w-[960px] mt-4"
         >
           <div id="unity-logo"></div>
           <div
@@ -123,19 +123,19 @@ const RocketBoost = () => {
             ></div>
           </div>
         </div>
-        <div id="unity-warning" className="absolute bottom-4"></div>
+        <div id="unity-warning" className="mt-4"></div>
         <div
           id="unity-footer"
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+          className="flex flex-col items-center mt-4 space-y-2"
         >
           <div id="unity-webgl-logo"></div>
           <button
             id="unity-fullscreen-button"
-            className="bg-gray-800 text-white px-4 py-2 rounded mt-2 hover:bg-gray-700"
+            className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700"
           >
             Fullscreen
           </button>
-          <div id="unity-build-title" className="text-white mt-2 text-lg">
+          <div id="unity-build-title" className="text-white text-lg mt-2">
             Rocket Boost
           </div>
         </div>

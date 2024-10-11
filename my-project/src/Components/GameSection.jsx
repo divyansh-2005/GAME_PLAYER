@@ -34,16 +34,11 @@ const GameSection = () => {
       link: "/rckpapsc",
     },
     {
-<<<<<<< HEAD
       name: "Rocket Boost",
       description: "Description of Game F",
       link: "/rocketboost",
     },
     {
-      name: "PingPong Game",
-      description: "Description of Game F",
-      link: "PingPong",
-=======
       name: "Ping Pong Game",
       description: "Challenge your reflexes in this fast-paced ping pong game!",
       link: "/pingpong",
@@ -59,7 +54,6 @@ const GameSection = () => {
       description:
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
       link: "/word-guessing-game",
->>>>>>> 3f15938ce67aa9c413035e90c9cc38679defb7f5
     },
   ]);
 
