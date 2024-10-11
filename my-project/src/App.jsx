@@ -18,6 +18,7 @@ import SimonSays from "./Games/SimonSays/SimonSays";
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; 
 import ChessGame from "./Games/ChessGame/ChessGame";
 import Header from "./Components/Header";
+import LightsOut from "./Games/LightsOut/LightsOut";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/chessgame" element={<ChessGame />} />
+        <Route path="/LightsOut" element={<LightsOut />} />
 
       </Routes>
     </>

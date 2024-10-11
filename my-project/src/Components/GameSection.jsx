@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,forwardRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-const GameSection = () => {
+const GameSection = ((props, ref) => {
   const [games, setGames] = useState([
     {
       name: "Guess the Hex",
@@ -54,6 +54,11 @@ const GameSection = () => {
       name: "Chess Game",
       description: "Play a classic game of Chess against the computer or a friend!",
       link: "/chessgame", 
+    },
+    {
+      name: "LightsOut Game",
+      description: "Play a classic game of Chess against the computer or a friend!",
+      link: "/LightsOut", 
     }
   ]);
 
@@ -70,7 +75,7 @@ const GameSection = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (link) => {
-    navigate(link); // Navigate directly to the game's route
+    navigate(link); 
   };
 
   return (
@@ -106,6 +111,7 @@ const GameSection = () => {
       )}
     </div>
   );
-};
+
+});
 
 export default GameSection;
