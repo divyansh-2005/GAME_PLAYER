@@ -50,6 +50,12 @@ const GameSection = () => {
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
       link: "/word-guessing-game",
     },
+    {
+      name: "2048",
+      description:
+        "Slide numbered tiles on a grid to combine them and create a tile with the number 2048. Use strategy and planning to achieve the highest score!",
+      link: "/Game2048",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
