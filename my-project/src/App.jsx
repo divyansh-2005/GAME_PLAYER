@@ -16,7 +16,8 @@ import ContactPage from "./Components/ContactPage";
 import TetrisGame from "./Games/Tetris/TetrisGame"; // Import your new TetrisGame component
 import NumberGuessing from "./Games/NumberGuessing/NumberGuessing";
 import SimonSays from "./Games/SimonSays/SimonSays";
-
+// Import the Word Guessing Game component
+import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
 
 
 const App = () => {
@@ -37,7 +38,7 @@ const App = () => {
         <Route path="/number-guessing" element={<NumberGuessing />} />
         {/* Add the new route */}
         <Route path="/simon-says" element={<SimonSays />} />
-
+        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
