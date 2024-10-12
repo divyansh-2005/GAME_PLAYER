@@ -55,6 +55,11 @@ const GameSection = () => {
       description: "Challenge to Controll rocket with speed boost!",
       link: "/rocketboost",
     },
+    {
+      name: "endless Runner",
+      description: "Challenge to Controll rocket with speed boost!",
+      link: "/endless-runner",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
