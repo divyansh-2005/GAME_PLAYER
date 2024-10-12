@@ -55,6 +55,12 @@ const GameSection = () => {
       description: "Challenge to Controll rocket with speed boost!",
       link: "/rocketboost",
     },
+    {
+      name: "Text-based Adventure Game",
+      description:
+        "Text-based adventure games, where players navigate a story through choices and text, have a unique charm in gaming.",
+      link: "/gth",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
