@@ -32,7 +32,7 @@ const FlappyBird = () => {
     currentScore = 0;
     flight = jump;
 
-    // Set initial flyHeight (middle of screen - size of the bird)
+    // Set initial flyHeight
     flyHeight = (canvasHeight / 2) - (size[1] / 2);
 
     // Setup first 3 pipes
@@ -42,15 +42,14 @@ const FlappyBird = () => {
   const render = (ctx) => {
     index++;
 
-    // Background first part 
+    // Background rendering
     ctx.drawImage(img, 0, 0, 431, 600, -((index * (speed / 2)) % 431) + 431, 0, 431, 600);
-    // Background second part
     ctx.drawImage(img, 0, 0, 431, 600, -(index * (speed / 2)) % 431, 0, 431, 600);
     
     // Pipe display
     if (gamePlaying) {
       pipes.map(pipe => {
-        // Pipe moving
+        // Pipe movement
         pipe[0] -= speed;
 
         // Top pipe
@@ -58,17 +57,14 @@ const FlappyBird = () => {
         // Bottom pipe
         ctx.drawImage(img, 432 + pipeWidth, 108, pipeWidth, 600 - pipe[1] + pipeGap, pipe[0], pipe[1] + pipeGap, pipeWidth, 600 - pipe[1] + pipeGap);
 
-        // Give 1 point & create new pipe
+        // Score management
         if (pipe[0] <= -pipeWidth) {
           currentScore++;
-          // Check if it's the best score
           bestScore = Math.max(bestScore, currentScore);
-          
-          // Remove & create new pipe
           pipes = [...pipes.slice(1), [pipes[pipes.length - 1][0] + pipeGap + pipeWidth, pipeLoc()]];
         }
     
-        // If hit the pipe, end
+        // Collision detection
         if ([ 
           pipe[0] <= cTenth + size[0], 
           pipe[0] + pipeWidth >= cTenth, 
@@ -88,7 +84,6 @@ const FlappyBird = () => {
     } else {
       ctx.drawImage(img, 432, Math.floor((index % 9) / 3) * size[1], ...size, ((431 / 2) - size[0] / 2), flyHeight, ...size);
       flyHeight = (600 / 2) - (size[1] / 2);
-      // Text accueil
       ctx.fillText(`Best score : ${bestScore}`, 85, 245);
       ctx.fillText('Tap to play', 90, 535); // Updated text to reflect the click/tap action
       ctx.font = "bold 30px courier";
@@ -98,7 +93,7 @@ const FlappyBird = () => {
     document.getElementById('currentScore').innerHTML = `Current : ${currentScore}`;
     document.getElementById('bestScore').innerHTML = `Best : ${bestScore}`;
 
-    // Tell the browser to perform animation
+    // Animation loop
     window.requestAnimationFrame(() => render(ctx));
   }
 
@@ -136,7 +131,6 @@ const FlappyBird = () => {
       <Footer />
     </>
   );
-  
 };
 
 export default FlappyBird;
