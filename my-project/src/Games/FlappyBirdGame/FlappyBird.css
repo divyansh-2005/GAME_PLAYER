@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  text-align: center; /* Center align text */
+}
+
+#game-container {
+  position: relative;
+  width: 440px; /* Increase width to accommodate the scores */
+  margin: 0 auto; /* Center the game container */
+  border: 5px solid #000; /* Black border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* Background color inside the border */
+}
+
+#scoreContainer {
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  top: 610px; /* Adjust position below the canvas */
+  color: white; /* Text color */
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-around; /* Space out scores evenly */
+}
+
+#currentScore, #bestScore {
+  margin: 0 10px; /* Margin to separate the scores */
+}
+
+canvas {
+  display: block; /* Ensures there is no extra space */
+}
+
+/* Add specific styles for game text to prevent global impact */
+.game-text {
+  font-size: 24px; /* Set a specific font size for game-related text */
+  color: #333; /* Color for the text */
+}
+
+.header-background {
+  background: black; /* Header background color */
+}
