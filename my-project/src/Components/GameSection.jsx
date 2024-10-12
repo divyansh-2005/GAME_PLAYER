@@ -50,6 +50,12 @@ const GameSection = () => {
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
       link: "/word-guessing-game",
     },
+    {
+      name: "Flappy Bird",
+      description:
+        "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
+      link: "/flappybird", // Link to the Flappy Bird game
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
