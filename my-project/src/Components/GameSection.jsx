@@ -55,6 +55,11 @@ const GameSection = () => {
       description: "Challenge to Controll rocket with speed boost!",
       link: "/rocketboost",
     },
+    {
+      name: "LightsOut Game",
+      description: "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
+      link: "/LightsOut", 
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
