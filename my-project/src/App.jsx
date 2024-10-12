@@ -16,7 +16,6 @@ import ContactPage from "./Components/ContactPage";
 import SimonSays from "./Games/SimonSays/SimonSays";
 // Import the Word Guessing Game component
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
-
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 
 const App = () => {

@@ -51,10 +51,15 @@ const GameSection = () => {
       link: "/word-guessing-game",
     },
     {
+      name: "Rocket Boost",
+      description: "Challenge to Controll rocket with speed boost!",
+      link: "/rocketboost",
+    },
+    {
       name: "Flappy Bird",
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
-      link: "/flappybird", // Link to the Flappy Bird game
+      link: "/flappybird",
     },
   ]);
 
