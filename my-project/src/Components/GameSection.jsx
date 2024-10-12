@@ -57,7 +57,7 @@ const GameSection = () => {
     },
     {
       name: "endless Runner",
-      description: "Challenge to Controll rocket with speed boost!",
+      description: " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
       link: "/endless-runner",
     },
   ]);
