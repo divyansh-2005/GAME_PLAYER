@@ -16,7 +16,7 @@ import ContactPage from "./Components/ContactPage";
 import SimonSays from "./Games/SimonSays/SimonSays";
 // Import the Word Guessing Game component
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
-
+import Game2048 from "./Games/Game2048/Game2048";
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
@@ -33,6 +33,7 @@ const App = () => {
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
+        <Route path="/Game2048" element={<Game2048 />} /> {/* Make sure this route is present */}
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
