@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-  /* margin: 0; */
-  text-align: center;
-  /* overflow: hidden; */
-  /* font-family: 'Press Start 2P', cursive;
-  user-select: none;
-  background: #f0f0f0; Set the desired background color for the website */
+  text-align: center; /* Center align text */
 }
 
 #game-container {
@@ -15,8 +10,7 @@ body {
   margin: 0 auto; /* Center the game container */
   border: 5px solid #000; /* Black border */
   border-radius: 10px; /* Rounded corners */
-  /* overflow: hidden; Ensure that the canvas fits within the border */
-  background-color: #fff; /* Optional: background color inside the border */
+  background-color: #fff; /* Background color inside the border */
 }
 
 #scoreContainer {
@@ -31,13 +25,11 @@ body {
 }
 
 #currentScore, #bestScore {
-  margin: 0 10px; /* Optional: margin to separate the scores */
+  margin: 0 10px; /* Margin to separate the scores */
 }
-
 
 canvas {
   display: block; /* Ensures there is no extra space */
-  /* background: #fff; Background for the canvas */
 }
 
 /* Add specific styles for game text to prevent global impact */
@@ -46,7 +38,6 @@ canvas {
   color: #333; /* Color for the text */
 }
 
-/* If you want to apply a different background to specific sections */
 .header-background {
-  background: black; /* Specify the header background color */
+  background: black; /* Header background color */
 }
