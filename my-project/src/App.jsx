@@ -16,6 +16,7 @@ import ContactPage from "./Components/ContactPage";
 import SimonSays from "./Games/SimonSays/SimonSays";
 // Import the Word Guessing Game component
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
+import RocketBoost from "./Games/RocketBoost/RocketBoost";
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 
 const App = () => {
@@ -33,8 +34,9 @@ const App = () => {
         <Route path="/rckpapsc" element={<RockPaperScissors />} />
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
-        <Route path="/word-guessing-game" element={<WordGuessingGame />} />
-        <Route path="/flappybird" element={<FlappyBird />} /> 
+        <Route path="/rocketboost" element={<RocketBoost />} />
+        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
+        <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
