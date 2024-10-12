@@ -14,11 +14,12 @@ import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
 import SimonSays from "./Games/SimonSays/SimonSays";
-// Import the Word Guessing Game component
-import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
+import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; 
 import RocketBoost from "./Games/RocketBoost/RocketBoost";
+import ChessGame from "./Games/ChessGame/ChessGame";
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 import ArkanoidGame from "./Games/Arkanoid/ArkanoidGame";
+
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -36,12 +37,14 @@ const App = () => {
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
-        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
+        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> 
+        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> 
         <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/chessgame" element={<ChessGame/>} />
       </Routes>
     </>
   );
