@@ -51,6 +51,11 @@ const GameSection = () => {
       link: "/word-guessing-game",
     },
     {
+      name: "Chess Game",
+      description: "Play a classic game of Chess against friend!",
+      link: "/chessgame", 
+    },
+    {
       name: "Rocket Boost",
       description: "Challenge to Controll rocket with speed boost!",
       link: "/rocketboost",
