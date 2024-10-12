@@ -1,0 +1,98 @@
+.game-2048 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #faf8ef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    touch-action: none;
+    user-select: none;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #776e65;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #776e65;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    background-color: #bbada0;
+    border-radius: 5px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background-color: #bbada0;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 500px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .cell {
+    aspect-ratio: 1 / 1;
+    background-color: #cdc1b4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #776e65;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .cell-2 { background-color: #eee4da; }
+  .cell-4 { background-color: #ede0c8; }
+  .cell-8 { background-color: #f2b179; color: #f9f6f2; }
+  .cell-16 { background-color: #f59563; color: #f9f6f2; }
+  .cell-32 { background-color: #f67c5f; color: #f9f6f2; }
+  .cell-64 { background-color: #f65e3b; color: #f9f6f2; }
+  .cell-128 { background-color: #edcf72; color: #f9f6f2; }
+  .cell-256 { background-color: #edcc61; color: #f9f6f2; }
+  .cell-512 { background-color: #edc850; color: #f9f6f2; }
+  .cell-1024 { background-color: #edc53f; color: #f9f6f2; }
+  .cell-2048 { background-color: #edc22e; color: #f9f6f2; }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8f7a66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #776e65;
+  }
+  
+  .game-over {
+    position: absolute;
+    background-color: rgba(238, 228, 218, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #776e65;
+    font-weight: bold;
+  }
+  
