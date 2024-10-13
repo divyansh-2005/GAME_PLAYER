@@ -19,6 +19,13 @@ const userSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
+  gamesPlayed: {
+    type: Number,
+    default: 0,
+  },
+  achievements: [{
+    type: String,
+  }],
   createdAt: {
     type: Date,
     default: Date.now,
