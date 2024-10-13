@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background-color: lightblue;
+}
+
+.game-area {
+  background-color: lightgreen;
+  overflow: hidden;
+}
+
+.fruit {
+  transition: transform 0.2s;
+}
+
+.fruit:hover {
+  transform: scale(1.2); /* Slight zoom effect when hovering over fruit */
+}
+
+.score, .timer {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.start-screen, .end-screen {
+  color: white;
+}
+
+.welcome-text {
+  font-size: 64px; /* Increased text size for "Welcome to Fruit Ninja" */
+  font-weight: bold;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+.pause-button {
+  position: absolute;
+  top: 50px; /* Adjusted slightly down to fit below the score */
+  right: 10px; /* Align with the score */
+  padding: 10px 20px; /* Matches the "Start Game" button size */
+  font-size: 18px; /* Consistent font size with "Start Game" */
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pause-button:hover {
+  background-color: darkorange;
+}
