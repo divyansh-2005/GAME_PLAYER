@@ -51,10 +51,25 @@ const GameSection = () => {
       link: "/word-guessing-game",
     },
     {
+      name: "Chess Game",
+      description: "Play a classic game of Chess against friend!",
+      link: "/chessgame", 
+    },
+    {
       name: "Rocket Boost",
       description: "Challenge to Controll rocket with speed boost!",
       link: "/rocketboost",
     },
+    {
+      name: "Flappy Bird",
+      description:
+        "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
+      link: "/flappybird",
+    },{
+        name: "Arkanoid",
+        description: "The player is tasked with clearing a formation of colorful blocks by deflecting a ball towards it without letting the ball leave the bottom edge of the playfield.",
+        link: "/arkanoid",
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
