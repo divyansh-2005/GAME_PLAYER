@@ -7,7 +7,7 @@ const ChatBotEmbed = () => {
     const script1 = document.createElement('script');
     script1.innerHTML = `
       window.embeddedChatbotConfig = {
-        chatbotId: "REPLACE_WITH_YOUR_ID",          
+        chatbotId: "REPLACE_WITH_YOUR_CHATBOT_ID",          
         domain: "www.chatbase.co"
       };
     `;
@@ -15,7 +15,7 @@ const ChatBotEmbed = () => {
 
     const script2 = document.createElement('script');
     script2.src = "https://www.chatbase.co/embed.min.js";
-    script2.setAttribute('chatbotId', "REPLACE_WITH_YOUR_ID");
+    script2.setAttribute('chatbotId', "REPLACE_WITH_YOUR_CHATBOT_ID");
     script2.setAttribute('domain', "www.chatbase.co");
     script2.defer = true;
     document.body.appendChild(script2);
