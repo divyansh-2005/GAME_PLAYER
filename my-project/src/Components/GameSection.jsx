@@ -16,6 +16,12 @@ const GameSection = () => {
       link: "/flipcard",
     },
     {
+      name: "FruitNinja",
+      description:
+        "Slice falling fruits in this exciting and fast-paced Fruit Ninja game!",
+      link: "/fruitninja",
+    },
+    {
       name: "Snake Game",
       description:
         "Guide the hungry snake with the arrow keys in a race to gobble up as many boxes as you can! Each box boosts your score—how many can you collect without letting the snake crash?",
