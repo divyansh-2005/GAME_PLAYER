@@ -1,5 +1,6 @@
 const User = require("../models/user");
 
+// Save a new user
 const saveUser = async (req, res) => {
   try {
     const { telegramId, name, username } = req.body;
@@ -22,6 +23,7 @@ const saveUser = async (req, res) => {
   }
 };
 
+// Fetch a user by telegramId
 const fetchUser = async (req, res) => {
   try {
     const { telegramId } = req.body;
@@ -42,7 +44,19 @@ const fetchUser = async (req, res) => {
   }
 };
 
+// Get leaderboard (Top 10 users by points)
+const getLeaderboard = async (req, res) => {
+  try {
+    const topUsers = await User.find().sort({ points: -1 }).limit(10);
+    res.status(200).json(topUsers);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal Server Error");
+  }
+};
+
 module.exports = {
   saveUser,
   fetchUser,
+  getLeaderboard,
 };
