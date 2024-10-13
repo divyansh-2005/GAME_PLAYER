@@ -61,6 +61,12 @@ const GameSection = () => {
       link: "/rocketboost",
     },
     {
+      name: "Text-based Adventure Game",
+      description:
+        "Text-based adventure games, where players navigate a story through choices and text, have a unique charm in gaming.",
+      link: "/gth",
+    },
+    {
       name: "Flappy Bird",
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
