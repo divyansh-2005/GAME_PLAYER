@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import FlipGame from "./Games/FlipCard/FlipCard";
+import FruitNinja from "./Games/FruitNinja/FruitNinja";
 import SnakeGame from "./Games/SnakeGame/SnakeGame";
 import GTH from "./Games/GuessTheColor/GTH";
 import PongGame from "./Games/PingPongGame/PongGame";
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/games" element={<Games />} />
         <Route path="/flipcard" element={<FlipGame />} />
+        <Route path="/fruitninja" element={<FruitNinja />} />
         <Route path="/snakegame" element={<SnakeGame />} />
         <Route path="/gth" element={<GTH />} />
         <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
