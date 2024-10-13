@@ -22,10 +22,7 @@ body {
 
 /* Header styles */
 .bg-gradient {
-  background: linear-gradient(to right,
-      #3f87a6,
-      #ebf8e1);
-  /* Example gradient colors */
+  background: linear-gradient(to right, #3f87a6, #ebf8e1);
 }
 
 .header {
@@ -60,6 +57,43 @@ body {
   margin-top: 20px;
 }
 
+/* Leaderboard Styles */
+.leaderboard-container {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th, 
+.leaderboard-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.leaderboard-table th {
+  background-color: #3f87a6;
+  color: white;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 /* Footer styles */
 .footer {
   text-align: center;
@@ -86,5 +120,10 @@ body {
 
   .main-content {
     padding: 10px;
+  }
+
+  .leaderboard-table th, 
+  .leaderboard-table td {
+    padding: 8px;
   }
 }
