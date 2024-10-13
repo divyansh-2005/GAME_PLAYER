@@ -3,6 +3,8 @@ import "./ArkanoidGame.css"; // Import your CSS file for styling
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Canvas from "../../Components/Canvas"; // Import your Canvas component
+import Back from '../../Components/Back';
+
 
 const ArkanoidGame = () => {
   const canvasRef = useRef(null);
@@ -172,6 +174,7 @@ const ArkanoidGame = () => {
   return (
     <>
       <Header />
+      <Back />
       <div className="arkanoid-container">
         <div className="game-area">
           <Canvas ref={canvasRef} width={500} height={320} />
