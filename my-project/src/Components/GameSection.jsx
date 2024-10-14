@@ -83,6 +83,11 @@ const GameSection = () => {
       description:
         "This game offers an enjoyable experience where players can enhance their shooting skills.",
       link: "/aimshooter",
+    },{
+      name: "Candy Crush Saga",
+      description:
+        "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
+      link: "/candycrush",
     },
   ]);
 
