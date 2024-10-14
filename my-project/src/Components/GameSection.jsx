@@ -78,6 +78,12 @@ const GameSection = () => {
         "This game provides the fun and fast-paced action of clicking moles as they pop up, with clear instructions and smooth interactions.",
       link: "/whack-a-mole",
     },
+    {
+      name: "Sudoku",
+      description:
+        "Challenge your mind with Sudoku - the ultimate logic puzzle that’s fun, addictive, and endlessly satisfying!",
+      link: "/sudoku",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
