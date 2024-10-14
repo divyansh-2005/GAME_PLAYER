@@ -87,6 +87,15 @@ const GameSection = () => {
       link: "/whack-a-mole",
     },
 
+
+
+    {
+      name: "Candy Crush Saga",
+      description:
+        "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
+      link: "/candycrush",
+    },
+
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
