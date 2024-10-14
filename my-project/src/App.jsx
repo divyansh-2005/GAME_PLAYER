@@ -21,6 +21,7 @@ import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 import ArkanoidGame from "./Games/Arkanoid/ArkanoidGame";
 import WhackAMole from "./Games/WhackAMole/WhackAMole";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
+import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/chessgame" element={<ChessGame />} />
         <Route path="/whack-a-mole" element={<WhackAMole />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
+        <Route path="/dicegame" element={<DiceGameTenzi />} />
       </Routes>
     </>
   );
