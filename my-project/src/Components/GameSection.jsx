@@ -85,10 +85,12 @@ const GameSection = () => {
         "This game provides the fun and fast-paced action of clicking moles as they pop up, with clear instructions and smooth interactions.",
       link: "/whack-a-mole",
     },
-
-
-
     {
+      name: "Color Memo",
+      description:
+        "The Memory Game with Colors challenges players to remember and match sequences of colors, improving their focus and memory skills through engaging gameplay.",
+      link: "/colormemo",
+    },{
       name: "Aim Shooter",
       description:
         "This game offers an enjoyable experience where players can enhance their shooting skills.",
