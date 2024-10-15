@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import './Pong.css'
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import Back from '../../Components/Back';
+
 
 const PongGame = () => {
   const canvasRef = useRef(null);
@@ -142,6 +144,7 @@ const PongGame = () => {
   return (
     <>
       <Header/>
+      <Back />
       <canvas
         ref={canvasRef}
         width="750"

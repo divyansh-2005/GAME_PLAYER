@@ -7,6 +7,8 @@ import scissorsImage from './Images/scissors.png';
 import './Game.css'
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
+import Back from '../../Components/Back';
+
 
 const RockPaperScissors = () => {
   const [userScore, setUserScore] = useState(0);
@@ -53,6 +55,7 @@ const RockPaperScissors = () => {
   return (
     <>
     <Header/>
+    <Back />
     <div className="game-container">
       <div className="choices">
         <div className="choice" onClick={() => showWinner('rock')}>

@@ -3,6 +3,8 @@ import './FlappyBird.css'; // Import your CSS file for styling
 import Header from '../../Components/Header'; // Import the Header component
 import Footer from '../../Components/Footer'; // Import the Footer component
 import imgSrc from './assets/flappy-bird-set.png'; // Import the image from the assets folder
+import Back from '../../Components/Back';
+
 
 const FlappyBird = () => {
   const canvasRef = useRef(null);
@@ -122,6 +124,7 @@ const FlappyBird = () => {
   return (
     <>
       <Header />
+      <Back />
       <div id="game-container">
         <canvas ref={canvasRef} width={431} height={600} />
         <div id="scoreContainer">
