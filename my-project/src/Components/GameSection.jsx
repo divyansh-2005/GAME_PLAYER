@@ -107,6 +107,12 @@ const GameSection = () => {
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
     },
+    {
+      name: "3D Tetris",
+      description:
+        "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
+      link: "/tetrisgame",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
