@@ -107,6 +107,11 @@ const GameSection = () => {
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
     },
+    {
+      name: "Reaction Time",
+      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      link: "/reaction",
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
