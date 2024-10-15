@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 60px); /* Adjust this value based on the navbar's height */
+  margin-top: 60px; /* Ensure content starts below the navbar */
+}
+
+.game-content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.home-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+
+.button:hover {
+  cursor: url(./assets/cursorRed.png), auto;
+}
+
+.container {  
+  height: 80vh;
+  width: 100vw;
+  /* background-color: #0e1320; */
+  /* color: white; */
+  /* background-color: #000; */
+  margin-top: 60px; /* Adjust this based on the height of your navbar */
+  cursor: url(./assets/cursorWhite.png), auto;
+}
+
+.container-2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e1320;
+  /* color: white; */
+  position: relative;
+  cursor: url(./assets/cursorDisabled.png), auto;
+}
+
+.aim {
+  cursor: url(./assets/cursorWhite.png), auto;
+}
+
+.start-button {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  border: 4px solid white;
+  transition: all 0.3s ease;
+  padding: 20px 60px;
+}
+
+.start-button-helper-text {
+  font-size: 0.825rem;
+  padding: 10px;
+}
+
+.start-button:hover {
+  cursor: url(./assets/cursorRed.png), auto;
+  background-color: white;
+  color: #0e1320;
+}
+
+.target {
+  position: absolute;
+  z-index: 10;
+  color: red;
+}
+
+.score {
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.score img {
+  max-height: 100px;
+  width: auto;
+}
+
+.timer {
+  font-family: "Orbitron", sans-serif;
+  position: absolute;
+  top: 68px;
+  left: 0;
+}
+
+.timer img {
+  max-height: 100px;
+  width: auto;
+}
+
+.result-container {
+  margin-top: 20px;
+  height: 80vh;
+  width: 100vw;
+  color: white;
+  position: relative;
+  cursor: url(./assets/cursorWhite.png), auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 1.825rem;
+}
+
+.result-container div:first-child {
+  font-size: 2.25rem;
+}
