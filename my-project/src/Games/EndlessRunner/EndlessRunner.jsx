@@ -9,10 +9,12 @@ import groundImage from "./images/ground.jpg";
 
 const EndlessRunner = () => {
   const [counter, setCounter] = useState(0);
+  const [timer, setTimer] = useState(30); // Set initial timer value (in seconds)
+  const [isGameRunning, setIsGameRunning] = useState(false);
+  const [obstacleVisible, setObstacleVisible] = useState(false); // State to control obstacle visibility
 
   useEffect(() => {
     const tl = gsap.timeline();
-
     tl.from("p", {
       y: 60,
       opacity: 0,
@@ -22,18 +24,22 @@ const EndlessRunner = () => {
   }, []);
 
   const jump = () => {
+    if (!isGameRunning) return; // Prevent jumping if the game hasn't started
+
     const chicken = document.getElementById("chicken");
     if (!chicken.classList.contains("animate")) {
       chicken.classList.add("animate");
+      setCounter((prevCounter) => prevCounter + 1); // Increment score on a successful jump
     }
     setTimeout(() => {
       chicken.classList.remove("animate");
     }, 500);
-    setCounter(counter + 1);
   };
 
   useEffect(() => {
     const lose = setInterval(() => {
+      if (!isGameRunning) return; // Prevent collision detection if the game isn't running
+
       const chicken = document.getElementById("chicken");
       const obstacle = document.getElementById("obstacle");
       const chickenTop = parseInt(
@@ -42,15 +48,56 @@ const EndlessRunner = () => {
       const blockLeft = parseInt(
         window.getComputedStyle(obstacle).getPropertyValue("left")
       );
+      // Collision detection
       if (blockLeft < 20 && blockLeft > 0 && chickenTop >= 130) {
         obstacle.style.animation = "none";
         obstacle.style.display = "none";
-        alert(`SCORE: ${counter}`);
-        setCounter(0);
+        setIsGameRunning(false);
+        setObstacleVisible(false); // Hide obstacle when the game ends
+        alert(`Your SCORE: ${counter}`); // Show score alert when the game ends
       }
     }, 10);
     return () => clearInterval(lose);
-  }, [counter]);
+  }, [counter, isGameRunning]);
+
+  useEffect(() => {
+    let interval;
+    if (isGameRunning && timer > 0) {
+      interval = setInterval(() => {
+        setTimer((prevTimer) => prevTimer - 1);
+        setObstacleVisible(true); // Show obstacle when the game starts
+      }, 1000);
+    } else if (timer === 0 && isGameRunning) {
+      alert(`Time's up! Your SCORE: ${counter}`);
+      setIsGameRunning(false);
+      setCounter(0);
+      setObstacleVisible(false); // Hide obstacle when the game ends
+    }
+    return () => clearInterval(interval);
+  }, [isGameRunning, timer]);
+
+  const startGame = () => {
+    setIsGameRunning(true);
+    setCounter(0); // Reset score when starting the game
+    setTimer(30); // Reset timer to 30 seconds when starting the game
+    setObstacleVisible(true); // Show obstacle when starting the game
+  };
+
+  const handleKeyPress = (event) => {
+    // Start the game when the 'S' key is pressed
+    if (event.key === "s" && !isGameRunning) {
+      startGame();
+    } else if (isGameRunning && event.key === " ") {
+      jump(); // Jump if the game is running
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [isGameRunning]);
 
   return (
     <div
@@ -66,8 +113,8 @@ const EndlessRunner = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundColor: "black",
+        position: "relative", // Added relative position for absolute elements inside
       }}
-      onClick={jump}
     >
       <div
         style={{
@@ -76,6 +123,7 @@ const EndlessRunner = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
+          position: "relative",
         }}
       >
         <h1
@@ -95,12 +143,23 @@ const EndlessRunner = () => {
         </h1>
 
         <div
+          style={{
+            color: "white",
+            fontSize: "30px",
+            marginBottom: "20px",
+          }}
+        >
+          {isGameRunning ? `Time Left: ${timer}s` : "Press 'S' to Start"}
+        </div>
+
+        <div
           id="game"
           style={{
             width: "700px",
             height: "250px",
             position: "relative",
             backgroundColor: "#111",
+            overflow: "hidden", // Prevents overflow of the obstacle
           }}
         >
           <img
@@ -141,20 +200,22 @@ const EndlessRunner = () => {
             <img src={chickenImage} alt="chicken" />
           </div>
 
-          <div
-            id="obstacle"
-            style={{
-              width: "50px",
-              height: "50px",
-              background: "none",
-              position: "absolute",
-              top: "200px",
-              left: "100%",
-              animation: "block 1.3s infinite linear",
-            }}
-          >
-            <img src={obstacleImage} alt="obstacle" />
-          </div>
+          {obstacleVisible && ( // Only show the obstacle if the game is running
+            <div
+              id="obstacle"
+              style={{
+                width: "50px",
+                height: "50px",
+                background: "none",
+                position: "absolute",
+                top: "200px",
+                left: "100%",
+                animation: "block 1.3s infinite linear",
+              }}
+            >
+              <img src={obstacleImage} alt="obstacle" />
+            </div>
+          )}
         </div>
 
         <div
@@ -162,8 +223,10 @@ const EndlessRunner = () => {
           style={{
             width: "700px",
             height: "60px",
-            backgroundPosition: "center",
+           
             backgroundSize: "cover",
+            
+            bottom: "0",
           }}
         >
           <img
