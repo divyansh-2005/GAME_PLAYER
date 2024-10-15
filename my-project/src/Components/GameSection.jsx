@@ -107,6 +107,12 @@ const GameSection = () => {
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
     },
+    {
+      name: "Tower of Hanoi",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/towerofhanoi",
+    }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
