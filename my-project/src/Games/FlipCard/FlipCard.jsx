@@ -2,6 +2,8 @@ import  { useState, useEffect } from "react";
 import "./FlipGame.css"; // Import your CSS file for styling
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import Back from '../../Components/Back';
+
 
 const symbols = [
   "😀", "🐶", "🍕", "🚗", "🌟", "🎉", "🏀", "🎸",
@@ -57,6 +59,7 @@ const FlipGame = () => {
   return (
     <>
     <Header/>
+    <Back />
     <div className="flip-game-container">
       {!gameStarted ? (
         <div className="start-screen">
