@@ -43,6 +43,13 @@ const GameSection = () => {
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
       link: "/simon-says",
+
+    },
+    {
+      name: "Number Guessing",
+      description:
+        'The user has to guess a randomly generated number within a certain range. Provide feedback like "Too high" or "Too low" until they guess the correct number.',
+      link: "/number-guessing",
     },
     {
       name: "Hangman",

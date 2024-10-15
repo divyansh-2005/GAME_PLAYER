@@ -13,6 +13,8 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import TetrisGame from "./Games/Tetris/TetrisGame"; // Import your new TetrisGame component
+import NumberGuessing from "./Games/NumberGuessing/NumberGuessing";
 import SimonSays from "./Games/SimonSays/SimonSays";
 import DiceRoller from "./Games/Dice_rolling_simulator/Dice";
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
@@ -25,6 +27,7 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -40,6 +43,9 @@ const App = () => {
         <Route path="/emojiintruder" element={<EmojiIntruderHunt />} />
         <Route path="/rckpapsc" element={<RockPaperScissors />} />
         <Route path="/PingPong" element={<PongGame />} />
+        <Route path="/tetris" element={<TetrisGame />} />
+        <Route path="/number-guessing" element={<NumberGuessing />} />
+        {/* Add the new route */}
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
 
