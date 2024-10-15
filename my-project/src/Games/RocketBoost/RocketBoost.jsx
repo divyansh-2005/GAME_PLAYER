@@ -3,6 +3,8 @@
 import React, { useEffect } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import Back from '../../Components/Back';
+
 
 const RocketBoost = () => {
   useEffect(() => {
@@ -96,6 +98,7 @@ const RocketBoost = () => {
   return (
     <>
       <Header />
+      <Back />
       <div
         id="unity-container"
         className="flex flex-col justify-center items-center min-h-screen w-screen bg-gray-900 p-4 pt-[64px]" // Adjusted padding
