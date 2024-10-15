@@ -67,7 +67,7 @@ const GameSection = () => {
       link: "/endless-runner",
     },
     {
-      name: "Flappy Bird",
+      
 
       name: "Dice Roller",
       description: "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",

@@ -223,9 +223,9 @@ const EndlessRunner = () => {
           style={{
             width: "700px",
             height: "60px",
-           
+            backgroundPosition: "center",
             backgroundSize: "cover",
-            
+            position: "absolute",
             bottom: "0",
           }}
         >
