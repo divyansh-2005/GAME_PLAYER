@@ -25,7 +25,7 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
-
+import StackTowerGame from "./Games/Stack-tower-game/src/StackTowerGame"
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
@@ -60,6 +60,7 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+        <Route path="/stacktowergame" element={<StackTowerGame />} />
       </Routes>
     </>
   );
