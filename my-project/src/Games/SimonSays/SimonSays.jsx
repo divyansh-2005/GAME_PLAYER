@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../Components/Header";
+import Back from '../../Components/Back';
+
 
 const SimonSays = () => {
   const [colors] = useState(["red", "blue", "green", "yellow"]);
@@ -88,6 +90,7 @@ const SimonSays = () => {
   return (
     <>
       <Header />
+      <Back />
       <div style={styles.container}>
         <h1>Simon Says</h1>
         <h2>{prompt}</h2>
