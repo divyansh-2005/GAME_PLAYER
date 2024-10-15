@@ -61,17 +61,17 @@ const GameSection = () => {
       link: "/rocketboost",
     },
     {
-
       name: "Dice Roller",
-      description: "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
+      description:
+        "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
       link: "/dice-roller",
     },
 
-    {name: "Flappy Bird",
+    {
+      name: "Flappy Bird",
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
       link: "/flappybird",
-
     },
     {
       name: "Arkanoid",
@@ -90,12 +90,14 @@ const GameSection = () => {
       description:
         "The Memory Game with Colors challenges players to remember and match sequences of colors, improving their focus and memory skills through engaging gameplay.",
       link: "/colormemo",
-    },{
+    },
+    {
       name: "Aim Shooter",
       description:
         "This game offers an enjoyable experience where players can enhance their shooting skills.",
       link: "/aimshooter",
-    },{
+    },
+    {
       name: "Candy Crush Saga",
       description:
         "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
@@ -106,6 +108,12 @@ const GameSection = () => {
       description:
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
+    },
+    {
+      name: "Math Quiz",
+      description:
+        "Math Quiz game with a broader range of math questions including addition, subtraction, multiplication, division, and even questions with powers (exponentiation) and modulus operations.",
+      link: "/math-quiz",
     },
   ]);
 
