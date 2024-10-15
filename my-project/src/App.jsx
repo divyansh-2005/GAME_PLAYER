@@ -25,11 +25,15 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+import { Provider } from "react-redux";
+import { store } from "./Games/Mario-Jump-Game/src/config/redux/store";
+import Home from "./Games/Mario-Jump-Game/src/config/Routes/Routes"
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
+        <Provider store={store}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -60,7 +64,9 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+          <Route path="/mariojump" element={<Home />} />
       </Routes>
+        </Provider>
     </>
   );
 };

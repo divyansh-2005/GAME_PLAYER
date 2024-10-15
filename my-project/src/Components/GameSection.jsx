@@ -107,6 +107,12 @@ const GameSection = () => {
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
     },
+    {
+      name: "Mario Jump",
+      description:
+        "Mario Jump is an endless running game inspired by the famous Google Chrome's T-Rex Dinosaur Game 🦖",
+      link: "/mariojump",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
