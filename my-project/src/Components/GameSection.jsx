@@ -62,17 +62,26 @@ const GameSection = () => {
     },
     {
 
+      name: "endless Runner",
+      description: " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
+      link: "/endless-runner",
+    },
+    {
+      
+
       name: "Dice Roller",
       description: "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
       link: "/dice-roller",
     },
 
     {name: "Flappy Bird",
+
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
       link: "/flappybird",
 
     },
+
     {
       name: "Arkanoid",
       description:
@@ -85,6 +94,9 @@ const GameSection = () => {
         "This game provides the fun and fast-paced action of clicking moles as they pop up, with clear instructions and smooth interactions.",
       link: "/whack-a-mole",
     },
+
+
+
     {
       name: "Color Memo",
       description:
@@ -101,12 +113,14 @@ const GameSection = () => {
         "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
       link: "/candycrush",
     },
+
     {
       name: "Dice Game Tenzi",
       description:
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
     },
+
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
