@@ -14,8 +14,17 @@ import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
 import SimonSays from "./Games/SimonSays/SimonSays";
-import DiceRoller from "./Games/Dice_rolling_simulator/Dice";
+
+
+
+import EndlessRunner from "./Games/EndlessRunner/EndlessRunner";
+// Import the Word Guessing Game component
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
+
+
+import DiceRoller from "./Games/Dice_rolling_simulator/Dice";
+ // Adjust the path as needed
+
 import RocketBoost from "./Games/RocketBoost/RocketBoost";
 import ChessGame from "./Games/ChessGame/ChessGame";
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
@@ -28,6 +37,7 @@ import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 import { Provider } from "react-redux";
 import { store } from "./Games/Mario-Jump-Game/src/config/redux/store";
 import Home from "./Games/Mario-Jump-Game/src/config/Routes/Routes"
+import DuckHunt from "./Games/DuckHunt/DuckHunt";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -47,13 +57,19 @@ const App = () => {
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
 
-        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> 
+
+        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
+        <Route path="/endless-runner" element={<EndlessRunner />} />
+
+        
+     
 
          <Route path="/dice-roller" element={<DiceRoller/>} />  {/* Add the new route here */}
 
-       
+
         <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
+        <Route path="/duckhunt" element={<DuckHunt />} />
 
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
