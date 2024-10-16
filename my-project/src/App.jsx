@@ -25,6 +25,7 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+import DuckHunt from "./Games/DuckHunt/DuckHunt";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -50,6 +51,7 @@ const App = () => {
        
         <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
+        <Route path="/duckhunt" element={<DuckHunt />} />
 
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
