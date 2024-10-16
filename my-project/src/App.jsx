@@ -30,6 +30,7 @@ import ChessGame from "./Games/ChessGame/ChessGame";
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 import ArkanoidGame from "./Games/Arkanoid/ArkanoidGame";
 import WhackAMole from "./Games/WhackAMole/WhackAMole";
+import SudokuGame from "./Games/SudokuGame/src/SudokuGame"
 import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
@@ -52,17 +53,10 @@ const App = () => {
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
-
-
         <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
-        <Route path="/endless-runner" element={<EndlessRunner />} />
-
-        
-     
-
+        <Route path="/endless-runner" element={<EndlessRunner />} />    
+    
          <Route path="/dice-roller" element={<DiceRoller/>} />  {/* Add the new route here */}
-
-
         <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
@@ -72,6 +66,8 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/chessgame" element={<ChessGame />} />
         <Route path="/whack-a-mole" element={<WhackAMole />} />
+        <Route path="/sudoku" element={<SudokuGame />} />
+        <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/colormemo" element={<ColorMemoGame />} />
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />

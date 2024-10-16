@@ -98,6 +98,12 @@ const GameSection = () => {
 
 
     {
+      name: "Sudoku",
+      description:
+        "Challenge your mind with Sudoku - the ultimate logic puzzle that’s fun, addictive, and endlessly satisfying!",
+      link: "/sudoku",
+    },
+    {
       name: "Color Memo",
       description:
         "The Memory Game with Colors challenges players to remember and match sequences of colors, improving their focus and memory skills through engaging gameplay.",
