@@ -109,6 +109,7 @@ const GameSection = () => {
           <div className="box" key={index}>
             <div className="content">
               <h2>{game.name}</h2>
+              <div className="line"></div>
               <h3>{game.description}</h3>
               <div className="card-footer">
                 <button onClick={() => handleNavigate(game.link)}>Play</button>

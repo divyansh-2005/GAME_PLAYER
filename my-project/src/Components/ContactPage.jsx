@@ -14,7 +14,7 @@ function ContactPage() {
             If you have any questions, feedback, or inquiries about our platform, feel free to reach out to us. Our team is here to assist you and ensure you have the best gaming experience possible.
           </p>
           
-          <h2 className={styles.subTitle}>Contact Information</h2>
+          <h2 className={styles.pTitle}>Contact Information</h2>
           <p className={styles.pPara}>
             <strong>Email:</strong> support@telegames.com
           </p>

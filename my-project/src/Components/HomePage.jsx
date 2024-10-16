@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from 'react';
 import LoaderWrapper from './LoaderWrapper';
 import Header from './Header';

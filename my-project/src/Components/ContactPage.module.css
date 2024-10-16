@@ -1,76 +1,78 @@
 .body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
-  }
-  
-  .container {
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  
-  .pTitle {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin: 10px 0;
-  }
-  
-  .pPara {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: #ffffff;
-    margin-bottom: 15px;
-  }
-  
-  .subTitle {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin: 20px 0 10px;
-  }
-  
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .label {
-    margin-bottom: 5px;
-  }
-  
-  .input, .textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .textarea {
-    height: 100px;
-  }
-  
-  .submitButton {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .submitButton:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.719);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5vw;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.pTitle {
+  font-size: 1.4vw;
+  color: #ffc310;
+  margin: 10px 0;
+}
+
+.pPara {
+  font-size: 1.2vw;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.subTitle {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 20px 0 10px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.textarea {
+  height: 100px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}

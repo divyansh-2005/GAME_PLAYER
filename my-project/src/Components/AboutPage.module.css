@@ -5,25 +5,30 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    font-family: "Poppins", sans-serif; 
   }
 
     
   .title {
-    font-size: 2.5rem; 
+    font-size: 2.5VW; 
     color: #ffffff;
     margin-bottom: 20px;
   }
   
   .container {
     max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.719);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     text-align: center;
   }
+  span{
+    color: #ffc310;
+  }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     line-height: 1.6;
     color: #ffffff;
     margin-bottom: 15px; 

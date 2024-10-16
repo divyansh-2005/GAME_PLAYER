@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo (3).png";
 import { Link } from "react-router-dom";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
@@ -15,10 +16,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="image-logo">
           <a href="https://game-player-navy.vercel.app/">
-            <img src={logo} alt="Logo" height="36px" width="36px" />
-          </a>
-          <a href="https://game-player-navy.vercel.app/">
-            <span className="logo">TeleGames</span>
+            <img src={logo} alt="Logo" height="180px" width="180px" />
           </a>
         </div>
         <ul
@@ -51,7 +49,7 @@ const Header = () => {
             </Link>
           </li>
 
-          <li className="nav-item" style={{ fontSize: "1.5rem" }}>
+          <li className="nav-item" style={{ fontSize: "2rem" }}>
             <ConnectButton />
           </li>
         </ul>

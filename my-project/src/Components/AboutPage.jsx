@@ -8,19 +8,17 @@ function AboutPage() {
       <Header />
 
       <div className={styles.body}>
-
         <div className={styles.container} id="about">
-
           <h2 className={styles.title}>About TeleGames</h2>
 
           <br />
 
           <p className="p-para">
-            Welcome to TeleGames! We are dedicated to bringing
-            you a fun and interactive gaming experience right at your fingertips.
-            Our platform allows you to enjoy a wide selection of games that can be
-            played instantly on our website or even through Telegram, making it
-            easy to play wherever you are.
+            Welcome to TeleGames! We are dedicated to bringing you a fun and
+            interactive gaming experience right at your fingertips. Our platform
+            allows you to enjoy a wide selection of games that can be played
+            instantly on our website or even through{" "}
+            <span>Telegram, making it easy to play wherever you are.</span>
           </p>
 
           <br />
@@ -34,9 +32,7 @@ function AboutPage() {
             challenge, the Instant Games Platform is here to provide endless
             entertainment. Join us today and start your gaming adventure!
           </p>
-
         </div>
-        
       </div>
     </>
   );
