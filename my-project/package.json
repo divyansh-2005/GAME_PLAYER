@@ -21,6 +21,7 @@
     "chess.js": "^1.0.0-beta.8",
     "dotenv": "^16.4.5",
     "lodash": "4.17.11",
+    "gsap": "^3.12.5",
     "my-project": "file:",
     "prop-types": "^15.8.1",
     "proptypes": "^1.1.0",
