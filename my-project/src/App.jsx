@@ -36,6 +36,7 @@ import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import MemoryCardGame from "./Games/MemoryCardGame/MemoryCard";
+import Board from "./Games/Checkers/Board";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -78,6 +79,7 @@ const App = () => {
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
         <Route path="/memorycardgame" element={<MemoryCardGame />} />
+        <Route path="/checkers" element={<Board />} />
       </Routes>
     </>
   );
