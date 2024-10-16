@@ -1,0 +1,171 @@
+/* font-family: Georgia; */
+.button-3d {
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    text-shadow: 0px -1px 0px #855575;
+    width: 100px;
+    text-align: center;
+}
+.button-3d:active {
+    left: 6px;
+    top: 6px;
+}
+.game-header {
+    position: absolute;
+    width: 100vw;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.game-header .title-3d {
+    all:unset;
+    margin: 0;
+    font-size: 3em;
+    color: #ffc5e8;
+    text-shadow: 1px 1px 0 #855575, 2px 2px 0 #855575;
+    padding: 40px 10px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+}
+.game-header .game-buttons-container {
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+.game-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #484954;
+}
+.game-container .game-canvas-left {
+    width: 40%;
+    height: 100%;
+    background: #484954;
+}
+.game-container .game-canvas-right {
+    position: relative;
+    top: -55px;
+    width: 40%;
+    height: 100%;
+    background: #484954;
+}
+.game-container .game-canvas-right .next-block-label {
+    color: white;
+}
+.game-container .game-canvas-right .score-label {
+    color: white;
+    white-space: nowrap;
+}
+.game-container .game-canvas-right .instructions-label {
+    white-space: nowrap;
+    color: #ababab;
+    padding: 10px;
+}
+.game-container .game-canvas-right .instructions-label ul {
+    all:unset;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+.game-container .game-canvas-right .instructions-label ul li {
+    margin: 10px 0;
+}
+.game-container .game-canvas-right .instructions-label ul li > strong {
+    font-weight: bold;
+    color: #ddd;
+}
+.game-container .game-canvas-right .instructions-label ul li ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+.game-container .game-canvas-right .instructions-label ul li ul li {
+    font-size: 0.95em;
+}
+.game-container .game-canvas-right .instructions-label span {
+    font-size: 1.1em;
+}
+.game-container .game-canvas-right .axis-label {
+    color: white;
+    text-align: center;
+}
+.game-over-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.game-over-container h1 {
+    font-size: 2em;
+    color: #333;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.mobile-buttons-group {
+    position: absolute;
+    bottom: 35px;
+}
+.mobile-buttons-group .mobile-button-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    gap: 10px;
+}
+.mobile-buttons-group .button-3d {
+    width: 45px;
+    font-size: 12px;
+}
+.mobile-buttons-group .space-row .button-3d {
+    width: 100px;
+}
+@media (max-width: 768px) {
+    .game-header {
+        gap: 0px;
+   }
+    .game-header .title-3d {
+        font-size: 2em;
+   }
+    .game-header .game-buttons-container {
+        position: relative;
+        left: -10px;
+        flex-direction: column;
+   }
+    .game-container .game-canvas-left {
+        transform: scale(0.85) !important;
+        width: 100% !important;
+        margin-left: 20px;
+   }
+    .game-container .game-canvas-right {
+        transform: scale(0.75) !important;
+        width: 100% !important;
+        top: 0;
+   }
+    .game-container .game-canvas-right .score-label {
+        margin-top: -25px;
+   }
+    .game-container .game-canvas-right .instructions-label {
+        margin-top: -35px;
+   }
+}
