@@ -34,6 +34,7 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 
 const App = () => {
@@ -76,6 +77,7 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+        <Route path="/typing-game" element={<WriteTypingGame />} />
       </Routes>
     </>
   );
