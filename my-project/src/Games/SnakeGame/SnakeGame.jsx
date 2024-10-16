@@ -164,12 +164,12 @@ const SnakeGame = () => {
     <Back />
     <div className="snake-game">
       <div className="body">
-        <button onClick={showInstructions} className="instructions">
+        <button onClick={showInstructions} className="instructions" >
           Instructions
         </button>
         <div id="scoreBox">Score: {score}</div>
         <div id="HiScore">HighScore: {hiscoreval}</div>
-        <div id="board">
+        <div id="board" >
           {snakeArr.map((snakePart, index) => (
             <div
               key={index}
