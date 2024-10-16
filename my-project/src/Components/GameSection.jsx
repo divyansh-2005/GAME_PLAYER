@@ -121,6 +121,12 @@ const GameSection = () => {
       link: "/dicegame",
     },
     {
+      name: "Slot Machine",
+      description:
+        "A slot machine game where players spin reels to match symbols and win coins or rewards.",
+      link: "/slot-machine-game",
+    },
+    {
         name: "DuckHunt",
         description:
           "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
