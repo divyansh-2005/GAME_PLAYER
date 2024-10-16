@@ -126,6 +126,12 @@ const GameSection = () => {
           "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
         link: "/duckhunt",
       },
+      {
+        name: "MemoryCard Game",
+        description:
+          "A game where players flip over two cards at a time, trying to find matching pairs. The game continues until all pairs are found.",
+        link: "/memorycardgame",
+      },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
