@@ -120,7 +120,12 @@ const GameSection = () => {
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
     },
-
+    {
+        name: "DuckHunt",
+        description:
+          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+        link: "/duckhunt",
+      },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
