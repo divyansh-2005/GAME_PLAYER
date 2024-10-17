@@ -128,17 +128,17 @@ const GameSection = () => {
         link: "/duckhunt",
       },
       {
-        name: "Tower of Hanoi",
-        description:
-          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/towerofhanoi",
-      },
-      {
         name: "MemoryCard Game",
         description:
           "A game where players flip over two cards at a time, trying to find matching pairs. The game continues until all pairs are found.",
         link: "/memorycardgame",
       },
+      {
+        name: "Tower of Hanoi",
+        description:
+          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+        link: "/towerofhanoi",
+      },  
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
