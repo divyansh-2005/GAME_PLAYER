@@ -14,17 +14,9 @@ import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
 import SimonSays from "./Games/SimonSays/SimonSays";
-
-
-
 import EndlessRunner from "./Games/EndlessRunner/EndlessRunner";
-// Import the Word Guessing Game component
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
-
-
 import DiceRoller from "./Games/Dice_rolling_simulator/Dice";
- // Adjust the path as needed
-
 import RocketBoost from "./Games/RocketBoost/RocketBoost";
 import ChessGame from "./Games/ChessGame/ChessGame";
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
@@ -34,9 +26,11 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import MemoryCardGame from "./Games/MemoryCardGame/MemoryCard";
 import Board from "./Games/Checkers/Board";
+
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -54,21 +48,12 @@ const App = () => {
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
-
-
         <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
         <Route path="/endless-runner" element={<EndlessRunner />} />
-
-        
-     
-
          <Route path="/dice-roller" element={<DiceRoller/>} />  {/* Add the new route here */}
-
-
         <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
-
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -80,6 +65,7 @@ const App = () => {
         <Route path="/dicegame" element={<DiceGameTenzi />} />
         <Route path="/memorycardgame" element={<MemoryCardGame />} />
         <Route path="/checkers" element={<Board />} />
+        <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
       </Routes>
     </>
   );
