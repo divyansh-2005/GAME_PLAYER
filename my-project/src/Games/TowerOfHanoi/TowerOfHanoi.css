@@ -1,0 +1,139 @@
+.Hanoi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center;
+  }
+  label{
+    color: white;
+  }
+  .heading{
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #f2f6f200;
+    font-size: 3rem;
+  }
+  
+  .tower {
+    position: relative;
+    width: 12px;
+    height: 200px; /* Adjust the height to contain all disks */
+    background-color: #a53208;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    overflow: visible; /* Ensure disks don't go out of bounds */
+    border-radius: 20px;
+    margin: 0 50px; /* Reduce margin for better alignment */
+  }
+
+  .disk {
+    position: absolute;
+    height: 21px; /* Adjust height as needed */
+    text-align: center;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 100%; /* Make the container width responsive */
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between controls */
+    margin: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .number-input {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 15px;
+  }
+  
+  .number-input button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .number-input button:hover {
+    background-color: #45a049;
+  }
+  
+  .number-input input[type="number"] {
+    width: 50px;
+    padding: 3px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Dancing Script', cursive;
+  }
+  .restart{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Dancing Script', cursive;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  /* Add this CSS for the win message animation */
+.win-message {
+    animation: fadeInScale 1s ease-out forwards; /* Apply animation */
+    font-size: 3rem; /* Change size as needed */
+    color: rgb(75, 216, 255); /* Or any color you prefer */
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+
+  }
+  
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  
