@@ -61,25 +61,20 @@ const GameSection = () => {
       link: "/rocketboost",
     },
     {
-
       name: "endless Runner",
       description: " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
       link: "/endless-runner",
     },
     {
-      
-
       name: "Dice Roller",
-      description: "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
+      description:
+        "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
       link: "/dice-roller",
     },
-
     {name: "Flappy Bird",
-
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
       link: "/flappybird",
-
     },
 
     {
@@ -102,12 +97,14 @@ const GameSection = () => {
       description:
         "The Memory Game with Colors challenges players to remember and match sequences of colors, improving their focus and memory skills through engaging gameplay.",
       link: "/colormemo",
-    },{
+    },
+    {
       name: "Aim Shooter",
       description:
         "This game offers an enjoyable experience where players can enhance their shooting skills.",
       link: "/aimshooter",
-    },{
+    },
+    {
       name: "Candy Crush Saga",
       description:
         "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
@@ -121,6 +118,12 @@ const GameSection = () => {
       link: "/dicegame",
     },
     
+    {
+      name: "Click speed test",
+      description:
+        "The player has 10 seconds to click as many times as possible. The game tracks the number of clicks, displays the countdown timer, and shows the final score when the time is up. Players can restart the game to try again.",
+      link: "click-speed-test",
+    },
     {
         name: "DuckHunt",
         description:
