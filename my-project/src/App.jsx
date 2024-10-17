@@ -28,6 +28,8 @@ import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
+import MemoryCardGame from "./Games/MemoryCardGame/MemoryCard";
+import Board from "./Games/Checkers/Board";
 
 
 const App = () => {
@@ -46,8 +48,6 @@ const App = () => {
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
-
-
         <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
         <Route path="/endless-runner" element={<EndlessRunner />} />
          <Route path="/dice-roller" element={<DiceRoller/>} />  {/* Add the new route here */}
@@ -63,6 +63,8 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+        <Route path="/memorycardgame" element={<MemoryCardGame />} />
+        <Route path="/checkers" element={<Board />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
       </Routes>
     </>
