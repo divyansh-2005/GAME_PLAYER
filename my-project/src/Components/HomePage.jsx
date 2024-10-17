@@ -5,6 +5,7 @@ import HeroSection from './HeroSection';
 import GameSection from './GameSection';
 import ScrollToTopButton from './ScrollToTopButton';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const calcScrollValue = () => {
@@ -54,6 +55,7 @@ const HomePage = () => {
       <GameSection ref={gameSectionRef} />
       <ScrollToTopButton />
       <Footer />
+      <Link to="/feedback">Go to Feedback Form</Link>
     </>
   );
 };

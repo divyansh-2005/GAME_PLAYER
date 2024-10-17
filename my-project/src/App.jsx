@@ -36,6 +36,8 @@ import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 
+import FeedbackForm from './Components/FeedbackForm';
+
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
@@ -76,6 +78,7 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+        <Route path="/feedback" element={<FeedbackForm />} />
       </Routes>
     </>
   );
