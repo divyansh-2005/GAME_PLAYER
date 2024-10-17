@@ -48,8 +48,6 @@ const App = () => {
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
-
-
         <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
         <Route path="/endless-runner" element={<EndlessRunner />} />
          <Route path="/dice-roller" element={<DiceRoller/>} />  {/* Add the new route here */}
