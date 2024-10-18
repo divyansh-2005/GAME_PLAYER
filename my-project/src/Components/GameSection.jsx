@@ -127,6 +127,12 @@ const GameSection = () => {
     },
     
     {
+      name: "Mario Jump",
+      description:
+        "Mario Jump is an endless running game inspired by the famous Google Chrome's T-Rex Dinosaur Game 🦖",
+      link: "/mariojump",
+    },
+    {
         name: "DuckHunt",
         description:
           "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
