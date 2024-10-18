@@ -133,6 +133,12 @@ const GameSection = () => {
           "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
         link: "/towerofhanoi",
       },
+      {
+        name: "Crossword",
+        description:
+          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+        link: "/crossword",
+      }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
