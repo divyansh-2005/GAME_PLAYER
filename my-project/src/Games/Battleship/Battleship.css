@@ -1,0 +1,82 @@
+
+.battleship-game {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px; /* Adjusted font size */
+  margin: 0;
+  color: #00FFFF; /* Neon color */
+  text-shadow: 
+    0 1px 0 #fff, /* Light glow */
+    0 0 5px rgba(0, 255, 255, 0.8), /* Outer glow */
+    0 0 10px rgba(0, 255, 255, 0.6),
+    0 0 20px rgba(0, 255, 255, 0.5),
+    0 0 30px rgba(0, 255, 255, 0.4); /* 3D neon effect */
+  letter-spacing: 3px;
+  margin-bottom: 2%;
+  padding: 2%;
+  border-radius: 50%;
+}
+
+.boards {
+  display: flex;
+  justify-content: space-between; /* Increased space between the boards */
+  align-items: center;
+  margin-top: 2px;
+  position: relative; /* Allows positioning of title */
+  width: 100%; /* Ensure the boards take up the full width */
+}
+
+.board {
+  border: none; /* Remove border */
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+  width: 450px; /* Keep board width */
+  height: 470px; /* Keep board height */
+  position: relative;
+}
+
+.neon-border {
+  box-shadow: 0 0 2000px rgba(0, 255, 255, 0.8), 
+              0 0 3000px rgba(0, 255, 255, 0.6);
+  border: none; /* Removed border but kept glow */
+}
+
+.board-row {
+  display: flex;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  background-color: lightblue;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.cell.hit {
+  background-color: red;
+}
+
+.cell.miss {
+  background-color: yellow;
+}
+
+/* Position the title between the boards */
+.between-boards {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%; /* Position vertically at the center of the boards */
+  left: 40%;
+  transform: translate(-50%, -50%); /* Center the text */
+}
