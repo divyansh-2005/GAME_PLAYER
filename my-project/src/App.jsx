@@ -23,6 +23,7 @@ import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 import ArkanoidGame from "./Games/Arkanoid/ArkanoidGame";
 import WhackAMole from "./Games/WhackAMole/WhackAMole";
 import SudokuGame from "./Games/SudokuGame/src/SudokuGame"
+import LightsOut from "./Games/LightsOut/LightsOut";
 import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
@@ -60,6 +61,7 @@ const App = () => {
         <Route path="/whack-a-mole" element={<WhackAMole />} />
         <Route path="/sudoku" element={<SudokuGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
+        <Route path="/LightsOut" element={<LightsOut />} />
         <Route path="/colormemo" element={<ColorMemoGame />} />
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
