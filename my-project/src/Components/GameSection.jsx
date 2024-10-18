@@ -125,7 +125,12 @@ const GameSection = () => {
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
     },
-    
+    {
+      name: "Slot Machine",
+      description:
+        "A slot machine game where players spin reels to match symbols and win coins or rewards.",
+      link: "/slot-machine-game",
+    },
     {
         name: "DuckHunt",
         description:
