@@ -1,0 +1,192 @@
+
+
+   .connect-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 5px solid #00FFFF; /* Neon border */
+    box-shadow: 
+      0 0 20px #00FFFF;  /* Third layer */
+    
+    animation: neonPulse 1.5s infinite alternate; /* Pulse effect */
+    margin-top: 5%;
+  }
+  
+  @keyframes neonPulse {
+    from {
+      box-shadow: 
+        0 0 10px #00FFFF,
+        0 0 20px #00FFFF;
+    }
+    to {
+      box-shadow: 
+        0 0 20px #00FFFF,
+        0 0 40px #00FFFF;
+    }
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  .hole {
+    width: 70px;
+    height: 70px;
+    background-color: #004080;
+    border-radius: 50%;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6), 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .hole:hover {
+    transform: scale(1.1);
+  }
+  
+  .piece {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Red metallic ball */
+  .R {
+    background: radial-gradient(circle at 30% 30%, #f48282, #cc0000, #330d0d);
+    box-shadow: inset 10px 10px 30px rgba(255, 255, 255, 0.5), inset -5px -5px 10px rgba(0, 0, 0, 0.7), 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Yellow metallic ball */
+  .Y {
+    background: radial-gradient(circle at 30% 30%, #ffff99, #cccc00, #5b5b03);
+    box-shadow: inset 10px 10px 30px rgba(255, 255, 255, 0.5), inset -5px -5px 10px rgba(0, 0, 0, 0.7), 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dropping-piece {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    animation: drop 0.2s linear;
+  }
+  
+  @keyframes drop {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .winner {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .animate-winner {
+    animation: winner-glow 1.5s infinite alternate;
+  }
+  
+  @keyframes winner-glow {
+    from {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  
+  .red-glow {
+    background-color: #ff4d4d;
+    box-shadow: 0 0 15px 5px red;
+  }
+  
+  .yellow-glow {
+    background-color: #ffff99;
+    box-shadow: 0 0 15px 5px yellow;
+  }
+  
+  .turn-display {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .red-turn {
+    background-color: #ff6666;
+    color: white;
+    box-shadow: 0 0 10px red;
+  }
+  
+  .yellow-turn {
+    background-color: #ffff66;
+    color: black;
+    box-shadow: 0 0 10px yellow;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0059b3;
+    transform: scale(1.05);
+  }
+   
+
+  .neon-title {
+    font-size: 3rem;
+    color: #8800ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+    
+   
+}
+
+  
