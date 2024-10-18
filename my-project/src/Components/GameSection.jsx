@@ -127,6 +127,12 @@ const GameSection = () => {
     },
     
     {
+      name: "3D Tetris",
+      description:
+        "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
+      link: "/tetrisgame",
+    },
+    {
         name: "DuckHunt",
         description:
           "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
