@@ -29,6 +29,7 @@ import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
+import Crossword from "./Games/Crossword/Crossword";
 
 
 const App = () => {
@@ -66,6 +67,7 @@ const App = () => {
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
+        <Route path="/crossword" element={<Crossword />} />
       </Routes>
     </>
   );
