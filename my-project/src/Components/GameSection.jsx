@@ -120,15 +120,12 @@ const GameSection = () => {
         "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
       link: "/dicegame",
     },
-<<<<<<< HEAD
     {
       name: "Slot Machine",
       description:
         "A slot machine game where players spin reels to match symbols and win coins or rewards.",
       link: "/slot-machine-game",
     },
-=======
-    
     {
         name: "DuckHunt",
         description:
@@ -141,7 +138,6 @@ const GameSection = () => {
           "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
         link: "/towerofhanoi",
       },
->>>>>>> c816631a82ed73f391cfa702bdad5fa8672dd987
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
