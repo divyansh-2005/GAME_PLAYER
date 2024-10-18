@@ -3,6 +3,8 @@ import Swal from 'sweetalert2';
 import './Style.css'; // Import your CSS file for styling
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
+import Back from '../../Components/Back';
+
 
 const SnakeGame = () => {
   const [inputDir, setInputDir] = useState({ x: 0, y: 0 });
@@ -159,6 +161,7 @@ const SnakeGame = () => {
   return (
     <>
     <Header/>
+    <Back />
     <div className="snake-game">
       <div className="body">
         <button onClick={showInstructions} className="instructions">

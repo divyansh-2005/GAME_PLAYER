@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ChessGame.css';
 import Header from '../../Components/Header';
+import Back from '../../Components/Back';
+
 
 const pieces = {
   w: {
@@ -162,6 +164,7 @@ const ChessGame = () => {
   return (
     <div>
       <Header />
+      <Back />
       <h1 className="game-title"><b>Chess Game</b></h1>
       <div className="chessboard">
         

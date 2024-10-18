@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../Components/Header";
+import Back from '../../Components/Back';
+
 
 const WhackAMole = () => {
   const [moles, setMoles] = useState(Array(9).fill(false)); // Array for mole positions
@@ -48,6 +50,7 @@ const WhackAMole = () => {
   return (
     <>
       <Header />
+      <Back />
       <div style={styles.container}>
         <h1>Whack-a-Mole</h1>
         <h2>{isPlaying ? `Time Left: ${timeLeft}s` : "Game Over"}</h2>
