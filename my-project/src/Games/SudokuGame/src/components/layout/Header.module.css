@@ -1,0 +1,45 @@
+.header {
+    position: relative;
+    border-bottom: 2px solid var(--color-grey);
+    padding: 0 20px;
+  }
+  
+  .header h1 {
+    float: left;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 2.75;
+    color: var(--color-grey);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .headerGroupOne {
+    color: var(--color-blue);
+  }
+  
+  .headerGroupTwo {
+    color: var(--color-grey-light);
+  }
+  
+  .header h2 {
+    float: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    color: var(--color-grey);
+    padding-top: 16px;
+    cursor: pointer;
+  }
+  
+  .header h2:hover {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
