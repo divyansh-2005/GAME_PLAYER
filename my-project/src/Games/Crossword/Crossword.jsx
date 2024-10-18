@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Crossword.css';
+import Header from '../../Components/Header';
 
 
 const initialGrid = [
@@ -137,10 +138,13 @@ const Crossword = () => {
   };
 
   return (
+    <>
+
+    <Header style={{ marginBottom: '20px' }} />
+        
     
     <div className="crossword">
-        
-        
+         
       <h2 className="neon-title">CROSSWORD GAME</h2>
       <div className="timer">Time Left: {timeLeft}s</div>
       
@@ -191,8 +195,10 @@ const Crossword = () => {
         </div>
       </div>
     </div>
+    </>
   );
-  
+ 
 };
+
 
 export default Crossword;
