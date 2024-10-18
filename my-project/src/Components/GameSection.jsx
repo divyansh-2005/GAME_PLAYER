@@ -133,6 +133,12 @@ const GameSection = () => {
           "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
         link: "/towerofhanoi",
       },
+      {
+      name: "Tic Tac Toe",
+      description:
+        "Tic-Tac-Toe is a two-player game played on a 3x3 grid. Players take turns marking cells with either X or O aiming to align three of their symbols in a row, column, or diagonal. ",
+      link: "/tictactoe",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
