@@ -27,21 +27,31 @@
   }
   
   .boards {
+    /* border: 10px solid green; */
     display: flex;
-    justify-content: space-between; /* Increased space between the boards */
+    justify-content: center; 
     align-items: center;
     margin-top: 2px;
-    position: relative; /* Allows positioning of title */
+    /* position: relative;  */
     width: 100%; /* Ensure the boards take up the full width */
   }
   
-  .board {
-    border: none; /* Remove border */
+  /* .board {
+    border: none; 
     padding: 10px;
     transition: box-shadow 0.3s ease;
-    width: 450px; /* Keep board width */
-    height: 470px; /* Keep board height */
+    width: 450px; 
+    height: 470px;
     position: relative;
+    display: inline-block;
+  } */
+
+  .board {
+    /* border: 10px solid green; */
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
   }
   
   .neon-border {
@@ -79,4 +89,53 @@
     top: 50%; /* Position vertically at the center of the boards */
     left: 40%;
     transform: translate(-50%, -50%); /* Center the text */
+  }
+
+
+
+
+
+
+
+
+
+  /* .battleship-game {
+    text-align: center;
+  } */
+  
+  /* .board {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  } */
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .cell.hit {
+    background-color: red;
+  }
+  
+  .cell.miss {
+    background-color: blue;
+  }
+  
+  .neon-border {
+    border: 2px solid #00ff00; /* Neon border for the current player's board */
+  }
+  
+  .scoreboard {
+    margin-top: 20px;
   }
