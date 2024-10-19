@@ -1,0 +1,61 @@
+.duck-hunt-container {
+    position: relative;
+    width: 600px;
+    height: 420px;
+    background-color: #87ceeb;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .duck {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .duck:hover {
+    transform: scale(1.2);
+  }
+
+  .score, .misses {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .game-area {
+    position: relative;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 5px 10px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline-block */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.game-over {
+    color: red; /* Text color */
+    font-size: 24px; /* Font size */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Space above the text */
+    font-weight: bold; /* Bold text */
+}

@@ -4,8 +4,8 @@ html, body {
 }
 
 body {
-    background: black;
-    display: flex;
+    /* background: black;
+    display: flex; */
     align-items: center;
     justify-content: center;
 }
