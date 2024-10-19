@@ -1,0 +1,72 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.title {
+    font-size: 5rem;
+    text-align: center;
+    background: linear-gradient(to right, #03cc65, #00ff99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #03cc65, 0 0 20px #03cc65;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.turn-indicator {
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.win-message {
+    text-align: center;
+    font-size: 3rem;
+    color: #03cc65;
+    text-shadow: 0 0 10px #03cc65, 0 0 20px #03cc65;
+}
+
+.lightsout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-gap: 5px;
+    margin-left: 60%;
+    transform: translateX(-50%);
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cell.on {
+    background-color: #39ff14;
+    border: 2px solid black;
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14;
+}
+
+.cell.off {
+    background-color: black;
+    border: 2px solid #041301;
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14;
+}
+
+.game-won {
+    font-size: 3rem;
+    color: #ff073a;
+    text-shadow: 0 0 5px #ff073a, 0 0 10px #ff073a, 0 0 15px #ff073a, 0 0 20px #ff073a, 0 0 30px #ff073a;
+    margin-top: 20px;
+}

@@ -94,9 +94,20 @@ const GameSection = () => {
         "This game provides the fun and fast-paced action of clicking moles as they pop up, with clear instructions and smooth interactions.",
       link: "/whack-a-mole",
     },
+    {
+      name: "Lights Out Game",
+      description: "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
+      link: "/LightsOut", 
+    },
 
 
 
+    {
+      name: "Sudoku",
+      description:
+        "Challenge your mind with Sudoku - the ultimate logic puzzle that’s fun, addictive, and endlessly satisfying!",
+      link: "/sudoku",
+    },
     {
       name: "Color Memo",
       description:
@@ -126,6 +137,12 @@ const GameSection = () => {
       description:
         "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
       link: "/tetrisgame",
+    },
+    {
+      name: "Write Typing Game",
+      description:
+        "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
+      link: "/typing-game",
     },
     {
         name: "DuckHunt",
