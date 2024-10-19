@@ -2,6 +2,8 @@ import  { useState, useEffect } from 'react';
 import './EmojiIntruder.css'
 import Footer from '../../Components/Footer';
 import Header from '../../Components/Header';
+import Back from '../../Components/Back';
+
 
 const EmojiIntruderHunt = () => {
   const [gridItems, setGridItems] = useState([]);
@@ -100,6 +102,7 @@ const EmojiIntruderHunt = () => {
   return (
     <>
     <Header/>
+    <Back />
     <div className="emoji-intruder-hunt">
       <div className="header">
         <h1 className='emoji-heading' >Emoji Intruder Hunt</h1>
