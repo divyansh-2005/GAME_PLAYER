@@ -109,6 +109,12 @@ const GameSection = () => {
 
 
     {
+      name: "Sudoku",
+      description:
+        "Challenge your mind with Sudoku - the ultimate logic puzzle that’s fun, addictive, and endlessly satisfying!",
+      link: "/sudoku",
+    },
+    {
       name: "Color Memo",
       description:
         "The Memory Game with Colors challenges players to remember and match sequences of colors, improving their focus and memory skills through engaging gameplay.",
@@ -132,6 +138,12 @@ const GameSection = () => {
       link: "/dicegame",
     },
     
+    {
+      name: "Write Typing Game",
+      description:
+        "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
+      link: "/typing-game",
+    },
     {
         name: "DuckHunt",
         description:
