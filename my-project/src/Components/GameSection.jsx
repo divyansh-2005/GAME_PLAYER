@@ -133,6 +133,12 @@ const GameSection = () => {
     },
     
     {
+      name: "Write Typing Game",
+      description:
+        "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
+      link: "/typing-game",
+    },
+    {
         name: "DuckHunt",
         description:
           "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
