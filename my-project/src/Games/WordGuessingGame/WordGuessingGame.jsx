@@ -234,8 +234,8 @@ const WordGuessingGame = () => {
   ];
 
   const randomWordObject = wordList[Math.floor(Math.random() * wordList.length)];
-  const [word] = useState(randomWordObject.word);
-  const [clue] = useState(randomWordObject.clue);
+  let [word] = useState(randomWordObject.word);
+  let [clue] = useState(randomWordObject.clue);
   const [category] = useState(randomWordObject.category);
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [wrongGuesses, setWrongGuesses] = useState(0);
