@@ -39,12 +39,12 @@ const GameSection = () => {
       link: "/pingpong",
     },
     {
-
       name: "Reaction Time",
-      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      description:
+        "The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
       link: "/reaction",
     },
-{
+    {
       name: "Simon Says",
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
@@ -67,25 +67,24 @@ const GameSection = () => {
       link: "/rocketboost",
     },
     {
-
       name: "endless Runner",
-      description: " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
+      description:
+        " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
       link: "/endless-runner",
     },
     {
-      
-
       name: "Dice Roller",
-      description: "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
+      description:
+        "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
       link: "/dice-roller",
     },
 
-    {name: "Flappy Bird",
+    {
+      name: "Flappy Bird",
 
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
       link: "/flappybird",
-
     },
 
     {
@@ -102,11 +101,10 @@ const GameSection = () => {
     },
     {
       name: "Lights Out Game",
-      description: "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
-      link: "/LightsOut", 
+      description:
+        "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
+      link: "/LightsOut",
     },
-
-
 
     {
       name: "Sudoku",
@@ -119,12 +117,14 @@ const GameSection = () => {
       description:
         "The Memory Game with Colors challenges players to remember and match sequences of colors, improving their focus and memory skills through engaging gameplay.",
       link: "/colormemo",
-    },{
+    },
+    {
       name: "Aim Shooter",
       description:
         "This game offers an enjoyable experience where players can enhance their shooting skills.",
       link: "/aimshooter",
-    },{
+    },
+    {
       name: "Candy Crush Saga",
       description:
         "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
@@ -156,16 +156,22 @@ const GameSection = () => {
       link: "/typing-game",
     },
     {
-        name: "DuckHunt",
-        description:
-          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
-        link: "/duckhunt",
-      },
-      {
-        name: "Tower of Hanoi",
-        description:"The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/towerofhanoi",
-      },
+      name: "DuckHunt",
+      description:
+        "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+      link: "/duckhunt",
+    },
+    {
+      name: "Tower of Hanoi",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/towerofhanoi",
+    },
+    {
+      name: "Realm Rush",
+      description: "Save Your Gold Enventory with fight with Enemy.",
+      link: "/realmrush",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

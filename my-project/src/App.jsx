@@ -34,6 +34,7 @@ import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
+import RealmRush from "./Games/RealmRush/RealmRush";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -74,6 +75,7 @@ const App = () => {
         <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
+        <Route path="/realmrush" element={<RealmRush />} />
       </Routes>
     </>
   );
