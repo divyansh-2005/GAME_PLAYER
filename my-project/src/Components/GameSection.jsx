@@ -39,6 +39,12 @@ const GameSection = () => {
       link: "/pingpong",
     },
     {
+
+      name: "Reaction Time",
+      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      link: "/reaction",
+    },
+{
       name: "Simon Says",
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
@@ -138,6 +144,18 @@ const GameSection = () => {
       link: "/stacktowergame",
     },
     {
+      name: "Slot Machine",
+      description:
+        "A slot machine game where players spin reels to match symbols and win coins or rewards.",
+      link: "/slot-machine-game",
+    },
+    {
+      name: "3D Tetris",
+      description:
+        "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
+      link: "/tetrisgame",
+    },
+    {
       name: "Write Typing Game",
       description:
         "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
@@ -151,8 +169,7 @@ const GameSection = () => {
       },
       {
         name: "Tower of Hanoi",
-        description:
-          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+        description:"The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
         link: "/towerofhanoi",
       },
   ]);
