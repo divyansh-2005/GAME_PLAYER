@@ -22,10 +22,13 @@ import ChessGame from "./Games/ChessGame/ChessGame";
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 import ArkanoidGame from "./Games/Arkanoid/ArkanoidGame";
 import WhackAMole from "./Games/WhackAMole/WhackAMole";
+import SudokuGame from "./Games/SudokuGame/src/SudokuGame"
+import LightsOut from "./Games/LightsOut/LightsOut";
 import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import MemoryCardGame from "./Games/MemoryCardGame/MemoryCard";
@@ -47,7 +50,9 @@ const App = () => {
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
+
         <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}
+
         <Route path="/endless-runner" element={<EndlessRunner />} />
          <Route path="/dice-roller" element={<DiceRoller/>} />  {/* Add the new route here */}
         <Route path="/flappybird" element={<FlappyBird />} />
@@ -58,11 +63,18 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/chessgame" element={<ChessGame />} />
         <Route path="/whack-a-mole" element={<WhackAMole />} />
+        <Route path="/sudoku" element={<SudokuGame />} />
+        <Route path="/candycrush" element={<CandyCrushGame />} />
+        <Route path="/LightsOut" element={<LightsOut />} />
         <Route path="/colormemo" element={<ColorMemoGame />} />
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+
         <Route path="/memorycardgame" element={<MemoryCardGame />} />
+
+        <Route path="/typing-game" element={<WriteTypingGame />} />
+
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
       </Routes>
     </>
