@@ -3,6 +3,7 @@ import Home from "./src/components/Home/Home";
 import RegAim from "./src/pages/RegAim"; 
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import Back from "../../Components/Back";
 
 function AimShooterGame() {
   const [screen, setScreen] = useState(0);
@@ -12,7 +13,8 @@ function AimShooterGame() {
 
   return (
     <div>
-      <Header/>
+      <Header />
+      <Back/>
       {screen === 0 && <Home regAim={regAim} />}
       {screen === 1 && <RegAim />}
       <Footer />

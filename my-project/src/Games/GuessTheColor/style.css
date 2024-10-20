@@ -1,87 +1,15 @@
-body {
-    background-color: #411530;
-    font-size: 62.5%;
-    margin: 0;
-  }
-  
-  #gth-game {
-    text-align: center;
-    padding-top: 20px;
-  }
-  
-  #container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .square {
-    width: 30%;
-    padding-bottom: 30%;
-    margin: 1.66%;
-    transition: background 0.5s;
-  }
-  
-  h1 {
-    color: white;
-    background-color: #d1512d;
-    font-size: 3.5em;
-    font-family: "Quicksand", sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 10px 0;
-  }
-  
-  #color-display {
-    display: block;
-    font-size: 2em;
-  }
-  
-  #stripe {
-    background: white;
-    height: 30px;
-    text-align: center;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  #message {
-    text-transform: uppercase;
-    color: #d1512d;
-    font-size: 1.5em;
-    width: 20%;
-  }
-  
-  button {
-    outline: none;
-    color: #d1512d;
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    background-color: white;
-    height: 100%;
-    letter-spacing: 1px;
-    transition: all 0.3s;
-  }
-  
-  button:hover {
-    background-color: #d1512d;
-    color: white;
-  }
-  
-  .selected {
-    background-color: #d1512d;
-    color: white;
-  }
-  
-  .square {
-    border-radius: 20%;
-  }
-  
+.square {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.square:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+#message {
+  min-height: 1.5rem;
+}
+.home-icon {
+  transition: color 0.3s ease;
+}
+.home-icon:hover {
+  color: #3490dc; 
+}
