@@ -39,12 +39,12 @@ const GameSection = () => {
       link: "/pingpong",
     },
     {
-
       name: "Reaction Time",
-      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      description:
+        "The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
       link: "/reaction",
     },
-{
+    {
       name: "Simon Says",
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
@@ -173,17 +173,6 @@ const GameSection = () => {
         "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
       link: "/towerofhanoi",
     },
-    {
-        name: "DuckHunt",
-        description:
-          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
-        link: "/duckhunt",
-      },
-      {
-        name: "Tower of Hanoi",
-        description:"The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/towerofhanoi",
-      },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

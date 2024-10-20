@@ -56,7 +56,7 @@ const ClickSpeedTest = () => {
           <button onClick={startGame} style={styles.startButton}>
             Start Game
           </button>
-        )}
+        )} 
       </div>
     </>
   );
@@ -72,7 +72,7 @@ const styles = {
     borderRadius: "8px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     textAlign: "center",
-    backgroundColor: "#f9f9f9",
+    backgroundColor: "#black",
   },
   clickButton: {
     width: "200px",

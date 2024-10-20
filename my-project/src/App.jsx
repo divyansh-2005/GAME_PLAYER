@@ -33,7 +33,6 @@ import ClickSpeedTest from "./Games/Click-speed-test/ClickSpeedTest";
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame";
 import TetrisGame from "./Games/3D-Tetris-Game/src/TetrisGame";
 import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
-import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 
@@ -44,7 +43,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/reaction" element={<Game/>}></Route>
+        <Route path="/reaction" element={<Game />}></Route>
         <Route path="/games" element={<Games />} />
         <Route path="/flipcard" element={<FlipGame />} />
         <Route path="/snakegame" element={<SnakeGame />} />
