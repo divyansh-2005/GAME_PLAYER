@@ -13,6 +13,7 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import Game from "./Games/ReactionTime/Game";
 import SimonSays from "./Games/SimonSays/SimonSays";
 import EndlessRunner from "./Games/EndlessRunner/EndlessRunner";
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
@@ -28,11 +29,13 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+
+import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
+
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import MemoryCardGame from "./Games/MemoryCardGame/MemoryCard";
-
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -41,6 +44,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/reaction" element={<Game/>}></Route>
         <Route path="/games" element={<Games />} />
         <Route path="/flipcard" element={<FlipGame />} />
         <Route path="/snakegame" element={<SnakeGame />} />
@@ -70,11 +74,9 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
-
         <Route path="/memorycardgame" element={<MemoryCardGame />} />
-
+        <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
-
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
       </Routes>
     </>
