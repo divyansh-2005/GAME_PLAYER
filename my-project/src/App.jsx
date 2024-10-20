@@ -29,10 +29,12 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+
+import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
+
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
-
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -69,6 +71,7 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+        <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
       </Routes>
