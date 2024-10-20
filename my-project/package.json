@@ -20,6 +20,8 @@
     "axios": "^1.7.2",
     "chess.js": "^1.0.0-beta.8",
     "dotenv": "^16.4.5",
+    "moment": "^2.30.1",
+    "gsap": "^3.12.5",
     "my-project": "file:",
     "proptypes": "^1.1.0",
     "react": "^18.3.1",
@@ -27,6 +29,7 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
+    "styled-components": "^6.1.13",
     "sweetalert2": "^11.12.0",
     "viem": "^2.16.5",
     "wagmi": "^2.10.8"

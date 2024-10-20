@@ -61,6 +61,12 @@ const GameSection = () => {
       link: "/rocketboost",
     },
     {
+      name: "endless Runner",
+      description:
+        " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
+      link: "/endless-runner",
+    },
+    {
       name: "Dice Roller",
       description:
         "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
@@ -69,10 +75,12 @@ const GameSection = () => {
 
     {
       name: "Flappy Bird",
+
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
       link: "/flappybird",
     },
+
     {
       name: "Arkanoid",
       description:
@@ -84,6 +92,19 @@ const GameSection = () => {
       description:
         "This game provides the fun and fast-paced action of clicking moles as they pop up, with clear instructions and smooth interactions.",
       link: "/whack-a-mole",
+    },
+    {
+      name: "Lights Out Game",
+      description:
+        "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
+      link: "/LightsOut",
+    },
+
+    {
+      name: "Sudoku",
+      description:
+        "Challenge your mind with Sudoku - the ultimate logic puzzle that’s fun, addictive, and endlessly satisfying!",
+      link: "/sudoku",
     },
     {
       name: "Color Memo",
@@ -103,6 +124,7 @@ const GameSection = () => {
         "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
       link: "/candycrush",
     },
+
     {
       name: "Dice Game Tenzi",
       description:
@@ -114,6 +136,25 @@ const GameSection = () => {
       description:
         "Math Quiz game with a broader range of math questions including addition, subtraction, multiplication, division, and even questions with powers (exponentiation) and modulus operations.",
       link: "/math-quiz",
+    },
+
+    {
+      name: "Write Typing Game",
+      description:
+        "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
+      link: "/typing-game",
+    },
+    {
+      name: "DuckHunt",
+      description:
+        "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+      link: "/duckhunt",
+    },
+    {
+      name: "Tower of Hanoi",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/towerofhanoi",
     },
   ]);
 
