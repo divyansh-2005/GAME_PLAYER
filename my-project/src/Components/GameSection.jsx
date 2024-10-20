@@ -166,6 +166,18 @@ const GameSection = () => {
         description:"The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
         link: "/towerofhanoi",
       },
+      {
+        name: "MemoryCard Game",
+        description:
+          "A game where players flip over two cards at a time, trying to find matching pairs. The game continues until all pairs are found.",
+        link: "/memorycardgame",
+      },
+      {
+        name: "Checkers",
+        description:
+          "A two-player board game where players move pieces diagonally across a board with the goal of capturing the opponent’s pieces.",
+        link: "/checkers",
+      },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
