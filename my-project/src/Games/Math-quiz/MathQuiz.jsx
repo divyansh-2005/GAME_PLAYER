@@ -141,7 +141,7 @@ const styles = {
     borderRadius: "8px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     textAlign: "center",
-    backgroundColor: "#f9f9f9",
+    backgroundColor: "black",
   },
   choicesGrid: {
     display: "grid",
