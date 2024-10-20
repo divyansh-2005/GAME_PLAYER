@@ -5,6 +5,8 @@ import './style.css'
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 
+import Back from '../../Components/Back';
+
 const GTH = () => {
   const [colors, setColors] = useState([]);
   const [pickedColor, setPickedColor] = useState("");
@@ -44,6 +46,7 @@ const GTH = () => {
   return (
     <>
     <Header/>
+    <Back/>
     <div className="gth-game">
       <div style={{ textAlign: "center", fontSize: "50px" }}>
         <a href="https://kunjgit.github.io/GameZone/">

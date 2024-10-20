@@ -1,0 +1,21 @@
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+    color: rgb(32, 32, 32);
+}
+
+.scoreContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.divider {
+    width: 100%;
+    border-radius: 10px;
+    height: 5px;
+    background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    border: none;
+}

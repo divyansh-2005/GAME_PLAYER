@@ -1,0 +1,22 @@
+.back-icon{
+    display:block;
+    position: relative;
+    margin: 10px;
+    font-size: 30px; /* Adjust the size as needed */
+    color: white; /* Default color */
+    text-decoration: none;
+    text-align: left;
+    transition: color 0.3s ease; /* Smooth color transition */;
+    width: fit-content;
+    
+
+  }
+  
+  .back-icon:hover {
+    color: gray; /* Change color on hover */
+  }
+  
+  .back-icon:active {
+    color: lightgray; /* Change color on click */
+  }
+  
