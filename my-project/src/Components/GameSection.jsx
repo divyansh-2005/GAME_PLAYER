@@ -39,6 +39,12 @@ const GameSection = () => {
       link: "/pingpong",
     },
     {
+
+      name: "Reaction Time",
+      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      link: "/reaction",
+    },
+{
       name: "Simon Says",
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
@@ -146,8 +152,7 @@ const GameSection = () => {
       },
       {
         name: "Tower of Hanoi",
-        description:
-          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+        description:"The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
         link: "/towerofhanoi",
       },
   ]);
