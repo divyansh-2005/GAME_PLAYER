@@ -22,11 +22,14 @@ import ChessGame from "./Games/ChessGame/ChessGame";
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 import ArkanoidGame from "./Games/Arkanoid/ArkanoidGame";
 import WhackAMole from "./Games/WhackAMole/WhackAMole";
+import SudokuGame from "./Games/SudokuGame/src/SudokuGame"
+import LightsOut from "./Games/LightsOut/LightsOut";
 import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 import ClickSpeedTest from "./Games/Click-speed-test/ClickSpeedTest";
+import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 
@@ -60,11 +63,15 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/chessgame" element={<ChessGame />} />
         <Route path="/whack-a-mole" element={<WhackAMole />} />
+        <Route path="/sudoku" element={<SudokuGame />} />
+        <Route path="/candycrush" element={<CandyCrushGame />} />
+        <Route path="/LightsOut" element={<LightsOut />} />
         <Route path="/colormemo" element={<ColorMemoGame />} />
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
         <Route path="/click-speed-test" element={<ClickSpeedTest />} />
+        <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
 
       </Routes>
