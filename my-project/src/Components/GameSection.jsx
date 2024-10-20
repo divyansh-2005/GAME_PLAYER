@@ -144,6 +144,12 @@ const GameSection = () => {
       link: "/slot-machine-game",
     },
     {
+      name: "3D Tetris",
+      description:
+        "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
+      link: "/tetrisgame",
+    },
+    {
       name: "Write Typing Game",
       description:
         "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
