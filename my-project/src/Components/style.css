@@ -315,6 +315,7 @@ section {
     transition: 0.5s ease-in-out;
     background: #fff; /* Ensure the button background is visible */
     box-shadow: 0 0 0 4px transparent; /* Set up for glow effect */
+    width: 280px;
 }
 
 .comp-section .compcontainer .started::before {
