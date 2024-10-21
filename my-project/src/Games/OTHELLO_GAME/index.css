@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    background-color: #EEE;
+}
+
+#title-link {
+    text-decoration: none;
+}
+
+#title {
+    margin: 0 0 0 20px;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-weight: 800;
+    font-size: 80px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#banner-container {
+    width: 100%;
+    max-height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: white;
+    border-radius: 4px;
+    padding: 10px 0px;
+}
+
+.ad { width: 320px; height: 100px; }
+@media(min-width: 500px) { .ad { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .ad { width: 728px; height: 90px; } }
+
+#gameBoard > table {
+    margin: 0 auto;
+    border-spacing: 1px;
+}
+
+#gameBoard > table th {
+    margin: 0;
+    padding: 0.125em 0.25em;
+    line-height: 100%;
+}
+
+.cell {
+    background-color: green;
+    height: 35px;
+    width: 35px;
+}
+
+.disc {
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+}
+
+.blocked {
+    background-color: grey !important; 
+}
+
+.black > .disc {
+    background-color: black;
+    background-image: radial-gradient(#333333 30%, black 70%);
+}
+
+.attackableBlack:hover {
+    background-color: #F9F54B;
+    cursor: pointer;
+}
+
+.attackableBlack:hover > .disc {
+    background-color: black;
+    background-image: radial-gradient(#333333 30%, black 70%);
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+}
+
+.attackableBlack > .disc {
+    background-color: black;
+    border-radius: 0;
+    height: 5px;
+    width: 5px;
+}
+
+.white > .disc {
+    background-color: white;
+    background-image: radial-gradient(white 30%, #cccccc 70%);
+}
+
+.attackableWhite:hover {
+    background-color: #F9F54B;
+    cursor: pointer;
+}
+
+.attackableWhite:hover > .disc {
+    background-color: white;
+    background-image: radial-gradient(white 30%, #cccccc 70%);
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+}
+
+.attackableWhite > .disc {
+    background-color: white;
+    border-radius: 0;
+    height: 5px;
+    width: 5px;
+}
+
+#score-board-container {
+    width: 100%;
+    min-height: 200px;
+    max-width: 400px;
+    background: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-bottom: 30px; 
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team-name h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.score-board {
+    width: 80px;
+    height: 60px;
+    background: #080001;
+    border-radius: 5px;
+    border: 3px solid white;
+    padding: 0 0 0 5px;
+    font-family: 'Press Start 2P', system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    text-align: center;
+    color: red;
+}
+
+#turn, #ai {
+    text-align: center;
+    font-weight: 800;
+    margin: 10px 0 0 20px;
+}
+
+#ai-type {
+    padding: 4px;
+    font-weight: 400;
+}
+
+#new-game-button-container {
+    text-align: center;
+    margin: 10px 0 0 20px;
+}
+
+#new-game-button {
+    font-size: 15px;
+    padding: 5px;
+}
+
+#sns-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sns-item {
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: black;
+    margin-left: 20px;
+}
+
+.sns-item > i {
+    vertical-align: middle;
+}
+
+/* ins.adsbygoogle[data-ad-status="unfilled"] {
+    display: none !important;
+} */
