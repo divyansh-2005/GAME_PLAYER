@@ -34,12 +34,8 @@ import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
-<<<<<<< HEAD
-import AnimatedCursor  from "react-animated-cursor"
-import RealmRush from "./Games/RealmRush/RealmRush";
-=======
 import AnimatedCursor from "react-animated-cursor"
->>>>>>> 2ffcd07a26a86cfe4246c251d42e3b4430a79bd3
+import RealmRush from "./Games/RealmRush/RealmRush";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
