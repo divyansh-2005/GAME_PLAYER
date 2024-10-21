@@ -214,7 +214,7 @@ const GameSection = () => {
               <h2>{game.name}</h2>
               <h3>{game.description}</h3>
               <div className="card-footer">
-                <button onClick={() => handleNavigate(game.link)}>Play</button>
+                <button onClick={() => handleNavigate(game.link)}>PLAY</button>
               </div>
             </div>
           </div>
