@@ -36,8 +36,6 @@ import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import AnimatedCursor from "react-animated-cursor"
 
-
-
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
