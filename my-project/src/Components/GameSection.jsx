@@ -39,6 +39,12 @@ const GameSection = () => {
       link: "/pingpong",
     },
     {
+      name: "Reaction Time",
+      description:
+        "The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      link: "/reaction",
+    },
+    {
       name: "Simon Says",
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
@@ -137,7 +143,18 @@ const GameSection = () => {
         "Math Quiz game with a broader range of math questions including addition, subtraction, multiplication, division, and even questions with powers (exponentiation) and modulus operations.",
       link: "/math-quiz",
     },
-
+    {
+      name: "Slot Machine",
+      description:
+        "A slot machine game where players spin reels to match symbols and win coins or rewards.",
+      link: "/slot-machine-game",
+    },
+    {
+      name: "3D Tetris",
+      description:
+        "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
+      link: "/tetrisgame",
+    },
     {
       name: "Write Typing Game",
       description:
@@ -197,7 +214,7 @@ const GameSection = () => {
               <h2>{game.name}</h2>
               <h3>{game.description}</h3>
               <div className="card-footer">
-                <button onClick={() => handleNavigate(game.link)}>Play</button>
+                <button onClick={() => handleNavigate(game.link)}>PLAY</button>
               </div>
             </div>
           </div>

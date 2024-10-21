@@ -13,6 +13,7 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import Game from "./Games/ReactionTime/Game";
 import SimonSays from "./Games/SimonSays/SimonSays";
 import EndlessRunner from "./Games/EndlessRunner/EndlessRunner";
 import WordGuessingGame from "./Games/WordGuessingGame/WordGuessingGame"; // Adjust the path as needed
@@ -29,17 +30,53 @@ import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 import MathQuiz from "./Games/Math-quiz/MathQuiz";
+import TetrisGame from "./Games/3D-Tetris-Game/src/TetrisGame";
+import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame";
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
+import AnimatedCursor from "react-animated-cursor";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={18}
+        color="245, 4, 20" // RGB equivalent of #f50414
+        outerAlpha={0.5}
+        innerScale={0.7}
+        outerScale={5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+          {
+            target: ".custom",
+            options: {
+              innerSize: 12,
+              outerSize: 26,
+              color: "255, 255, 255",
+              outerAlpha: 0.3,
+              innerScale: 0.7,
+              outerScale: 8,
+            },
+          },
+        ]}
+      />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/reaction" element={<Game />}></Route>
         <Route path="/games" element={<Games />} />
         <Route path="/flipcard" element={<FlipGame />} />
         <Route path="/snakegame" element={<SnakeGame />} />
@@ -70,6 +107,8 @@ const App = () => {
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
         <Route path="/math-quiz" element={<MathQuiz />} />
+        <Route path="/tetrisgame" element={<TetrisGame />} />
+        <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
       </Routes>
