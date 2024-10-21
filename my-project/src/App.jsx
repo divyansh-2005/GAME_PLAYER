@@ -34,11 +34,44 @@ import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
+import AnimatedCursor from "react-animated-cursor"
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
+     <AnimatedCursor
+      innerSize={8}
+      outerSize={18}
+      color='245, 4, 20'  // RGB equivalent of #f50414
+      outerAlpha={0.5}
+      innerScale={0.7}
+      outerScale={5}
+      clickables={[
+        'a',
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link',
+        {
+          target: '.custom',
+          options: {
+            innerSize: 12,
+            outerSize: 26,
+            color: '255, 255, 255',
+            outerAlpha: 0.3,
+            innerScale: 0.7,
+            outerScale: 8
+          }
+        }
+      ]}
+    />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
