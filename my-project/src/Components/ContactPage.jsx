@@ -24,9 +24,9 @@ function ContactPage() {
           <p className={styles.pPara}>
             <strong>Follow us on social media:</strong>
             <br />
-            <a href="" target="_blank" rel="noopener noreferrer">Twitter</a> | 
-            <a href="" target="_blank" rel="noopener noreferrer">Facebook</a> | 
-            <a href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-lg"></i></a> | 
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f fa-lg"></i></a> | 
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-xl"></i></a>
           </p>
           
         </div>
