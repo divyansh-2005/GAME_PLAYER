@@ -38,11 +38,8 @@ import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import ConnectFour from "./Games/ConnectFour/ConnectFour";
 import AnimatedCursor from "react-animated-cursor"
 import RealmRush from "./Games/RealmRush/RealmRush";
-<<<<<<< HEAD
-=======
 
 
->>>>>>> d28c0001109b89c58549b2cb7382a0b980a55a39
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
