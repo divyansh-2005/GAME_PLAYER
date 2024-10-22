@@ -144,6 +144,18 @@ const GameSection = () => {
       link: "/math-quiz",
     },
     {
+      name: "Connect Four ",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/connectFour",
+    },
+    {
+      name: "Click speed test",
+      description:
+        "The player has 10 seconds to click as many times as possible. The game tracks the number of clicks, displays the countdown timer, and shows the final score when the time is up. Players can restart the game to try again.",
+      link: "click-speed-test",
+    },
+    {
       name: "Slot Machine",
       description:
         "A slot machine game where players spin reels to match symbols and win coins or rewards.",
@@ -172,6 +184,11 @@ const GameSection = () => {
       description:
         "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
       link: "/towerofhanoi",
+    },
+    {
+      name: "Realm Rush",
+      description: "Save Your Gold Enventory with fight with Enemy.",
+      link: "/realmrush",
     },
   ]);
 
