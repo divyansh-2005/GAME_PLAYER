@@ -138,23 +138,23 @@ const GameSection = () => {
       link: "/dicegame",
     },
     {
-        name: "DuckHunt",
-        description:
-          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
-        link: "/duckhunt",
-      },
-      {
-        name: "Tower of Hanoi",
-        description:
-          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/towerofhanoi",
-      },
-      {
-        name: "Connect Four ",
-        description:
-          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/connectFour",
-      },
+      name: "DuckHunt",
+      description:
+        "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+      link: "/duckhunt",
+    },
+    {
+      name: "Tower of Hanoi",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/towerofhanoi",
+    },
+    {
+      name: "Connect Four ",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/connectFour",
+    },
     {
       name: "Click speed test",
       description:
@@ -186,15 +186,16 @@ const GameSection = () => {
       link: "/duckhunt",
     },
     {
+      name: "Pacman",
+      description:
+        "The main goal is to collect as many pellets as possible while avoiding ghosts. Players must navigate the maze, as getting caught by a ghost results in game over.",
+      link: "/pacman",
+    },
+    {
       name: "Tower of Hanoi",
       description:
         "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
       link: "/towerofhanoi",
-    },
-    {
-      name: "Realm Rush",
-      description: "Save Your Gold Enventory with fight with Enemy.",
-      link: "/realmrush",
     },
   ]);
 

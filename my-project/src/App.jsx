@@ -33,50 +33,48 @@ import ClickSpeedTest from "./Games/Click-speed-test/ClickSpeedTest";
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame";
 import TetrisGame from "./Games/3D-Tetris-Game/src/TetrisGame";
 import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
+import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame";
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
-import ConnectFour from "./Games/ConnectFour/ConnectFour";
-import AnimatedCursor from "react-animated-cursor"
-import RealmRush from "./Games/RealmRush/RealmRush";
-
-
+import AnimatedCursor from "react-animated-cursor";
+import Pacman from "./Games/PacMan/PacMan";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
-     <AnimatedCursor
-      innerSize={8}
-      outerSize={18}
-      color='245, 4, 20'  // RGB equivalent of #f50414
-      outerAlpha={0.5}
-      innerScale={0.7}
-      outerScale={5}
-      clickables={[
-        'a',
-        'input[type="text"]',
-        'input[type="email"]',
-        'input[type="number"]',
-        'input[type="submit"]',
-        'input[type="image"]',
-        'label[for]',
-        'select',
-        'textarea',
-        'button',
-        '.link',
-        {
-          target: '.custom',
-          options: {
-            innerSize: 12,
-            outerSize: 26,
-            color: '255, 255, 255',
-            outerAlpha: 0.3,
-            innerScale: 0.7,
-            outerScale: 8
-          }
-        }
-      ]}
-    />
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={18}
+        color="245, 4, 20" // RGB equivalent of #f50414
+        outerAlpha={0.5}
+        innerScale={0.7}
+        outerScale={5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+          {
+            target: ".custom",
+            options: {
+              innerSize: 12,
+              outerSize: 26,
+              color: "255, 255, 255",
+              outerAlpha: 0.3,
+              innerScale: 0.7,
+              outerScale: 8,
+            },
+          },
+        ]}
+      />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -98,6 +96,7 @@ const App = () => {
         <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
+        <Route path="/pacman" element={<Pacman />} />
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
