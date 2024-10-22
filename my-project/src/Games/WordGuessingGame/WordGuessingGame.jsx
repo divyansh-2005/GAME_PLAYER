@@ -1,3 +1,9 @@
+<<<<<<<<< Temporary merge branch 1
+import React, { useState, useEffect } from 'react';
+import Header from '../../Components/Header';
+import Back from '../../Components/Back';
+import Footer from '../../Components/Footer';
+=========
 // import React, { useState, useEffect } from 'react';
 
 // import Header from '../../Components/Header';
@@ -223,6 +229,7 @@
 // export default WordGuessingGame;
 import React, { useState, useEffect } from "react";
 import Header from "../../Components/Header";
+>>>>>>>>> Temporary merge branch 2
 
 const WordGuessingGame = () => {
   const wordList = [
@@ -372,6 +379,65 @@ const WordGuessingGame = () => {
   };
 
   return (
+<<<<<<<<< Temporary merge branch 1
+    <>
+      <Header />
+      <Back />
+      <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-gray-800 to-gray-900 text-white">
+        <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500 border-4 border-red-500 p-4 rounded-lg shadow-xl text-center">
+          Word Guessing Game
+        </h1>
+
+        {isWinner ? (
+          <div className="text-center">
+            <h2 className="text-4xl md:text-6xl text-green-500 animate-bounce mb-6">
+              🎉 You won! 🎉
+            </h2>
+            <button
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
+              onClick={resetGame}
+            >
+              Play Again
+            </button>
+          </div>
+        ) : wrongGuesses >= maxWrongGuesses ? (
+          <div className="text-center">
+            <h2 className="text-4xl md:text-6xl text-red-500 animate-shake mb-6">
+              😢 You lost! 😢
+            </h2>
+            <p className="text-lg">
+              The word was: <strong>{word}</strong>
+            </p>
+            <button
+              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out mt-4"
+              onClick={resetGame}
+            >
+              Play Again
+            </button>
+          </div>
+        ) : (
+          <>
+            <p className="text-lg md:text-xl mb-2">
+              <strong>Category:</strong> {category}
+            </p>
+            <p className="text-lg md:text-xl mb-4">
+              <strong>Clue:</strong> {clue}
+            </p>
+            <h2 className="text-3xl md:text-5xl font-semibold mb-6">
+              {displayWord()}
+            </h2>
+            <p className="text-lg">
+              Wrong guesses: {wrongGuesses}/{maxWrongGuesses}
+            </p>
+            <div className="mt-4">{renderKeyboard()}</div>
+          </>
+        )}
+
+        <div className="mt-8">{renderHangman()}</div>
+      </div>
+      <Footer />
+    </>
+=========
     <div
       style={{
         display: "flex",
