@@ -191,6 +191,11 @@ const GameSection = () => {
         "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
       link: "/towerofhanoi",
     },
+    {
+      name: "Realm Rush",
+      description: "Save Your Gold Enventory with fight with Enemy.",
+      link: "/realmrush",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

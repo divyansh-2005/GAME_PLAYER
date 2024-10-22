@@ -37,6 +37,8 @@ import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import ConnectFour from "./Games/ConnectFour/ConnectFour";
 import AnimatedCursor from "react-animated-cursor"
+import RealmRush from "./Games/RealmRush/RealmRush";
+
 
 
 const App = () => {
@@ -113,6 +115,7 @@ const App = () => {
         <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
+        <Route path="/realmrush" element={<RealmRush />} />
         <Route path="/connectFour" element={<ConnectFour />} />
       </Routes>
     </>
