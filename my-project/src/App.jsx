@@ -23,20 +23,28 @@ import ChessGame from "./Games/ChessGame/ChessGame";
 import FlappyBird from "./Games/FlappyBirdGame/FlappyBird";
 import ArkanoidGame from "./Games/Arkanoid/ArkanoidGame";
 import WhackAMole from "./Games/WhackAMole/WhackAMole";
-import SudokuGame from "./Games/SudokuGame/src/SudokuGame"
+import SudokuGame from "./Games/SudokuGame/src/SudokuGame";
 import LightsOut from "./Games/LightsOut/LightsOut";
 import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+import ClickSpeedTest from "./Games/Click-speed-test/ClickSpeedTest";
+import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame";
 import TetrisGame from "./Games/3D-Tetris-Game/src/TetrisGame";
 import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
-import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
+import ConnectFour from "./Games/ConnectFour/ConnectFour";
 import AnimatedCursor from "react-animated-cursor"
+
 import MemoryCardGame from "./Games/MemoryCard-Game/MemoryCardGame";
 import Board from "./Games/Checkers/Checkers";
+
+import RealmRush from "./Games/RealmRush/RealmRush";
+
+
+
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -77,7 +85,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/reaction" element={<Game/>}></Route>
+        <Route path="/reaction" element={<Game />}></Route>
         <Route path="/games" element={<Games />} />
         <Route path="/flipcard" element={<FlipGame />} />
         <Route path="/snakegame" element={<SnakeGame />} />
@@ -87,9 +95,11 @@ const App = () => {
         <Route path="/PingPong" element={<PongGame />} />
         <Route path="/simon-says" element={<SimonSays />} />
         <Route path="/rocketboost" element={<RocketBoost />} />
-        <Route path="/word-guessing-game" element={<WordGuessingGame />} /> {/* Add the new route here */}  
+        <Route path="/word-guessing-game" element={<WordGuessingGame />} />{" "}
+        {/* Add the new route here */}
         <Route path="/endless-runner" element={<EndlessRunner />} />
-         <Route path="/dice-roller" element={<DiceRoller/>} />  {/* Add the new route here */}
+        <Route path="/dice-roller" element={<DiceRoller />} />{" "}
+        {/* Add the new route here */}
         <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
@@ -105,12 +115,18 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+        <Route path="/click-speed-test" element={<ClickSpeedTest />} />
         <Route path="/tetrisgame" element={<TetrisGame />} />
         <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
+
         <Route path="/memorycard" element={<MemoryCardGame />} />
         <Route path="/checkers" element={<Board />} />
+
+        <Route path="/realmrush" element={<RealmRush />} />
+        <Route path="/connectFour" element={<ConnectFour />} />
+
       </Routes>
     </>
   );
