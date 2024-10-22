@@ -138,6 +138,12 @@ const GameSection = () => {
       link: "/dicegame",
     },
     {
+      name: "Click speed test",
+      description:
+        "The player has 10 seconds to click as many times as possible. The game tracks the number of clicks, displays the countdown timer, and shows the final score when the time is up. Players can restart the game to try again.",
+      link: "click-speed-test",
+    },
+    {
       name: "Slot Machine",
       description:
         "A slot machine game where players spin reels to match symbols and win coins or rewards.",
@@ -172,6 +178,7 @@ const GameSection = () => {
       description: "Save Your Gold Enventory with fight with Enemy.",
       link: "/realmrush",
     },
+
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
