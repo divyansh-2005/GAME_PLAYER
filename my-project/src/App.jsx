@@ -112,7 +112,7 @@ const App = () => {
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
         <Route path="/stacktowergame" element={<StackTowerGame />} />
-        <Route path="/click-speed-test" element={<ClickSpeedTest />} 
+        <Route path="/click-speed-test" element={<ClickSpeedTest />} />
         <Route path="/tetrisgame" element={<TetrisGame />} />
         <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
