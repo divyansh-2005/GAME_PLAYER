@@ -171,6 +171,12 @@ const GameSection = () => {
         description:
           "A game where players flip over two cards at a time, trying to find matching pairs. The game continues until all pairs are found.",
         link: "/memorycard",
+      },
+      {
+        name: "Checkers",
+        description:
+          "A two-player board game where players move pieces diagonally across a board with the goal of capturing the opponent’s pieces.",
+        link: "/checkers",
       }
   ]);
 

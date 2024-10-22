@@ -36,6 +36,7 @@ import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import AnimatedCursor from "react-animated-cursor"
 import MemoryCardGame from "./Games/MemoryCard-Game/MemoryCardGame";
+import Board from "./Games/Checkers/Checkers";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -109,6 +110,7 @@ const App = () => {
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
         <Route path="/memorycard" element={<MemoryCardGame />} />
+        <Route path="/checkers" element={<Board />} />
       </Routes>
     </>
   );
