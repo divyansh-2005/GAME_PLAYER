@@ -138,6 +138,12 @@ const GameSection = () => {
       link: "/dicegame",
     },
     {
+      name: "Stack Tower 3D",
+      description:
+        "Build the tallest tower you can in Stack Tower 3D—precision and timing are the keys to victory!",
+      link: "/stacktowergame",
+    },
+    {
         name: "DuckHunt",
         description:
           "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
@@ -209,6 +215,13 @@ const GameSection = () => {
       description: "Save Your Gold Enventory with fight with Enemy.",
       link: "/realmrush",
     },
+
+    {
+      "name": "Crossword",
+      "description": "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
+      "link": "/crossword"
+    }
+    
 
   ]);
 
