@@ -138,29 +138,35 @@ const GameSection = () => {
       link: "/dicegame",
     },
     {
+      name: "Math Quiz",
+      description:
+        "Math Quiz game with a broader range of math questions including addition, subtraction, multiplication, division, and even questions with powers (exponentiation) and modulus operations.",
+      link: "/math-quiz",
+    },
+    {
       name: "Stack Tower 3D",
       description:
         "Build the tallest tower you can in Stack Tower 3D—precision and timing are the keys to victory!",
       link: "/stacktowergame",
     },
     {
-        name: "DuckHunt",
-        description:
-          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
-        link: "/duckhunt",
-      },
-      {
-        name: "Tower of Hanoi",
-        description:
-          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/towerofhanoi",
-      },
-      {
-        name: "Connect Four ",
-        description:
-          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/connectFour",
-      },
+      name: "DuckHunt",
+      description:
+        "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+      link: "/duckhunt",
+    },
+    {
+      name: "Tower of Hanoi",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/towerofhanoi",
+    },
+    {
+      name: "Connect Four ",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/connectFour",
+    },
     {
       name: "Click speed test",
       description:
@@ -184,18 +190,6 @@ const GameSection = () => {
       description:
         "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
       link: "/typing-game",
-    },
-    {
-      name: "DuckHunt",
-      description:
-        "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
-      link: "/duckhunt",
-    },
-    {
-      name: "Tower of Hanoi",
-      description:
-        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-      link: "/towerofhanoi",
     },
     {
       name: "Realm Rush",
