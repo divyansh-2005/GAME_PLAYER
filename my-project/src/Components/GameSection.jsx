@@ -40,8 +40,7 @@ const GameSection = forwardRef((props, ref) => {
     },
     {
       name: "Reaction Time",
-      description:
-        "The Reaction Time Checker game challenges players to test their reflexes by clicking a button as soon as it lights up.",
+      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
       link: "/reaction",
     },
     {
@@ -67,9 +66,9 @@ const GameSection = forwardRef((props, ref) => {
       link: "/rocketboost",
     },
     {
-      name: "Endless Runner",
-      description:
-        "Navigate through obstacles in this fun, simple endless runner game!",
+
+      name: "endless Runner",
+      description: " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
       link: "/endless-runner",
     },
     {
@@ -78,8 +77,9 @@ const GameSection = forwardRef((props, ref) => {
         "Simulate rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface.",
       link: "/dice-roller",
     },
-    {
-      name: "Flappy Bird",
+
+    {name: "Flappy Bird",
+
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
       link: "/flappybird",
@@ -102,6 +102,9 @@ const GameSection = forwardRef((props, ref) => {
         "Dive into the challenging world of Lights Out! Your objective is to turn off all the lights on the grid by clicking on them.",
       link: "/LightsOut",
     },
+
+
+
     {
       name: "Sudoku",
       description:
@@ -115,10 +118,14 @@ const GameSection = forwardRef((props, ref) => {
       link: "/colormemo",
     },
     {
+    },
+    {
       name: "Aim Shooter",
       description:
         "Improve your shooting skills in this enjoyable aim shooter game.",
       link: "/aimshooter",
+    },
+    {
     },
     {
       name: "Candy Crush Saga",
@@ -131,6 +138,42 @@ const GameSection = forwardRef((props, ref) => {
       description:
         "Roll, match, and race to victory in the fast-paced fun of Tenzi!",
       link: "/dicegame",
+    },
+    {
+      name: "Math Quiz",
+      description:
+        "Math Quiz game with a broader range of math questions including addition, subtraction, multiplication, division, and even questions with powers (exponentiation) and modulus operations.",
+      link: "/math-quiz",
+    },
+    {
+      name: "Stack Tower 3D",
+      description:
+        "Build the tallest tower you can in Stack Tower 3D—precision and timing are the keys to victory!",
+      link: "/stacktowergame",
+    },
+    {
+      name: "DuckHunt",
+      description:
+        "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+      link: "/duckhunt",
+    },
+    {
+      name: "Tower of Hanoi",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/towerofhanoi",
+    },
+    {
+      name: "Connect Four ",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/connectFour",
+    },
+    {
+      name: "Click speed test",
+      description:
+        "The player has 10 seconds to click as many times as possible. The game tracks the number of clicks, displays the countdown timer, and shows the final score when the time is up. Players can restart the game to try again.",
+      link: "click-speed-test",
     },
     {
       name: "Slot Machine",
