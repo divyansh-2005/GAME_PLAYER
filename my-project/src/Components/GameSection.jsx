@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const GameSection = () => {
+const GameSection = forwardRef((props, ref) => {
   const [games, setGames] = useState([
     {
       name: "Guess the Hex",
@@ -39,12 +39,12 @@ const GameSection = () => {
       link: "/pingpong",
     },
     {
-
       name: "Reaction Time",
-      description:"The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      description:
+        "The Reaction Time Checker game challenges players to test their reflexes by clicking a button as soon as it lights up.",
       link: "/reaction",
     },
-{
+    {
       name: "Simon Says",
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
@@ -58,83 +58,78 @@ const GameSection = () => {
     },
     {
       name: "Chess Game",
-      description: "Play a classic game of Chess against friend!",
+      description: "Play a classic game of Chess against a friend!",
       link: "/chessgame",
     },
     {
       name: "Rocket Boost",
-      description: "Challenge to Controll rocket with speed boost!",
+      description: "Challenge yourself to control a rocket with speed boosts!",
       link: "/rocketboost",
     },
     {
-
-      name: "endless Runner",
-      description: " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
+      name: "Endless Runner",
+      description:
+        "Navigate through obstacles in this fun, simple endless runner game!",
       link: "/endless-runner",
     },
     {
-      
-
       name: "Dice Roller",
-      description: "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
+      description:
+        "Simulate rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface.",
       link: "/dice-roller",
     },
-
-    {name: "Flappy Bird",
-
+    {
+      name: "Flappy Bird",
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
       link: "/flappybird",
-
     },
-
     {
       name: "Arkanoid",
       description:
-        "The player is tasked with clearing a formation of colorful blocks by deflecting a ball towards it without letting the ball leave the bottom edge of the playfield.",
+        "Clear a formation of colorful blocks by deflecting a ball towards it, without letting the ball leave the bottom edge of the playfield.",
       link: "/arkanoid",
     },
     {
       name: "Whack A Mole",
       description:
-        "This game provides the fun and fast-paced action of clicking moles as they pop up, with clear instructions and smooth interactions.",
+        "Fast-paced action game where you click moles as they pop up!",
       link: "/whack-a-mole",
     },
     {
       name: "Lights Out Game",
-      description: "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
-      link: "/LightsOut", 
+      description:
+        "Dive into the challenging world of Lights Out! Your objective is to turn off all the lights on the grid by clicking on them.",
+      link: "/LightsOut",
     },
-
-
-
     {
       name: "Sudoku",
       description:
-        "Challenge your mind with Sudoku - the ultimate logic puzzle that’s fun, addictive, and endlessly satisfying!",
+        "Challenge your mind with Sudoku, the ultimate logic puzzle that’s fun, addictive, and endlessly satisfying!",
       link: "/sudoku",
     },
     {
       name: "Color Memo",
       description:
-        "The Memory Game with Colors challenges players to remember and match sequences of colors, improving their focus and memory skills through engaging gameplay.",
+        "A memory game where players remember and match sequences of colors.",
       link: "/colormemo",
-    },{
+    },
+    {
       name: "Aim Shooter",
       description:
-        "This game offers an enjoyable experience where players can enhance their shooting skills.",
+        "Improve your shooting skills in this enjoyable aim shooter game.",
       link: "/aimshooter",
-    },{
+    },
+    {
       name: "Candy Crush Saga",
       description:
-        "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
+        "Candy Crush Saga is a match-three puzzle game where players swap candies to create matches, clear levels, and earn points.",
       link: "/candycrush",
     },
-
     {
       name: "Dice Game Tenzi",
       description:
-        "Roll, match, and race to victory in the fast-paced, addictive fun of Tenzi—can you be the first to roll all ten dice the same?",
+        "Roll, match, and race to victory in the fast-paced fun of Tenzi!",
       link: "/dicegame",
     },
     {
@@ -152,32 +147,27 @@ const GameSection = () => {
     {
       name: "Write Typing Game",
       description:
-        "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
+        "Challenge yourself to improve your typing skills in this engaging game where every word matters!",
       link: "/typing-game",
     },
     {
-        name: "DuckHunt",
-        description:
-          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
-        link: "/duckhunt",
-      },
-      {
-        name: "Tower of Hanoi",
-        description:"The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/towerofhanoi",
-      },
-      {
-        name: "MemoryCard Game",
-        description:
-          "A game where players flip over two cards at a time, trying to find matching pairs. The game continues until all pairs are found.",
-        link: "/memorycard",
-      },
-      {
-        name: "Checkers",
-        description:
-          "A two-player board game where players move pieces diagonally across a board with the goal of capturing the opponent’s pieces.",
-        link: "/checkers",
-      }
+      name: "DuckHunt",
+      description:
+        "Shoot as many ducks as possible before they disappear. Miss too many and the game is over!",
+      link: "/duckhunt",
+    },
+    {
+      name: "Tower of Hanoi",
+      description:
+        "A classic puzzle game where players move a stack of disks from one rod to another, following specific rules.",
+      link: "/towerofhanoi",
+    },
+    {
+      name: "Memory Card Game",
+      description:
+        "A game where players flip over two cards at a time, trying to find matching pairs. The game continues until all pairs are found.",
+      link: "/memorycard",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -193,11 +183,11 @@ const GameSection = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (link) => {
-    navigate(link); // Navigate directly to the game's route
+    navigate(link);
   };
 
   return (
-    <div className="container" id="games">
+    <div className="container" id="games" ref={ref}>
       <div id="searchBar">
         <h1>Search Games</h1>
         <br />
@@ -229,6 +219,6 @@ const GameSection = () => {
       )}
     </div>
   );
-};
+});
 
 export default GameSection;

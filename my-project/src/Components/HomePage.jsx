@@ -7,30 +7,15 @@ import ScrollToTopButton from './ScrollToTopButton';
 import Footer from './Footer';
 import './style.css';
 
-const calcScrollValue = () => {
-  const scrollProgress = document.getElementById('progress');
-  const pos = document.documentElement.scrollTop;
-  const calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrollValue = Math.round((pos * 100) / calcHeight);
 
-  if (pos > 100) {
-    scrollProgress.style.display = 'grid';
-  } else {
-    scrollProgress.style.display = 'none';
-  }
-
-  scrollProgress.addEventListener('click', () => {
-    document.documentElement.scrollTop = 0;
-  });
-
-  scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-};
 
 const HomePage = () => {
   const gameSectionRef = useRef(null);
 
   const scrollToGameSection = () => {
-    gameSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    if (gameSectionRef.current) {
+      gameSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   useEffect(() => {
@@ -56,6 +41,28 @@ const HomePage = () => {
       <Footer />
     </>
   );
+};
+
+
+const calcScrollValue = () => {
+  const scrollProgress = document.getElementById('progress');
+  if (!scrollProgress) return;
+
+  const pos = document.documentElement.scrollTop;
+  const calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollValue = Math.round((pos * 100) / calcHeight);
+
+  if (pos > 100) {
+    scrollProgress.style.display = 'grid';
+  } else {
+    scrollProgress.style.display = 'none';
+  }
+
+  scrollProgress.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+  });
+
+  scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 };
 
 export default HomePage;

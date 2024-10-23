@@ -225,7 +225,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../../Components/Header';
 
-const WordGuessingGame = () => {
+export const WordGuessingGame = () => {
   const wordList = [
     { word: 'REACT', clue: 'A popular JavaScript library for building UIs', category: 'Tech' },
     { word: 'JAVASCRIPT', clue: 'The programming language of the web', category: 'Tech' },
@@ -234,8 +234,8 @@ const WordGuessingGame = () => {
   ];
 
   const randomWordObject = wordList[Math.floor(Math.random() * wordList.length)];
-  const [word] = useState(randomWordObject.word);
-  const [clue] = useState(randomWordObject.clue);
+  const [word, setWord] = useState(randomWordObject.word);
+  const [clue, setClue] = useState(randomWordObject.clue);
   const [category] = useState(randomWordObject.category);
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [wrongGuesses, setWrongGuesses] = useState(0);
@@ -286,8 +286,8 @@ const WordGuessingGame = () => {
     setGuessedLetters([]);
     setWrongGuesses(0);
     const randomWordObject = wordList[Math.floor(Math.random() * wordList.length)];
-    word = randomWordObject.word;
-    clue = randomWordObject.clue;
+    setWord(randomWordObject.word); // Use setter for word
+    setClue(randomWordObject.clue); // Use setter for clue
   };
 
   const isWinner = word.split('').every((letter) => guessedLetters.includes(letter));
@@ -395,6 +395,9 @@ const WordGuessingGame = () => {
     </div>
   );
 };
+
+
+
 
 const winnerStyle = {
   textAlign: 'center',

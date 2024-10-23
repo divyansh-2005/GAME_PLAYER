@@ -109,8 +109,7 @@ const App = () => {
         <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
-        <Route path="/memorycard" element={<MemoryCardGame />} />
-        <Route path="/checkers" element={<Board />} />
+    
       </Routes>
     </>
   );
