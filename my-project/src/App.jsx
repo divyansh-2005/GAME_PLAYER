@@ -32,8 +32,11 @@ import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
 import MathQuiz from "./Games/Math-quiz/MathQuiz";
 import ClickSpeedTest from "./Games/Click-speed-test/ClickSpeedTest";
 import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame";
+import StackTowerGame from "./Games/Stack-tower-game/src/StackTowerGame"
 import TetrisGame from "./Games/3D-Tetris-Game/src/TetrisGame";
 import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
+import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame"
+import ClickSpeedTest from "./Games/Click-speed-test/ClickSpeedTest";
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import ConnectFour from "./Games/ConnectFour/ConnectFour";
@@ -110,6 +113,7 @@ const App = () => {
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
         <Route path="/math-quiz" element={<MathQuiz />} />
+        <Route path="/stacktowergame" element={<StackTowerGame />} />
         <Route path="/click-speed-test" element={<ClickSpeedTest />} />
         <Route path="/tetrisgame" element={<TetrisGame />} />
         <Route path="/slot-machine-game" element={<SlotMachineGame />} />

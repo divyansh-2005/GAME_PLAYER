@@ -150,6 +150,30 @@ const GameSection = () => {
       link: "/connectFour",
     },
     {
+      name: "Stack Tower 3D",
+      description:
+        "Build the tallest tower you can in Stack Tower 3D—precision and timing are the keys to victory!",
+      link: "/stacktowergame",
+    },
+    {
+        name: "DuckHunt",
+        description:
+          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+        link: "/duckhunt",
+      },
+      {
+        name: "Tower of Hanoi",
+        description:
+          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+        link: "/towerofhanoi",
+      },
+      {
+        name: "Connect Four ",
+        description:
+          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+        link: "/connectFour",
+      },
+    {
       name: "Click speed test",
       description:
         "The player has 10 seconds to click as many times as possible. The game tracks the number of clicks, displays the countdown timer, and shows the final score when the time is up. Players can restart the game to try again.",
