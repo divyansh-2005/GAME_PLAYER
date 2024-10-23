@@ -39,6 +39,7 @@ import DuckHunt from "./Games/DuckHunt/DuckHunt";
 import ConnectFour from "./Games/ConnectFour/ConnectFour";
 import AnimatedCursor from "react-animated-cursor"
 import RealmRush from "./Games/RealmRush/RealmRush";
+import Crossword from "./Games/Crossword/Crossword";
 
 
 
@@ -120,6 +121,7 @@ const App = () => {
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
         <Route path="/realmrush" element={<RealmRush />} />
         <Route path="/connectFour" element={<ConnectFour />} />
+        <Route path="/crossword" element={<Crossword />} />
       </Routes>
     </>
   );
