@@ -50,6 +50,11 @@ const Header = () => {
               <i className="fa fa-phone" aria-hidden="true"></i> Contact
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to={"/contributors"} className="nav-link">
+              <i className="fa fa-phone" aria-hidden="true"></i> Contributors
+            </Link>
+          </li>
 
           <li className="nav-item" style={{ fontSize: "1.5rem" }}>
             <ConnectButton />
