@@ -138,70 +138,24 @@ const GameSection = () => {
       link: "/dicegame",
     },
     {
-      name: "Math Quiz",
+        name: "DuckHunt",
+        description:
+          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+        link: "/duckhunt",
+      },
+      {
+        name: "Tower of Hanoi",
+        description:
+          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+        link: "/towerofhanoi",
+      },
+      {
+      name: "Tic Tac Toe",
       description:
-        "Math Quiz game with a broader range of math questions including addition, subtraction, multiplication, division, and even questions with powers (exponentiation) and modulus operations.",
-      link: "/math-quiz",
+        "Tic-Tac-Toe is a two-player game played on a 3x3 grid. Players take turns marking cells with either X or O aiming to align three of their symbols in a row, column, or diagonal. ",
+      link: "/tictactoe",
     },
-    {
-      name: "Stack Tower 3D",
-      description:
-        "Build the tallest tower you can in Stack Tower 3D—precision and timing are the keys to victory!",
-      link: "/stacktowergame",
-    },
-    {
-      name: "DuckHunt",
-      description:
-        "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
-      link: "/duckhunt",
-    },
-    {
-      name: "Tower of Hanoi",
-      description:
-        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-      link: "/towerofhanoi",
-    },
-    {
-      name: "Connect Four ",
-      description:
-        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-      link: "/connectFour",
-    },
-    {
-      name: "Click speed test",
-      description:
-        "The player has 10 seconds to click as many times as possible. The game tracks the number of clicks, displays the countdown timer, and shows the final score when the time is up. Players can restart the game to try again.",
-      link: "click-speed-test",
-    },
-    {
-      name: "Slot Machine",
-      description:
-        "A slot machine game where players spin reels to match symbols and win coins or rewards.",
-      link: "/slot-machine-game",
-    },
-    {
-      name: "3D Tetris",
-      description:
-        "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
-      link: "/tetrisgame",
-    },
-    {
-      name: "Write Typing Game",
-      description:
-        "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
-      link: "/typing-game",
-    },
-    {
-      name: "Realm Rush",
-      description: "Save Your Gold Enventory with fight with Enemy.",
-      link: "/realmrush",
-    },
-    {
-      "name": "Crossword",
-      "description": "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
-      "link": "/crossword"
-    }
-    
+
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
