@@ -1,61 +1,22 @@
+/* Add this to your Tailwind configuration file if necessary */
+.neon-text {
+  text-shadow: 0 0 8px #4dd0e1, 0 0 16px #4dd0e1, 0 0 32px #4dd0e1;
+}
+
 .arkanoid-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    background-color: white; /* Set background to white */
+  border: 2px solid #4dd0e1;
+  background: linear-gradient(145deg, #001f3f, #001f1f);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.6);
+}
 
-  }
+.game-area {
+  position: relative;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
 
-  .start-screen {
-    text-align: center;
-  }
+.neon-glow {
+  text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 40px #ff6b6b;
+}
 
-  .start-button {
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: #ff5733;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .start-button:hover {
-    background-color: #ff4500;
-  }
-
-  .game-area {
-    position: relative;
-  }
-
-  .score,
-  .lives {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-
-  .game-over {
-    font-size: 24px;
-    color: red;
-    margin-top: 10px;
-  }
-
-  /* Styles for the bricks */
-  .canvas {
-    border: 2px solid #0095DD; /* Border around the canvas */
-  }
-
-  .brick {
-    background: linear-gradient(to bottom right, #ffcc00, #ff9900);
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-
-  /* Styles for the paddle */
-  .paddle {
-    background: linear-gradient(to right, #0095DD, #00aaff);
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }

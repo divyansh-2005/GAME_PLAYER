@@ -6,6 +6,9 @@ import sky2 from "./images/sky2.jpg";
 import chickenImage from "./images/chicken.png";
 import obstacleImage from "./images/images.jpeg";
 import groundImage from "./images/ground.jpg";
+import Footer from "../../Components/Footer";
+import Header from "../../Components/Header";
+import Back from "../../Components/Back";
 
 const EndlessRunner = () => {
   const [counter, setCounter] = useState(0);
@@ -100,160 +103,163 @@ const EndlessRunner = () => {
   }, [isGameRunning]);
 
   return (
-    <div
-      style={{
-        margin: 0,
-        padding: 0,
-        backgroundImage: `url(${sky})`,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundColor: "black",
-        position: "relative", // Added relative position for absolute elements inside
-      }}
-    >
+    <>
+    <Header />
+    <Back />
       <div
         style={{
+          margin: 0,
+          padding: 0,
+          backgroundImage: `url(${sky})`,
           display: "flex",
-          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          textAlign: "center",
-          position: "relative",
+          height: "100vh",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "black",
+          position: "relative", // Added relative position for absolute elements inside
         }}
       >
-        <h1
-          style={{
-            color: "white",
-            fontSize: "50px",
-            fontFamily: "'Arial', sans-serif",
-            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
-            backgroundColor: "black",
-            padding: "10px 20px",
-            borderRadius: "10px",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-            marginBottom: "20px",
-          }}
-        >
-          Endless Runner
-        </h1>
-
         <div
           style={{
-            color: "white",
-            fontSize: "30px",
-            marginBottom: "20px",
-          }}
-        >
-          {isGameRunning ? `Time Left: ${timer}s` : "Press 'S' to Start"}
-        </div>
-
-        <div
-          id="game"
-          style={{
-            width: "700px",
-            height: "250px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
             position: "relative",
-            backgroundColor: "#111",
-            overflow: "hidden", // Prevents overflow of the obstacle
           }}
         >
-          <img
-            className="bg-img"
-            src={sky2}
-            alt="background"
+          <h1
             style={{
-              position: "absolute",
-              width: "350px",
-              height: "250px",
-              opacity: 0.6,
-            }}
-          />
-          <img
-            className="bg-img-2"
-            src={sky}
-            alt="background2"
-            style={{
-              position: "absolute",
-              left: "350px",
-              width: "350px",
-              height: "250px",
-              opacity: 0.6,
-            }}
-          />
-
-          <div
-            id="chicken"
-            style={{
-              width: "105px",
-              height: "105px",
-              borderRadius: "50%",
-              position: "absolute",
-              top: "190px",
-              left: "100px",
+              color: "white",
+              fontSize: "50px",
+              fontFamily: "'Arial', sans-serif",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+              backgroundColor: "black",
+              padding: "10px 20px",
+              borderRadius: "10px",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+              marginBottom: "20px",
             }}
           >
-            <img src={chickenImage} alt="chicken" />
+            Endless Runner
+          </h1>
+
+          <div
+            style={{
+              color: "white",
+              fontSize: "30px",
+              marginBottom: "20px",
+            }}
+          >
+            {isGameRunning ? `Time Left: ${timer}s` : "Press 'S' to Start"}
           </div>
 
-          {obstacleVisible && ( // Only show the obstacle if the game is running
-            <div
-              id="obstacle"
+          <div
+            id="game"
+            style={{
+              width: "700px",
+              height: "250px",
+              position: "relative",
+              backgroundColor: "#111",
+              overflow: "hidden", // Prevents overflow of the obstacle
+            }}
+          >
+            <img
+              className="bg-img"
+              src={sky2}
+              alt="background"
               style={{
-                width: "50px",
-                height: "50px",
-                background: "none",
                 position: "absolute",
-                top: "200px",
-                left: "100%",
-                animation: "block 1.3s infinite linear",
+                width: "350px",
+                height: "250px",
+                opacity: 0.6,
+              }}
+            />
+            <img
+              className="bg-img-2"
+              src={sky}
+              alt="background2"
+              style={{
+                position: "absolute",
+                left: "350px",
+                width: "350px",
+                height: "250px",
+                opacity: 0.6,
+              }}
+            />
+
+            <div
+              id="chicken"
+              style={{
+                width: "105px",
+                height: "105px",
+                borderRadius: "50%",
+                position: "absolute",
+                top: "190px",
+                left: "100px",
               }}
             >
-              <img src={obstacleImage} alt="obstacle" />
+              <img src={chickenImage} alt="chicken" />
             </div>
-          )}
-        </div>
 
-        <div
-          id="ground"
-          style={{
-            width: "700px",
-            height: "60px",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            
-            bottom: "0",
-          }}
-        >
-          <img
-            src={groundImage}
-            className="ground"
-            alt="ground"
+            {obstacleVisible && ( // Only show the obstacle if the game is running
+              <div
+                id="obstacle"
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  background: "none",
+                  position: "absolute",
+                  top: "200px",
+                  left: "100%",
+                  animation: "block 1.3s infinite linear",
+                }}
+              >
+                <img src={obstacleImage} alt="obstacle" />
+              </div>
+            )}
+          </div>
+
+          <div
+            id="ground"
             style={{
-              backgroundSize: "cover",
-              height: "60px",
               width: "700px",
-              backgroundPosition: "end",
+              height: "60px",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+
+              bottom: "0",
             }}
-          />
+          >
+            <img
+              src={groundImage}
+              className="ground"
+              alt="ground"
+              style={{
+                backgroundSize: "cover",
+                height: "60px",
+                width: "700px",
+                backgroundPosition: "end",
+              }}
+            />
+          </div>
+
+          <p
+            style={{
+              color: "aliceblue",
+              fontSize: "larger",
+              marginTop: "100px",
+            }}
+          >
+            © 2024 Priya Ashu.
+          </p>
         </div>
 
-        <p
-          style={{
-            color: "aliceblue",
-            fontSize: "larger",
-            marginTop: "100px",
-          }}
-        >
-          © 2024 Priya Ashu.
-        </p>
-      </div>
-
-      <style>{`
+        <style>{`
         .animate {
           animation: jump 0.5s linear;
         }
@@ -282,7 +288,9 @@ const EndlessRunner = () => {
           }
         }
       `}</style>
-    </div>
+      </div>
+      <Footer />
+    </>
   );
 };
 

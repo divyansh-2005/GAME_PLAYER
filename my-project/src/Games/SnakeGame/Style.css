@@ -13,16 +13,35 @@ body {
 
 .snake-game {
   text-align: center;
-  padding-top: 20px; /* Adjust as needed */
+  padding-top: 20px;
 }
 
-.body {
-  background: whitesmoke;
-  display: flex;
-  flex-direction: column; /* Ensures buttons and score are aligned vertically */
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 100px); /* Adjust for header height */
+#board {
+  border-radius: 1rem;
+  background: #cd853f;
+  width: 75vmin;
+  height: 75vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+  background: #ffcd6e;
+  border: 4px solid white;
+  border-radius: 45%;
+}
+
+.snake {
+  background: #fffbaa;
+  border-radius: 45%;
+  border: 1px solid white;
+}
+
+.food {
+  background: #8b491c;
+  border-radius: 8px;
 }
 
 button {
@@ -52,44 +71,11 @@ button:hover {
   padding: 8px 16px;
 }
 
-#board {
-  margin-top: 20px;
-  border-radius: 1rem;
-  background: #cd853f;
-  width: 75vmin;
-  height: 75vmin;
-  border: 2px solid black;
-  display: grid;
-  grid-template-rows: repeat(18, 1fr);
-  grid-template-columns: repeat(18, 1fr);
-}
-
-.head {
-  background: #ffcd6e;
-  border: 4px solid white;
-  border-radius: 45%;
-}
-
-.snake {
-  background: #fffbaa !important;
-  border-radius: 45%;
-  border: 1px solid white;
-}
-
-.food {
-  background: #8b491c;
-  border-radius: 8px;
-}
-
-/* Adjustments for Mobile View */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .body {
-    padding: 10px;
-  }
-
   #board {
-    width: 90vmin;
-    height: 90vmin;
+    width: 85vmin;
+    height: 85vmin;
   }
 
   button {
@@ -112,11 +98,27 @@ button:hover {
     z-index: 10;
   }
 
-  .snake-game {
-    position: relative;
+  #board {
+    margin-top: 40px;
   }
 
+  .game-section {
+    width: 100%;
+  }
+}
+
+/* Larger screen adjustments */
+@media (min-width: 1024px) {
   #board {
-    margin-top: 60px; /* Adjust to create space for instructions */
+    width: 60vmin;
+    height: 60vmin;
+  }
+
+  .stats-section {
+    width: 30%;
+  }
+
+  button {
+    padding: 0.6rem 1.2rem;
   }
 }

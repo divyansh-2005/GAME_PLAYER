@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   height: calc(100vh); /* Adjust height to full viewport */
-  background: linear-gradient(to right, #0099ff, #9933ff);
+  /* background: linear-gradient(to right, #0099ff, #9933ff); */
   color: white;
   font-family: Arial, sans-serif;
   padding: 20px;

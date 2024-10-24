@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './ReactionTimeGame.css';
 import Footer from '../../Components/Footer';
 import Header from '../../Components/Header';
+import Back from '../../Components/Back';
 const ReactionTimeGame = () => {
   const [gameState, setGameState] = useState('waiting');
   const [message, setMessage] = useState('If you\'re ready, click to start!');
@@ -47,18 +48,27 @@ const ReactionTimeGame = () => {
 
   return (
     <>
-    <Header/>
-    <div className="reaction-game-container">
-      <div className={`reaction-card ${gameState}`} onClick={handleClick}>
-        <h2 className="reaction-message">{message}</h2>
+      <Header />
+      <Back />
+      <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold md:mb-6 bg-gradient-to-r from-purple-600 to-blue-500 p-4 rounded-lg shadow-lg mt-10">
+        Reaction Time
+      </h1>
+
+      <div className="reaction-game-container">
+        <div className={`reaction-card ${gameState}`} onClick={handleClick}>
+          <h2 className="reaction-message">{message}</h2>
+        </div>
+        {reactionTime !== null && (
+          <p className="reaction-time">
+            Your reaction time: {reactionTime.toString().padStart(3, "0")} ms
+          </p>
+        )}
+        <button className="restart-button" onClick={startGame}>
+          Restart Game
+        </button>
       </div>
-      {reactionTime !== null && (
-        <p className="reaction-time">Your reaction time: {reactionTime.toString().padStart(3, '0')} ms</p>
-      )}
-      <button className="restart-button" onClick={startGame}>Restart Game</button>
-    </div>
-    <Footer/></>
-    
+      <Footer />
+    </>
   );
 };
 

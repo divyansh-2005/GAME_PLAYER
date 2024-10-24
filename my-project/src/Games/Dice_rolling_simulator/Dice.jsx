@@ -9,6 +9,9 @@ import dice3 from './dice_3.png';
 import dice4 from './dice_4.png';
 import dice5 from './dice_5.png';
 import dice6 from './dice_6.png';
+import Header from '../../Components/Header';
+import Back from '../../Components/Back';
+import Footer from '../../Components/Footer';
 
 const DiceRoller = () => {
   const diceImages = [dice1, dice2, dice3, dice4, dice5, dice6];
@@ -43,19 +46,28 @@ const DiceRoller = () => {
   };
 
   return (
-    <div className={`w-full h-screen flex flex-col items-center justify-center ${bgColor} transition-colors duration-200`}>
-      <h1 className="text-4xl w-64 h-16 rounded-full mt-4 bg-slate-600 text-white mb-6">Dice Roll</h1>
-      <div className="flex items-center justify-center space-x-8">
-        <img src={dice1Image} alt="Dice 1" className="w-[400px] h-[400px]" />
-        <img src={dice2Image} alt="Dice 2" className="w-[400px] h-[400px]" />
-      </div>
-      <button
-        onClick={diceRoll}
-        className="mt-10 h-[60px] w-[100px] bg-violet-500 text-white px-6 py-3 text-xl font-bold rounded-lg hover:bg-green-600 transition duration-300"
+    <>
+    <Header />
+    <Back />
+      <div
+        className={`w-full h-screen flex flex-col items-center justify-center ${bgColor} transition-colors duration-200`}
       >
-        ROLL
-      </button>
-    </div>
+        <h1 className="text-4xl w-64 h-16 rounded-full mt-4 bg-slate-600 text-white mb-6">
+          Dice Roll
+        </h1>
+        <div className="flex items-center justify-center space-x-8">
+          <img src={dice1Image} alt="Dice 1" className="w-[400px] h-[400px]" />
+          <img src={dice2Image} alt="Dice 2" className="w-[400px] h-[400px]" />
+        </div>
+        <button
+          onClick={diceRoll}
+          className="mt-10 h-[60px] w-[100px] bg-violet-500 text-white px-6 py-3 text-xl font-bold rounded-lg hover:bg-green-600 transition duration-300"
+        >
+          ROLL
+        </button>
+      </div>
+      <Footer />
+    </>
   );
 };
 

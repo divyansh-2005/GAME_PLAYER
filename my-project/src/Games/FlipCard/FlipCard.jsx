@@ -58,35 +58,47 @@ const FlipGame = () => {
 
   return (
     <>
-    <Header/>
-    <Back />
-    <div className="flip-game-container">
-      {!gameStarted ? (
-        <div className="start-screen">
-          <h2>Flip Card Game</h2>
-          <button className="start-button" onClick={startGame}>Start Game</button>
-        </div>
-      ) : (
-        <div className="flip-game">
-          <div className="game-board">
-            {cards.map((symbol, index) => (
-              <div
-                key={index}
-                className={`card ${flippedIndices.includes(index) || matchedIndices.includes(index) ? "flipped" : ""}`}
-                onClick={() => handleCardClick(index)}
-              >
-                <div className="flipper">
-                  <div className="front"></div>
-                  <div className="back">{symbol}</div>
-                </div>
-              </div>
-            ))}
+      <Header />
+      <Back />
+      <div className="flip-game-container">
+        {!gameStarted ? (
+          <div className="start-screen">
+            <h2>Flip Card Game</h2>
+            <button className="start-button" onClick={startGame}>
+              Start Game
+            </button>
           </div>
-          <button className="reset-button" onClick={resetGame}>Reset Game</button>
-        </div>
-      )}
-    </div>
-    <Footer/>
+        ) : (
+          <div className="flip-game">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold">
+              Flip Card Game
+            </h1>
+            <div className="game-board">
+              {cards.map((symbol, index) => (
+                <div
+                  key={index}
+                  className={`card ${
+                    flippedIndices.includes(index) ||
+                    matchedIndices.includes(index)
+                      ? "flipped"
+                      : ""
+                  }`}
+                  onClick={() => handleCardClick(index)}
+                >
+                  <div className="flipper">
+                    <div className="front"></div>
+                    <div className="back">{symbol}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <button className="reset-button" onClick={resetGame}>
+              Reset Game
+            </button>
+          </div>
+        )}
+      </div>
+      <Footer />
     </>
   );
 };

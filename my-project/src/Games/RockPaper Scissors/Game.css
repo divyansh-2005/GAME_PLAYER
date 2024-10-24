@@ -1,6 +1,7 @@
 /* Game.css */
 
 .game-container {
+  height: fit-content;
     text-align: center;
     margin-top: 2rem; /* Adjust as needed */
   }
@@ -64,6 +65,7 @@
   }
   
   #msg {
+    width: 100px;
     font-size: 1.5rem;
     padding: 1rem;
     background-color: #081b31;
@@ -73,3 +75,15 @@
   /* .footer-basic{
     margin-top:90px;
   } */
+
+  .game-container {
+  transition: background-color 0.3s ease;
+}
+
+.game-container:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.drop-shadow-lg {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}

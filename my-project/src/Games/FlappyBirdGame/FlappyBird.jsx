@@ -125,6 +125,9 @@ const FlappyBird = () => {
     <>
       <Header />
       <Back />
+      <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6">
+        Flappy Bird
+      </h1>
       <div id="game-container">
         <canvas ref={canvasRef} width={431} height={600} />
         <div id="scoreContainer">
