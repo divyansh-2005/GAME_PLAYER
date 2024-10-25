@@ -91,6 +91,9 @@ const SimonSays = () => {
     <>
       <Header />
       <Back />
+      <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6 bg-gradient-to-r from-purple-600 to-blue-500 p-4 rounded-lg shadow-lg">
+        SimonSays
+      </h1>
       <div style={styles.container}>
         <h1>Simon Says</h1>
         <h2>{prompt}</h2>

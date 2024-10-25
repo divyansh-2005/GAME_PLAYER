@@ -1,71 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Prosto One', cursive;
+  background-color: #f3f3f3;
+}
+
 .emoji-intruder-hunt {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
+  font-family: 'Prosto One', cursive;
+  text-align: center;
+}
+
+.left-side {
+  background: linear-gradient(135deg, #ffb74d, #ff9800);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.emoji-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#timer {
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Responsive grid */
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #cd853f;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.emoji-button {
+  font-size: 2.5rem;
+  padding: 10px;
+  background-color: #ffcd6e;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-button:hover {
+  background-color: #ffab40;
+  transform: scale(1.1);
+}
+
+.instruction {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.highlight {
+  background-color: #f9a825 !important;
+  color: #fff;
+}
+
+#startButton {
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#startButton:hover {
+  background-color: #e65100;
+  transform: scale(1.05);
+}
+
+#result {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .emoji-heading {
+    font-size: 2.5rem;
   }
-  
-  .header {
-    margin-bottom: 20px;
-  }
-  
-  h1 {
-    font-size: 32px;
-  }
-  
-  #gridContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Responsive grid */
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
+
   .emoji-button {
-    font-size: 30px;
-    padding: 10px;
-    border: none;
-    background-color: #f2f2f2;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 2rem;
   }
-  
-  .emoji-button:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .instruction {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .disabled {
-    pointer-events: none;
-  }
-  
-  .highlight {
-    background-color: #f9a825 !important;
-    color: #fff;
-  }
-  
+
   #startButton {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+    font-size: 1.2rem;
   }
-  
-  #result {
-    font-size: 18px;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #007bff;
+
+  .instruction {
+    font-size: 1.2rem;
   }
-  #timer{
-    font-size: 20px;
-    color: white;
+
+  #timer {
+    font-size: 1.2rem;
   }
-  .emoji-heading{
-    font-size: 25px;
-  }
+}

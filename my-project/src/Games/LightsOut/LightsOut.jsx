@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import "./LightsOut.css"; 
 import Header from '../../Components/Header';
+import Back from "../../Components/Back";
+import Footer from "../../Components/Footer";
 
 const numRows = 5;
 const numCols = 5;
@@ -50,29 +52,32 @@ function LightsOut() {
   }
 
   return (
-    <div>
-    <Header />
-    <br></br>
-      <h1 className="title">Lights Out</h1>
-      <h2 className="turn-indicator">{playerTurn}'s Turn</h2>
-      {isWin() ? (
-        <h2 className="win-message">Game Won!</h2>
-      ) : (
-        <div className="board">
-          {grid.map((row, rowIndex) => (
-            <div key={rowIndex} className="row">
-              {row.map((cell, colIndex) => (
-                <div
-                  key={colIndex}
-                  className={`cell ${cell ? "on" : "off"}`}
-                  onClick={() => toggleLight(rowIndex, colIndex)}
-                ></div>
-              ))}
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
+    <>
+      <Header />
+      <Back />
+      <div className="mb-10">
+        <h1 className="title">Lights Out</h1>
+        <h2 className="turn-indicator">{playerTurn}'s Turn</h2>
+        {isWin() ? (
+          <h2 className="win-message">Game Won!</h2>
+        ) : (
+          <div className="board">
+            {grid.map((row, rowIndex) => (
+              <div key={rowIndex} className="row">
+                {row.map((cell, colIndex) => (
+                  <div
+                    key={colIndex}
+                    className={`cell ${cell ? "on" : "off"}`}
+                    onClick={() => toggleLight(rowIndex, colIndex)}
+                  ></div>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+      <Footer />
+    </>
   );
 }
 

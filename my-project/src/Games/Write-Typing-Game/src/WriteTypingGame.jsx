@@ -1,3 +1,4 @@
+import Back from '../../../Components/Back';
 import Footer from '../../../Components/Footer';
 import Header from '../../../Components/Header';
 import App from './App';
@@ -7,6 +8,7 @@ function WriteTypingGame() {
   return (
     <>
         <Header/>
+        <Back />
         <App/>
         <Footer/>
     </>

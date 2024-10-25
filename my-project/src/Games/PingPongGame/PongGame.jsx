@@ -143,17 +143,20 @@ const PongGame = () => {
 
   return (
     <>
-      <Header/>
+      <Header />
       <Back />
+      <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6 bg-gradient-to-r from-purple-600 to-blue-500 p-4 rounded-lg shadow-lg">
+        Realm Rush
+      </h1>
       <canvas
         ref={canvasRef}
         width="750"
         height="585"
-        style={{ border: '1px solid black' }}
+        className="border-4 border-gray-800 rounded-lg shadow-xl mx-auto"
       />
-      <Footer/>
+
+      <Footer />
     </>
-    
   );
 };
 

@@ -175,12 +175,28 @@ const ArkanoidGame = () => {
     <>
       <Header />
       <Back />
-      <div className="arkanoid-container">
-        <div className="game-area">
-          <Canvas ref={canvasRef} width={500} height={320} />
-          <div className="score">Score: {score}</div>
-          <div className="lives">Lives: {lives}</div>
-          {gameOver && <div className="game-over">Game Over</div>}
+      <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6 neon-text">
+        Arkanoid
+      </h1>
+      <div className="arkanoid-container bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 p-6 rounded-lg shadow-lg max-w-screen-md mx-auto">
+        <div className="game-area relative bg-blue-900 rounded-lg shadow-md overflow-hidden">
+          <Canvas
+            ref={canvasRef}
+            width={500}
+            height={320}
+            className="rounded-lg border-4 border-blue-800 w-5/6 mx-auto"
+          />
+          <div className="absolute top-2 left-4 text-white text-xl font-bold score">
+            Score: {score}
+          </div>
+          <div className="absolute top-2 right-4 text-white text-xl font-bold lives">
+            Lives: {lives}
+          </div>
+          {gameOver && (
+            <div className="absolute inset-0 flex items-center justify-center text-red-500 text-3xl font-extrabold game-over neon-glow">
+              Game Over
+            </div>
+          )}
         </div>
       </div>
       <Footer />

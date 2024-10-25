@@ -209,31 +209,40 @@ const CandyCrush = () => {
 
 
   return (
-    <div className={styles.app}>
-      <div className={styles['score-board']}>
-        <span>Score: </span><b>{score}</b>
+    <>
+      <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6 neon-text">
+        Candy Crush
+      </h1>
+
+      <div className={styles.app}>
+        <div className={styles["score-board"]}>
+          <span>Score: </span>
+          <b>{score}</b>
+        </div>
+        <div className={styles.game}>
+          {candies.map(({ color, modifier }, index) => (
+            <div
+              key={index}
+              className={`${styles["img-container"]} ${
+                color !== blank && modifier ? styles[modifier] : ""
+              }`}
+              data-src={color}
+              data-index={index}
+              data-modifier={modifier}
+              draggable={true}
+              onDragStart={dragStart}
+              onDragOver={(e) => e.preventDefault()}
+              onDragEnter={(e) => e.preventDefault()}
+              onDragLeave={(e) => e.preventDefault()}
+              onDrop={dragDrop}
+              onDragEnd={dragEnd}
+            >
+              <img src={color} alt="candy" />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className={styles.game}>
-        {candies.map(({ color, modifier }, index) => (
-          <div
-            key={index}
-            className={`${styles['img-container']} ${(color !== blank && modifier) ? styles[modifier] : ''}`}
-            data-src={color}
-            data-index={index}
-            data-modifier={modifier}
-            draggable={true}
-            onDragStart={dragStart}
-            onDragOver={(e) => e.preventDefault()}
-            onDragEnter={(e) => e.preventDefault()}
-            onDragLeave={(e) => e.preventDefault()}
-            onDrop={dragDrop}
-            onDragEnd={dragEnd}
-          >
-            <img src={color} alt="candy" />
-          </div>
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 
