@@ -47,7 +47,7 @@ const Board = () => {
                             <button onClick={resetGame}>Restart Game</button>
                         </div>
                     </div>
-                    <div className="board">
+                    <div className="boardalign">
                         <div className="click-columns">
                             {columns.map((column, i) => (
                                 <div key={i} onClick={() => handleColumnClick(i)} className="hover">

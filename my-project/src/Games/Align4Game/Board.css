@@ -22,9 +22,6 @@
 
 .sidebar {
     float: left;
-    margin-right: 20px;
-    width: 220px;
-    text-align: left;
     font-family: 'Doppio One', sans-serif;
     color: #ccc;
 }
@@ -58,11 +55,12 @@ button:hover {
     background-color: #6b4f83;
 }
 
-.board {
+.boardalign {
     position: relative;
     float: left;
     width: 428px;
     height: 428px;
+    padding: 0%;
     margin-top: 68px;
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/board.png');
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
@@ -75,10 +73,8 @@ button:hover {
 }
 
 .chip {
-    position: absolute;
     width: 60px;
     height: 60px;
-    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
 }
 
