@@ -149,13 +149,57 @@ const GameSection = () => {
           "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
         link: "/towerofhanoi",
       },
+    {
+      name: "Connect Four ",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/connectFour",
+    },
+    {
+      name: "Click speed test",
+      description:
+        "The player has 10 seconds to click as many times as possible. The game tracks the number of clicks, displays the countdown timer, and shows the final score when the time is up. Players can restart the game to try again.",
+      link: "click-speed-test",
+    },
+    {
+      name: "Slot Machine",
+      description:
+        "A slot machine game where players spin reels to match symbols and win coins or rewards.",
+      link: "/slot-machine-game",
+    },
+    {
+      name: "3D Tetris",
+      description:
+        "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
+      link: "/tetrisgame",
+    },
+    {
+      name: "Write Typing Game",
+      description:
+        "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
+      link: "/typing-game",
+    },
+    {
+      name: "Realm Rush",
+      description: "Save Your Gold Enventory with fight with Enemy.",
+      link: "/realmrush",
+    },
+    {
+      "name": "Crossword",
+      "description": "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
+      "link": "/crossword"
+    },
+    {
+      "name": "PianoTiles",
+      "description": "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
+      "link": "/pianotiles"
+    },
       {
       name: "Tic Tac Toe",
       description:
         "Tic-Tac-Toe is a two-player game played on a 3x3 grid. Players take turns marking cells with either X or O aiming to align three of their symbols in a row, column, or diagonal. ",
       link: "/tictactoe",
     },
-
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
