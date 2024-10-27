@@ -205,7 +205,11 @@ const GameSection = () => {
       "name": "PianoTiles",
       "description": "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
       "link": "/pianotiles"
-    }
+    },
+    { name: "Battleship", 
+      description: "Strategically sink your opponent's ships!", 
+      link: "/battleship" 
+    },
     
   ]);
 
