@@ -13,6 +13,7 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import Contributors from "./Components/Contributors";
 import Game from "./Games/ReactionTime/Game";
 import SimonSays from "./Games/SimonSays/SimonSays";
 import EndlessRunner from "./Games/EndlessRunner/EndlessRunner";
@@ -41,6 +42,7 @@ import ConnectFour from "./Games/ConnectFour/ConnectFour";
 import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
+import PianoTiles from "./Games/pianogame/PianoTiles";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -96,12 +98,14 @@ const App = () => {
         <Route path="/endless-runner" element={<EndlessRunner />} />
         <Route path="/dice-roller" element={<DiceRoller />} />{" "}
         {/* Add the new route here */}
-        <Route path="/flappybird" element={<FlappyBird />} />
+        <Route path="/flappybird" element={<FlappyBird />} />        
+        <Route path="/pianotiles" element={<PianoTiles />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contributors" element={<Contributors />} />
         <Route path="/chessgame" element={<ChessGame />} />
         <Route path="/whack-a-mole" element={<WhackAMole />} />
         <Route path="/sudoku" element={<SudokuGame />} />
