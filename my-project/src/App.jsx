@@ -13,6 +13,7 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import Contributors from "./Components/Contributors";
 import Game from "./Games/ReactionTime/Game";
 import SimonSays from "./Games/SimonSays/SimonSays";
 import EndlessRunner from "./Games/EndlessRunner/EndlessRunner";
@@ -29,6 +30,7 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+import MathQuiz from "./Games/Math-quiz/MathQuiz";
 import StackTowerGame from "./Games/Stack-tower-game/src/StackTowerGame";
 import TetrisGame from "./Games/3D-Tetris-Game/src/TetrisGame";
 import SlotMachineGame from "./Games/Slot-Machine-Game/src/SlotMachineGame";
@@ -41,6 +43,7 @@ import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import NumberGuessing from "./Games/NumberGuessingGame/NumberGuessing";
+import PianoTiles from "./Games/pianogame/PianoTiles";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -97,11 +100,13 @@ const App = () => {
         <Route path="/dice-roller" element={<DiceRoller />} />{" "}
         {/* Add the new route here */}
         <Route path="/flappybird" element={<FlappyBird />} />
+        <Route path="/pianotiles" element={<PianoTiles />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contributors" element={<Contributors />} />
         <Route path="/chessgame" element={<ChessGame />} />
         <Route path="/whack-a-mole" element={<WhackAMole />} />
         <Route path="/sudoku" element={<SudokuGame />} />
@@ -112,6 +117,7 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+        <Route path="/math-quiz" element={<MathQuiz />} />
         <Route path="/stacktowergame" element={<StackTowerGame />} />
         <Route path="/click-speed-test" element={<ClickSpeedTest />} />
         <Route path="/tetrisgame" element={<TetrisGame />} />
