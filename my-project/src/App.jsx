@@ -43,6 +43,9 @@ import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import PianoTiles from "./Games/pianogame/PianoTiles";
+// import Toppicks from "./Components/Toppicks";
+import AargonAssualt from "./Games/AargonAssualt/AargonAssualt";
+
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -98,7 +101,7 @@ const App = () => {
         <Route path="/endless-runner" element={<EndlessRunner />} />
         <Route path="/dice-roller" element={<DiceRoller />} />{" "}
         {/* Add the new route here */}
-        <Route path="/flappybird" element={<FlappyBird />} />        
+        <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/pianotiles" element={<PianoTiles />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
@@ -125,6 +128,8 @@ const App = () => {
         <Route path="/realmrush" element={<RealmRush />} />
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
+        {/* <Route path="/toppicks" element={<Toppicks />} /> */}
+        <Route path="/aargon-assualt" element={<AargonAssualt />} />
       </Routes>
     </>
   );
