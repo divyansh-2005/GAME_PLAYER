@@ -61,17 +61,17 @@ const TicTacToe = () => {
       <div className="tic-tac-toe">
         <h1>Tic Tac Toe</h1>
         {winner ? (
-          <h2 className="winner">Winner: {winner}</h2>
+          <h2 className="win">Winner: {winner}</h2>
         ) : isDraw ? (
-          <h2>It's a draw!</h2> // Display draw message
+          <h2 className="whiteText">It's a draw!</h2> // Display draw message
         ) : (
-          <h2>Next Player: {isXNext ? "X" : "O"}</h2>
+          <h2 className="whiteText">Next Player: {isXNext ? "X" : "O"}</h2>
         )}
-        <div className="board">
+        <div className="tictacboard">
           {board.map((value, index) => (
             <button
               key={index}
-              className="square"
+              className="squares"
               onClick={() => handleClick(index)}
             >
               {value} {/* Display 'X', 'O', or null */}
