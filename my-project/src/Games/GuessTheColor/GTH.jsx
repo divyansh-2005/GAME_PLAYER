@@ -48,30 +48,40 @@ const GTH = () => {
     <Header/>
     <Back/>
     <div className="gth-game">
-      <div style={{ textAlign: "center", margin: "20px", fontSize: "30px" }}>
+      <div style={{ textAlign: "center", fontSize: "50px" }}>
         <a href="https://kunjgit.github.io/GameZone/">
           <i style={{ color: "white" }} className="fas fa-home home-icon"></i>
         </a>
       </div>
-      <h1>
-        Guess by <span id="color-display">{pickedColor}</span>
+      <div clasName="Guessby">
+      <h1 style={{fontSize:"1rem"}}>
+        Guess by 
+      <span id="color-display">{pickedColor}</span>
       </h1>
-      <div id="stripe">
-        <button id="reset" onClick={resetGame}>New Colors</button>
-        <span id="message">{message}</span>
-        <button
+      </div>
+
+     <div id="stripe" >
+        <button  className="mode" id="reset" onClick={resetGame}>New Colors</button>
+     <div id="levels">
+        <button 
           className={`mode ${numSquares === 3 ? "selected" : ""}`}
           onClick={() => handleModeClick("Easy")}
         >
           Easy
         </button>
-        <button
+        <button 
           className={`mode ${numSquares === 6 ? "selected" : ""}`}
           onClick={() => handleModeClick("Hard")}
         >
           Hard
         </button>
+        </div>
       </div>
+
+      <div id="message-container" >
+          <span id="message">{message}</span>
+        </div>
+
       <div id="container">
         {colors.map((color, index) => (
           <div
