@@ -43,6 +43,7 @@ import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import PianoTiles from "./Games/pianogame/PianoTiles";
+import Obstacle3D from "./Games/Obstacle3D/Obstacle3D";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -125,6 +126,8 @@ const App = () => {
         <Route path="/realmrush" element={<RealmRush />} />
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
+        <Route path="/obstacle3D" element={<Obstacle3D />} />
+
       </Routes>
     </>
   );
