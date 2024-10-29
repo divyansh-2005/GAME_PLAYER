@@ -25,7 +25,6 @@
   background-image: url("./assets/bg2.jpg");
   background-size: cover;
 }
-
 .content-container {
   max-width: 90%;
   display: flex;
