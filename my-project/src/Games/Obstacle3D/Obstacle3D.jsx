@@ -36,9 +36,9 @@ const Obstacle3D = () => {
     const buildUrl = "/Build_Obstacle3D";
     const loaderUrl = `${buildUrl}/WebGl.loader.js`;
     const config = {
-      dataUrl: `${buildUrl}/WebGl.data`,
-      frameworkUrl: `${buildUrl}/WebGl.framework.js`,
-      codeUrl: `${buildUrl}/WebGl.wasm`,
+      dataUrl: `${buildUrl}/WebGl.data.gz`,
+      frameworkUrl: `${buildUrl}/WebGl.framework.js.gz`,
+      codeUrl: `${buildUrl}/WebGl.wasm.gz`,
       streamingAssetsUrl: "StreamingAssets",
       companyName: "CKs-Dev",
       productName: "Realm Rush",
@@ -103,7 +103,7 @@ const Obstacle3D = () => {
         className="flex flex-col justify-center items-center min-h-screen w-screen bg-gray-900 p-4 pt-[64px]"
       >
         <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6">
-          Realm Rush
+          Obstacle 3D
         </h1>
         <canvas
           id="unity-canvas"
@@ -137,9 +137,6 @@ const Obstacle3D = () => {
           >
             Fullscreen
           </button>
-          <div id="unity-build-title" className="text-white text-lg mt-2">
-            Realm Rush
-          </div>
         </div>
       </div>
       <Footer />
