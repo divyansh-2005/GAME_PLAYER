@@ -22,6 +22,12 @@ const GameSection = () => {
       link: "/snakegame",
     },
     {
+      name: "Number Guessing",
+      description:
+        'The user has to guess a randomly generated number within a certain range. Provide feedback like "Too high" or "Too low" until they guess the correct number.',
+      link: "/number-guessing",
+    },
+    {
       name: "Emoji Intruder",
       description:
         "Test your observation skills in this emoji intruder game! Spot the one sneaky, different emoji hiding among a sea of identical faces.",
@@ -197,16 +203,17 @@ const GameSection = () => {
       link: "/realmrush",
     },
     {
-      "name": "Crossword",
-      "description": "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
-      "link": "/crossword"
+      name: "Crossword",
+      description:
+        "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
+      link: "/crossword",
     },
     {
-      "name": "PianoTiles",
-      "description": "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
-      "link": "/pianotiles"
-    }
-    
+      name: "PianoTiles",
+      description:
+        "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
+      link: "/pianotiles",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

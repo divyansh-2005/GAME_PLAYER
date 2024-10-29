@@ -42,6 +42,7 @@ import ConnectFour from "./Games/ConnectFour/ConnectFour";
 import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
+import NumberGuessing from "./Games/NumberGuessingGame/NumberGuessing";
 import PianoTiles from "./Games/pianogame/PianoTiles";
 import Toppicks from "./Components/Toppicks";
 
@@ -99,7 +100,7 @@ const App = () => {
         <Route path="/endless-runner" element={<EndlessRunner />} />
         <Route path="/dice-roller" element={<DiceRoller />} />{" "}
         {/* Add the new route here */}
-        <Route path="/flappybird" element={<FlappyBird />} />        
+        <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/pianotiles" element={<PianoTiles />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
@@ -111,6 +112,7 @@ const App = () => {
         <Route path="/whack-a-mole" element={<WhackAMole />} />
         <Route path="/sudoku" element={<SudokuGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
+        <Route path="/number-guessing" element={<NumberGuessing />} />
         <Route path="/LightsOut" element={<LightsOut />} />
         <Route path="/colormemo" element={<ColorMemoGame />} />
         <Route path="/aimshooter" element={<AimShooterGame />} />
