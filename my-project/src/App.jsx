@@ -129,7 +129,7 @@ const App = () => {
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
         <Route path="/toppicks" element={<Toppicks />} />
-        <Route path="/obstacle3D" element={<Obstacle3D />} />
+        {/* <Route path="/obstacle3D" element={<Obstacle3D />} /> */}
 
         
       </Routes>
