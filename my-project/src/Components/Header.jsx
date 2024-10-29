@@ -22,7 +22,9 @@ const Header = () => {
           </a>
         </div>
         <ul
-          className={`nav-menu ${menuActive ? "active" : ""} items-center px-4 uppercase`}
+          className={`nav-menu ${
+            menuActive ? "active" : ""
+          } items-center px-4 uppercase`}
         >
           <li className="nav-item">
             <Link to={"/"} className="nav-link">
@@ -38,6 +40,11 @@ const Header = () => {
           <li className="nav-item">
             <Link to={"/addgame"} className="nav-link">
               <i className="fa fa-phone" aria-hidden="true"></i> Add Games
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to={"/toppicks"} className="nav-link">
+              <i className="fa fa-phone" aria-hidden="true"></i> Top Picks
             </Link>
           </li>
           <li className="nav-item">
