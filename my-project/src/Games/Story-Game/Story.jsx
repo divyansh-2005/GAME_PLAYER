@@ -140,15 +140,15 @@ function Story() {
     const skippedQuestions = Math.max(0, questions.length - answeredQuestions);
 
     return (
-      <div className="game-over-container flex justify-center items-center bg-gray-100">
+      <div className="game-over-container flex justify-center items-center bg-gray-100 w-full max-w-lg md:w-auto">
         <motion.div
-          className="game-over-card bg-white rounded-lg shadow-2xl p-8 md:p-12 max-w-lg w-full text-center"
+          className="game-over-card bg-white rounded-lg shadow-2xl p-8 md:p-12 max-w-lg w-full max-w-lg md:w-auto text-center"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold mb-6">Game Over!</h1>
+          <div className="text-5xl font-bold mb-6 animated-title">Game Over!</div>
           <div className="card-content space-y-4">
             <p className="text-2xl text-gray-700">
               Total Questions: <span className="font-semibold text-blue-500">{questions.length}</span>
