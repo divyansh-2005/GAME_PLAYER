@@ -43,9 +43,13 @@ import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import PianoTiles from "./Games/pianogame/PianoTiles";
+<<<<<<< HEAD
 // import Toppicks from "./Components/Toppicks";
 import AargonAssualt from "./Games/AargonAssualt/AargonAssualt";
 
+=======
+import Toppicks from "./Components/Toppicks";
+>>>>>>> b8610f62807de9dfd056c552743359f32fcef687
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -128,8 +132,12 @@ const App = () => {
         <Route path="/realmrush" element={<RealmRush />} />
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
+<<<<<<< HEAD
         {/* <Route path="/toppicks" element={<Toppicks />} /> */}
         <Route path="/aargon-assualt" element={<AargonAssualt />} />
+=======
+        <Route path="/toppicks" element={<Toppicks />} />
+>>>>>>> b8610f62807de9dfd056c552743359f32fcef687
       </Routes>
     </>
   );
