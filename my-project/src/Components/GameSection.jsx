@@ -205,8 +205,13 @@ const GameSection = () => {
       "name": "PianoTiles",
       "description": "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
       "link": "/pianotiles"
+    },
+    {
+      "name": "Mystery Story Game",
+     "description": "Mystery Story Game is an engaging puzzle adventure where players solve mysteries through thought-provoking questions, using reasoning and deduction to unravel the story.",
+
+      "link": "/mystery-story-game"
     }
-    
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

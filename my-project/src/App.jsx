@@ -44,6 +44,7 @@ import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import PianoTiles from "./Games/pianogame/PianoTiles";
 import Toppicks from "./Components/Toppicks";
+import Story from "./Games/Story-Game/Story";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -127,6 +128,7 @@ const App = () => {
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
         <Route path="/toppicks" element={<Toppicks />} />
+        <Route path="/mystery-story-game" element={<Story/>}/>
       </Routes>
     </>
   );
