@@ -44,6 +44,7 @@ import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import PianoTiles from "./Games/pianogame/PianoTiles";
+import Toppicks from "./Components/Toppicks";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -124,6 +125,10 @@ const App = () => {
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
         <Route path="/tictactoe" element={<TicTacToe />} />
+        <Route path="/realmrush" element={<RealmRush />} />
+        <Route path="/connectFour" element={<ConnectFour />} />
+        <Route path="/crossword" element={<Crossword />} />
+        <Route path="/toppicks" element={<Toppicks />} />
       </Routes>
     </>
   );
