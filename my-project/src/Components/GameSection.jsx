@@ -213,6 +213,11 @@ const GameSection = () => {
       description:
         "Dive into the obstacle and stay in live world",
       link: "/obstacle3D",
+    },{
+      name: "Rolling Ball",
+      description:
+        "Challenge to balance the ball.",
+      link: "/rollingBall",
     },
   ]);
 
