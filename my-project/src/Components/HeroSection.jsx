@@ -10,9 +10,12 @@ const HeroSection = () => {
   <>
   <section className="comp-section" id="home">
     <div className="compcontainer">
-      <p className="paragraph">
-        Welcome
+      <div className='flex flex-col items-center text-center mt-2'>
+      <p className="paragraph text-5xl">
+        WELCOME
       </p>
+      <hr className='w-40 -mt-2 mb-1 border-t-2 border-primary' />
+      </div>
       <h1 className='herosectionH1'>  {user?.firstName}    </h1>
       <h2>
         

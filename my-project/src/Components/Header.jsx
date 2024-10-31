@@ -14,15 +14,17 @@ const Header = () => {
     <header>
       <nav className="navbar">
         <div className="image-logo">
-          <a href="#">
+          <a href="https://game-player-navy.vercel.app/">
             <img src={logo} alt="Logo" height="36px" width="36px" />
           </a>
-          <a href="#">
+          <a href="https://game-player-navy.vercel.app/">
             <span className="logo">TeleGames</span>
           </a>
         </div>
         <ul
-          className={`nav-menu ${menuActive ? "active" : ""} items-center px-4`}
+          className={`nav-menu ${
+            menuActive ? "active" : ""
+          } items-center px-4 uppercase`}
         >
           <li className="nav-item">
             <Link to={"/"} className="nav-link">
@@ -41,6 +43,11 @@ const Header = () => {
             </Link>
           </li>
           <li className="nav-item">
+            <Link to={"/toppicks"} className="nav-link">
+              <i className="fa fa-phone" aria-hidden="true"></i> Top Picks
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link to={"/about"} className="nav-link">
               <i className="fa fa-calculator" aria-hidden="true"></i> About
             </Link>
@@ -48,6 +55,11 @@ const Header = () => {
           <li className="nav-item">
             <Link to={"/contact"} className="nav-link">
               <i className="fa fa-phone" aria-hidden="true"></i> Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to={"/contributors"} className="nav-link">
+              <i className="fa fa-phone" aria-hidden="true"></i> Contributors
             </Link>
           </li>
 
