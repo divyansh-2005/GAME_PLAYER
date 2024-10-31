@@ -47,6 +47,8 @@ import Toppicks from "./Components/Toppicks";
 import AargonAssualt from "./Games/AargonAssualt/AargonAssualt";
 
 
+import Obstacle3D from "./Games/Obstacle3D/Obstacle3D";
+import RollingBall from "./Games/RollingBall/RollingBall";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -131,6 +133,8 @@ const App = () => {
         <Route path="/crossword" element={<Crossword />} />
         <Route path="/toppicks" element={<Toppicks />} />
         <Route path="/aargon-assualt" element={<AargonAssualt />} />
+        <Route path="/obstacle3D" element={<Obstacle3D />} />
+        <Route path="/rollingBall" element={<RollingBall />} />
       </Routes>
     </>
   );

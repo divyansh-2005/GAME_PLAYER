@@ -213,6 +213,17 @@ const GameSection = () => {
       description: "Challenge to Fight with enemy aircraft .",
       link: "/aargon-assualt",
     },
+    {
+      name: "Obstacle 3D",
+      description:
+        "Dive into the obstacle and stay in live world",
+      link: "/obstacle3D",
+    },{
+      name: "Rolling Ball",
+      description:
+        "Challenge to balance the ball.",
+      link: "/rollingBall",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
