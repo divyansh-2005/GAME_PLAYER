@@ -209,10 +209,22 @@ const GameSection = () => {
       link: "/pianotiles",
     },
     {
+<<<<<<< HEAD
       name: "Tile Conquest",
       description:
         "Capture tiles with higher values to outscore your opponent and control the board.",
       link: "/tileConquest",
+=======
+      name: "Obstacle 3D",
+      description:
+        "Dive into the obstacle and stay in live world",
+      link: "/obstacle3D",
+    },{
+      name: "Rolling Ball",
+      description:
+        "Challenge to balance the ball.",
+      link: "/rollingBall",
+>>>>>>> 657b960055941e8c8c1ea04f6844903e68e1d649
     },
   ]);
 
