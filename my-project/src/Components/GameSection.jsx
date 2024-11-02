@@ -197,9 +197,16 @@ const GameSection = () => {
       link: "/realmrush",
     },
     {
-      "name": "Crossword",
-      "description": "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
-      "link": "/crossword"
+      name: "Crossword",
+      description:
+        "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
+      link: "/crossword",
+    },
+    {
+      name: "PianoTiles",
+      description:
+        "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
+      link: "/pianotiles",
     },
     {
       "name": "Align 4 Game",
@@ -210,8 +217,18 @@ const GameSection = () => {
       "name": "PianoTiles",
       "description": "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
       "link": "/pianotiles"
-    }
-    
+    },
+    {
+      name: "Obstacle 3D",
+      description:
+        "Dive into the obstacle and stay in live world",
+      link: "/obstacle3D",
+    },{
+      name: "Rolling Ball",
+      description:
+        "Challenge to balance the ball.",
+      link: "/rollingBall",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");

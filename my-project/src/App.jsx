@@ -13,6 +13,7 @@ import { useTma } from "./Context/tmaProvider";
 import Games from "./Components/Games";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
+import Contributors from "./Components/Contributors";
 import Game from "./Games/ReactionTime/Game";
 import SimonSays from "./Games/SimonSays/SimonSays";
 import EndlessRunner from "./Games/EndlessRunner/EndlessRunner";
@@ -43,6 +44,9 @@ import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import Board from "./Games/Align4Game/Board";
 import PianoTiles from "./Games/pianogame/PianoTiles";
+import Toppicks from "./Components/Toppicks";
+import Obstacle3D from "./Games/Obstacle3D/Obstacle3D";
+import RollingBall from "./Games/RollingBall/RollingBall";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -105,6 +109,7 @@ const App = () => {
         <Route path="/addgame" element={<AddGamePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contributors" element={<Contributors />} />
         <Route path="/chessgame" element={<ChessGame />} />
         <Route path="/whack-a-mole" element={<WhackAMole />} />
         <Route path="/sudoku" element={<SudokuGame />} />
@@ -124,7 +129,10 @@ const App = () => {
         <Route path="/realmrush" element={<RealmRush />} />
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
-        <Route path="/board" element={<Board/>}></Route>
+        <Route path="/board" element={<Board/>} /> 
+        <Route path="/toppicks" element={<Toppicks />} />
+        <Route path="/obstacle3D" element={<Obstacle3D />} />
+        <Route path="/rollingBall" element={<RollingBall />} />
       </Routes>
     </>
   );
