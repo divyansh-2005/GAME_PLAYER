@@ -209,10 +209,22 @@ const GameSection = () => {
       link: "/pianotiles",
     },
     {
+<<<<<<< HEAD
       name: "Othello",
       description:
         "Othello is a strategy game where players flip their opponent's pieces on an 8x8 grid to control the board.",
       link: "/othello",
+=======
+      name: "Obstacle 3D",
+      description:
+        "Dive into the obstacle and stay in live world",
+      link: "/obstacle3D",
+    },{
+      name: "Rolling Ball",
+      description:
+        "Challenge to balance the ball.",
+      link: "/rollingBall",
+>>>>>>> 657b960055941e8c8c1ea04f6844903e68e1d649
     },
   ]);
 

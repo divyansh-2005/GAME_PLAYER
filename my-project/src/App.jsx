@@ -43,7 +43,13 @@ import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import PianoTiles from "./Games/pianogame/PianoTiles";
+<<<<<<< HEAD
 import Othello from "./Games/Othello/Othello";
+=======
+import Toppicks from "./Components/Toppicks";
+import Obstacle3D from "./Games/Obstacle3D/Obstacle3D";
+import RollingBall from "./Games/RollingBall/RollingBall";
+>>>>>>> 657b960055941e8c8c1ea04f6844903e68e1d649
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -127,6 +133,9 @@ const App = () => {
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
         <Route path="/othello" element={<Othello />} />
+        <Route path="/toppicks" element={<Toppicks />} />
+        <Route path="/obstacle3D" element={<Obstacle3D />} />
+        <Route path="/rollingBall" element={<RollingBall />} />
       </Routes>
     </>
   );
