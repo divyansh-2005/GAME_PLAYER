@@ -47,6 +47,7 @@ import Othello from "./Games/Othello/Othello";
 import Toppicks from "./Components/Toppicks";
 import Obstacle3D from "./Games/Obstacle3D/Obstacle3D";
 import RollingBall from "./Games/RollingBall/RollingBall";
+import Battleship from "./Games/Battleship/Battleship";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -133,6 +134,7 @@ const App = () => {
         <Route path="/toppicks" element={<Toppicks />} />
         <Route path="/obstacle3D" element={<Obstacle3D />} />
         <Route path="/rollingBall" element={<RollingBall />} />
+        <Route path="/battleship" element={<Battleship />} />
       </Routes>
     </>
   );
