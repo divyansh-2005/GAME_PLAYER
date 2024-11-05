@@ -39,6 +39,12 @@ const GameSection = () => {
       link: "/pingpong",
     },
     {
+      name: "Reaction Time",
+      description:
+        "The Reaction Time Checker game challenges players to test their reflexes by clicking a button",
+      link: "/reaction",
+    },
+    {
       name: "Simon Says",
       description:
         "Test your memory in the classic Simon Says game! Repeat the sequence of colors as it gets progressively harder. Can you keep up?",
@@ -61,25 +67,24 @@ const GameSection = () => {
       link: "/rocketboost",
     },
     {
-
       name: "endless Runner",
-      description: " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
+      description:
+        " This is a fun, simple game where you control a chicken navigating through obstacles. The game ends when the chicken collides with an obstacle. ",
       link: "/endless-runner",
     },
     {
-      
-
       name: "Dice Roller",
-      description: "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
+      description:
+        "The simulator mimics the action of rolling a dice, providing a random outcome between 1 and 6 each time the user interacts with the interface",
       link: "/dice-roller",
     },
 
-    {name: "Flappy Bird",
+    {
+      name: "Flappy Bird",
 
       description:
         "Navigate the bird through pipes and test your reflexes in this classic Flappy Bird game!",
       link: "/flappybird",
-
     },
 
     {
@@ -96,11 +101,10 @@ const GameSection = () => {
     },
     {
       name: "Lights Out Game",
-      description: "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
-      link: "/LightsOut", 
+      description:
+        "Dive into the challenging world of LightsOut, where strategy meets puzzle-solving! Your objective is to turn off all the lights on the grid by clicking on them.",
+      link: "/LightsOut",
     },
-
-
 
     {
       name: "Sudoku",
@@ -113,12 +117,14 @@ const GameSection = () => {
       description:
         "The Memory Game with Colors challenges players to remember and match sequences of colors, improving their focus and memory skills through engaging gameplay.",
       link: "/colormemo",
-    },{
+    },
+    {
       name: "Aim Shooter",
       description:
         "This game offers an enjoyable experience where players can enhance their shooting skills.",
       link: "/aimshooter",
-    },{
+    },
+    {
       name: "Candy Crush Saga",
       description:
         "Candy Crush Saga is a popular match-three puzzle game where players swap colorful candies to create matches, clear levels, and earn points.",
@@ -132,28 +138,99 @@ const GameSection = () => {
       link: "/dicegame",
     },
     {
+      name: "Math Quiz",
+      description:
+        "Math Quiz game with a broader range of math questions including addition, subtraction, multiplication, division, and even questions with powers (exponentiation) and modulus operations.",
+      link: "/math-quiz",
+    },
+    {
+      name: "Stack Tower 3D",
+      description:
+        "Build the tallest tower you can in Stack Tower 3D—precision and timing are the keys to victory!",
+      link: "/stacktowergame",
+    },
+    {
+      name: "DuckHunt",
+      description:
+        "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
+      link: "/duckhunt",
+    },
+    {
+      name: "Tower of Hanoi",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/towerofhanoi",
+    },
+    {
+      name: "Connect Four ",
+      description:
+        "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
+      link: "/connectFour",
+    },
+    {
+      name: "Click speed test",
+      description:
+        "The player has 10 seconds to click as many times as possible. The game tracks the number of clicks, displays the countdown timer, and shows the final score when the time is up. Players can restart the game to try again.",
+      link: "click-speed-test",
+    },
+    {
+      name: "Slot Machine",
+      description:
+        "A slot machine game where players spin reels to match symbols and win coins or rewards.",
+      link: "/slot-machine-game",
+    },
+    {
+      name: "3D Tetris",
+      description:
+        "A 3D Tetris game where players manipulate falling blocks to fit them into a three-dimensional grid.",
+      link: "/tetrisgame",
+    },
+    {
       name: "Mario Jump",
       description:
         "Mario Jump is an endless running game inspired by the famous Google Chrome's T-Rex Dinosaur Game 🦖",
       link: "/mariojump",
     },
+    {
       name: "Write Typing Game",
       description:
         "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",
       link: "/typing-game",
     },
     {
-        name: "DuckHunt",
-        description:
-          "The main goal is to shoot as many ducks as possible before they disappear. Players have a limited number of misses; missing three ducks results in game over",
-        link: "/duckhunt",
-      },
-      {
-        name: "Tower of Hanoi",
-        description:
-          "The Tower of Hanoi is a classic puzzle game that challenges players to move a stack of disks from one rod to another, following specific rules.",
-        link: "/towerofhanoi",
-      },
+      name: "Realm Rush",
+      description: "Save Your Gold Enventory with fight with Enemy.",
+      link: "/realmrush",
+    },
+    {
+      name: "Crossword",
+      description:
+        "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
+      link: "/crossword",
+    },
+    {
+      name: "PianoTiles",
+      description:
+        "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
+      link: "/pianotiles",
+    },
+    {
+      name: "Othello",
+      description:
+        "Othello is a strategy game where players flip their opponent's pieces on an 8x8 grid to control the board.",
+      link: "/othello",
+    },
+    {
+      name: "Obstacle 3D",
+      description:
+        "Dive into the obstacle and stay in live world",
+      link: "/obstacle3D",
+    },{
+      name: "Rolling Ball",
+      description:
+        "Challenge to balance the ball.",
+      link: "/rollingBall",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -195,7 +272,7 @@ const GameSection = () => {
               <h2>{game.name}</h2>
               <h3>{game.description}</h3>
               <div className="card-footer">
-                <button onClick={() => handleNavigate(game.link)}>Play</button>
+                <button onClick={() => handleNavigate(game.link)}>PLAY</button>
               </div>
             </div>
           </div>
