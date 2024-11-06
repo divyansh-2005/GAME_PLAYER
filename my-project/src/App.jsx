@@ -48,9 +48,9 @@ import Othello from "./Games/Othello/Othello";
 import Toppicks from "./Components/Toppicks";
 import AargonAssualt from "./Games/AargonAssualt/AargonAssualt";
 
-
 import Obstacle3D from "./Games/Obstacle3D/Obstacle3D";
 import RollingBall from "./Games/RollingBall/RollingBall";
+import SpaceShooterGame from "./Games/Space Shooter Game/SpaceShooterGame";
 
 const App = () => {
   const { user, isLoading, isError } = useTma();
@@ -107,6 +107,7 @@ const App = () => {
         <Route path="/dice-roller" element={<DiceRoller />} />{" "}
         {/* Add the new route here */}
         <Route path="/flappybird" element={<FlappyBird />} />
+        <Route path="/space-shooter" element={<SpaceShooterGame />} />
         <Route path="/pianotiles" element={<PianoTiles />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />

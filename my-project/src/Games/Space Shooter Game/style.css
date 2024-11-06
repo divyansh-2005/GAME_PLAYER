@@ -1,0 +1,108 @@
+
+
+.game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gameArea {
+    position: relative;
+    width: 400px;
+    height: 600px; /* Set a fixed height for the game area */
+    border: 1px solid #fff;
+    overflow: hidden;
+    background-color: #111;
+    border-radius: 5px;
+     /* Dark background for the game area */
+}
+
+#player {
+    position: absolute;
+    bottom: 0px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Positioning the player near the bottom */
+}
+
+.bullet {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background-color: yellow;
+    bottom: 80px; /* Position it above the player */
+}
+
+.enemy {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent; /* Set transparent to use background image */
+}
+
+.explosion {
+    animation: explode 0.5s forwards;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: rgb(0 0 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 10; /* Ensures modal is above other content */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease; /* Transition for fade effect */
+}
+
+.modal.show {
+    opacity: 1; /* Make visible when show class is added */
+}
+
+.modal-content {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.75rem;
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding:  10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green */
+}
+p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
