@@ -45,6 +45,9 @@ import Crossword from "./Games/Crossword/Crossword";
 import PianoTiles from "./Games/pianogame/PianoTiles";
 import Othello from "./Games/Othello/Othello";
 import Toppicks from "./Components/Toppicks";
+import AargonAssualt from "./Games/AargonAssualt/AargonAssualt";
+
+
 import Obstacle3D from "./Games/Obstacle3D/Obstacle3D";
 import RollingBall from "./Games/RollingBall/RollingBall";
 
@@ -131,6 +134,7 @@ const App = () => {
         <Route path="/crossword" element={<Crossword />} />
         <Route path="/othello" element={<Othello />} />
         <Route path="/toppicks" element={<Toppicks />} />
+        <Route path="/aargon-assualt" element={<AargonAssualt />} />
         <Route path="/obstacle3D" element={<Obstacle3D />} />
         <Route path="/rollingBall" element={<RollingBall />} />
       </Routes>

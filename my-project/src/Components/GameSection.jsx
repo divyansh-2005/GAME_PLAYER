@@ -209,6 +209,11 @@ const GameSection = () => {
       link: "/pianotiles",
     },
     {
+      name: "Aargon Assualt",
+      description: "Challenge to Fight with enemy aircraft .",
+      link: "/aargon-assualt",
+    },
+    {
       name: "Othello",
       description:
         "Othello is a strategy game where players flip their opponent's pieces on an 8x8 grid to control the board.",
