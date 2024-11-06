@@ -1,10 +1,11 @@
+/** @format */
+
 import React, { useRef, useEffect, useState } from "react";
 import "./ArkanoidGame.css"; // Import your CSS file for styling
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Canvas from "../../Components/Canvas"; // Import your Canvas component
-import Back from '../../Components/Back';
-
+import Back from "../../Components/Back";
 
 const ArkanoidGame = () => {
   const canvasRef = useRef(null);
@@ -58,7 +59,10 @@ const ArkanoidGame = () => {
   const handleMouseMove = (event) => {
     const rect = canvasRef.current.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
-    paddleX = Math.min(Math.max(mouseX - 75 / 2, 0), canvasRef.current.width - 75); // Center the paddle on the mouse
+    paddleX = Math.min(
+      Math.max(mouseX - 75 / 2, 0),
+      canvasRef.current.width - 75
+    ); // Center the paddle on the mouse
   };
 
   const drawBall = (ctx) => {
@@ -74,7 +78,12 @@ const ArkanoidGame = () => {
     ctx.rect(paddleX, canvasRef.current.height - 10, 75, 10);
 
     // Create gradient for paddle
-    const paddleGradient = ctx.createLinearGradient(paddleX, canvasRef.current.height - 10, paddleX + 75, canvasRef.current.height - 10);
+    const paddleGradient = ctx.createLinearGradient(
+      paddleX,
+      canvasRef.current.height - 10,
+      paddleX + 75,
+      canvasRef.current.height - 10
+    );
     paddleGradient.addColorStop(0, "#0095DD");
     paddleGradient.addColorStop(1, "#00aaff");
 
@@ -93,7 +102,12 @@ const ArkanoidGame = () => {
           bricks[c][r].y = brickY;
 
           // Create gradient for brick
-          const gradient = ctx.createLinearGradient(brickX, brickY, brickX, brickY + brickHeight);
+          const gradient = ctx.createLinearGradient(
+            brickX,
+            brickY,
+            brickX,
+            brickY + brickHeight
+          );
           gradient.addColorStop(0, "#ffcc00");
           gradient.addColorStop(1, "#ff9900");
 
@@ -112,7 +126,12 @@ const ArkanoidGame = () => {
       for (let r = 0; r < brickRowCount; r++) {
         const b = bricks[c][r];
         if (b.status === 1) {
-          if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
+          if (
+            x > b.x &&
+            x < b.x + brickWidth &&
+            y > b.y &&
+            y < b.y + brickHeight
+          ) {
             dy = -dy;
             b.status = 0;
             setScore((prevScore) => prevScore + 1);
@@ -175,12 +194,28 @@ const ArkanoidGame = () => {
     <>
       <Header />
       <Back />
-      <div className="arkanoid-container">
-        <div className="game-area">
-          <Canvas ref={canvasRef} width={500} height={320} />
-          <div className="score">Score: {score}</div>
-          <div className="lives">Lives: {lives}</div>
-          {gameOver && <div className="game-over">Game Over</div>}
+      <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6 neon-text">
+        Arkanoid
+      </h1>
+      <div className="arkanoid-container bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 p-6 rounded-lg shadow-lg max-w-screen-md mx-auto">
+        <div className="game-area relative bg-blue-900 rounded-lg shadow-md overflow-hidden">
+          <Canvas
+            ref={canvasRef}
+            width={500}
+            height={320}
+            className="rounded-lg border-4 border-blue-800 w-5/6 mx-auto"
+          />
+          <div className="absolute top-2 left-4 text-white text-xl font-bold score">
+            Score: {score}
+          </div>
+          <div className="absolute top-2 right-4 text-white text-xl font-bold lives">
+            Lives: {lives}
+          </div>
+          {gameOver && (
+            <div className="absolute inset-0 flex items-center justify-center text-red-500 text-3xl font-extrabold game-over neon-glow">
+              Game Over
+            </div>
+          )}
         </div>
       </div>
       <Footer />
