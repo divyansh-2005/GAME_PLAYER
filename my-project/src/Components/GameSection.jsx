@@ -209,6 +209,12 @@ const GameSection = () => {
       link: "/pianotiles",
     },
     {
+      name: "Tile Conquest",
+      description:
+        "Capture tiles with higher values to outscore your opponent and control the board.",
+      link: "/tileConquest",
+    },
+    {
       name: "Aargon Assualt",
       description: "Challenge to Fight with enemy aircraft .",
       link: "/aargon-assualt",
