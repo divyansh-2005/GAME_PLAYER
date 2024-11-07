@@ -44,7 +44,12 @@ import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
 import Board from "./Games/Align4Game/Board";
 import PianoTiles from "./Games/pianogame/PianoTiles";
+import TileConquest from "./Games/Tile Conquest/TileConquest";
+import Othello from "./Games/Othello/Othello";
 import Toppicks from "./Components/Toppicks";
+import AargonAssualt from "./Games/AargonAssualt/AargonAssualt";
+
+
 import Obstacle3D from "./Games/Obstacle3D/Obstacle3D";
 import RollingBall from "./Games/RollingBall/RollingBall";
 
@@ -102,7 +107,7 @@ const App = () => {
         <Route path="/endless-runner" element={<EndlessRunner />} />
         <Route path="/dice-roller" element={<DiceRoller />} />{" "}
         {/* Add the new route here */}
-        <Route path="/flappybird" element={<FlappyBird />} />        
+        <Route path="/flappybird" element={<FlappyBird />} />
         <Route path="/pianotiles" element={<PianoTiles />} />
         <Route path="/arkanoid" element={<ArkanoidGame />} />
         <Route path="/duckhunt" element={<DuckHunt />} />
@@ -130,7 +135,10 @@ const App = () => {
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
         <Route path="/board" element={<Board/>} /> 
+        <Route path="/tileConquest" element={<TileConquest />} />
+        <Route path="/othello" element={<Othello />} />
         <Route path="/toppicks" element={<Toppicks />} />
+        <Route path="/aargon-assualt" element={<AargonAssualt />} />
         <Route path="/obstacle3D" element={<Obstacle3D />} />
         <Route path="/rollingBall" element={<RollingBall />} />
       </Routes>
