@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-import './Pong.css'
+/** @format */
+
+import React, { useEffect, useRef } from "react";
+import "./Pong.css";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import Back from '../../Components/Back';
-
+import Back from "../../Components/Back";
 
 const PongGame = () => {
   const canvasRef = useRef(null);
@@ -17,7 +18,7 @@ const PongGame = () => {
     y: 0,
     width: grid,
     height: paddleHeight,
-    dy: 0
+    dy: 0,
   };
 
   let rightPaddle = {
@@ -25,7 +26,7 @@ const PongGame = () => {
     y: 0,
     width: grid,
     height: paddleHeight,
-    dy: 0
+    dy: 0,
   };
 
   let ball = {
@@ -35,12 +36,12 @@ const PongGame = () => {
     height: grid,
     dx: ballSpeed,
     dy: -ballSpeed,
-    resetting: false
+    resetting: false,
   };
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext("2d");
     const maxPaddleY = canvas.height - grid - paddleHeight;
 
     leftPaddle.y = canvas.height / 2 - paddleHeight / 2;
@@ -71,9 +72,19 @@ const PongGame = () => {
       if (rightPaddle.y < grid) rightPaddle.y = grid;
       else if (rightPaddle.y > maxPaddleY) rightPaddle.y = maxPaddleY;
 
-      context.fillStyle = 'white';
-      context.fillRect(leftPaddle.x, leftPaddle.y, leftPaddle.width, leftPaddle.height);
-      context.fillRect(rightPaddle.x, rightPaddle.y, rightPaddle.width, rightPaddle.height);
+      context.fillStyle = "white";
+      context.fillRect(
+        leftPaddle.x,
+        leftPaddle.y,
+        leftPaddle.width,
+        leftPaddle.height
+      );
+      context.fillRect(
+        rightPaddle.x,
+        rightPaddle.y,
+        rightPaddle.width,
+        rightPaddle.height
+      );
 
       ball.x += ball.dx;
       ball.y += ball.dy;
@@ -101,7 +112,7 @@ const PongGame = () => {
 
       context.fillRect(ball.x, ball.y, ball.width, ball.height);
 
-      context.fillStyle = 'lightgrey';
+      context.fillStyle = "lightgrey";
       context.fillRect(0, 0, canvas.width, grid);
       context.fillRect(0, canvas.height - grid, canvas.width, grid);
 
@@ -119,41 +130,44 @@ const PongGame = () => {
     };
 
     const handleKeyDown = (e) => {
-      if (e.key === 'ArrowUp') rightPaddle.dy = -paddleSpeed;
-      if (e.key === 'ArrowDown') rightPaddle.dy = paddleSpeed;
-      if (e.key === 'w') leftPaddle.dy = -paddleSpeed;
-      if (e.key === 's') leftPaddle.dy = paddleSpeed;
+      if (e.key === "ArrowUp") rightPaddle.dy = -paddleSpeed;
+      if (e.key === "ArrowDown") rightPaddle.dy = paddleSpeed;
+      if (e.key === "w") leftPaddle.dy = -paddleSpeed;
+      if (e.key === "s") leftPaddle.dy = paddleSpeed;
     };
 
     const handleKeyUp = (e) => {
-      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') rightPaddle.dy = 0;
-      if (e.key === 'w' || e.key === 's') leftPaddle.dy = 0;
+      if (e.key === "ArrowUp" || e.key === "ArrowDown") rightPaddle.dy = 0;
+      if (e.key === "w" || e.key === "s") leftPaddle.dy = 0;
     };
 
-    document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('keyup', handleKeyUp);
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("keyup", handleKeyUp);
 
     requestAnimationFrame(loop);
 
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('keyup', handleKeyUp);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keyup", handleKeyUp);
     };
   }, []);
 
   return (
     <>
-      <Header/>
+      <Header />
       <Back />
+      <h1 className="text-3xl sm:text-4xl md:text-6xl text-center text-white font-bold mb-4 md:mb-6 bg-gradient-to-r from-purple-600 to-blue-500 p-4 rounded-lg shadow-lg">
+        Ping Pong Game
+      </h1>
       <canvas
         ref={canvasRef}
         width="750"
         height="585"
-        style={{ border: '1px solid black' }}
+        className="border-4 border-gray-800 rounded-lg shadow-xl mx-auto"
       />
-      <Footer/>
+
+      <Footer />
     </>
-    
   );
 };
 
