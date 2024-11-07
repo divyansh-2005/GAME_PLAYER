@@ -59,7 +59,7 @@ const TicTacToe = () => {
       <Header />
       <Back />
       <div className="tic-tac-toe">
-        <h1>Tic Tac Toe</h1>
+        <h1 className="whiteText">Tic Tac Toe</h1>
         {winner ? (
           <h2 className="win">Winner: {winner}</h2>
         ) : isDraw ? (
