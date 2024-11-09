@@ -60,7 +60,7 @@ function TicTechToe() {
       <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-100 to-blue-800">
         <div className="text-center p-8 bg-white shadow-lg rounded-lg">
           <h1 className="text-3xl font-bold text-gray-700 mb-6">
-            Tic-Tac-Toe with AI
+            Tic-Tac-Toe
           </h1>
           <div className="grid grid-cols-3 gap-4 w-80 mx-auto mb-6">
             {board.map((cell, index) => (
