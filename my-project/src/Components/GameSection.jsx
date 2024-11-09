@@ -197,21 +197,45 @@ const GameSection = () => {
       link: "/realmrush",
     },
     {
-      "name": "Crossword",
-      "description": "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
-      "link": "/crossword"
+      name: "Crossword",
+      description:
+        "Crossword is a word puzzle game where players fill a grid with words using clues for each word. The goal is to complete the grid by solving all the clues, testing vocabulary, knowledge, and problem-solving skills.",
+      link: "/crossword",
     },
     {
-      "name": "PianoTiles",
-      "description": "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
-      "link": "/pianotiles"
+      name: "PianoTiles",
+      description:
+        "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
+      link: "/pianotiles",
     },
     {
-      "name": "Mystery Story Game",
-     "description": "Mystery Story Game is an engaging puzzle adventure where players solve mysteries through thought-provoking questions, using reasoning and deduction to unravel the story.",
-
-      "link": "/mystery-story-game"
-    }
+      name: "Tile Conquest",
+      description:
+        "Capture tiles with higher values to outscore your opponent and control the board.",
+      link: "/tileConquest",
+    },
+    {
+      name: "Aargon Assualt",
+      description: "Challenge to Fight with enemy aircraft .",
+      link: "/aargon-assualt",
+    },
+    {
+      name: "Othello",
+      description:
+        "Othello is a strategy game where players flip their opponent's pieces on an 8x8 grid to control the board.",
+      link: "/othello",
+    },
+    {
+      name: "Obstacle 3D",
+      description:
+        "Dive into the obstacle and stay in live world",
+      link: "/obstacle3D",
+    },{
+      name: "Rolling Ball",
+      description:
+        "Challenge to balance the ball.",
+      link: "/rollingBall",
+    },
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
