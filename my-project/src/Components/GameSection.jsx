@@ -227,14 +227,18 @@ const GameSection = () => {
     },
     {
       name: "Obstacle 3D",
-      description:
-        "Dive into the obstacle and stay in live world",
+      description: "Dive into the obstacle and stay in live world",
       link: "/obstacle3D",
-    },{
+    },
+    {
       name: "Rolling Ball",
-      description:
-        "Challenge to balance the ball.",
+      description: "Challenge to balance the ball.",
       link: "/rollingBall",
+    },
+    {
+      name: "Tic-Tec-Toe",
+      description: "Take turns as X or O to complete three in a row—horizontally, vertically, or diagonally—to win the game!",
+      link: "/tic-tec-toe",
     },
   ]);
 
