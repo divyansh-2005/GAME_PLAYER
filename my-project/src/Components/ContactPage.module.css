@@ -1,76 +1,76 @@
+/* Main container styling */
 .body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
-  }
-  
-  .container {
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  
-  .pTitle {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin: 10px 0;
-  }
-  
-  .pPara {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: #ffffff;
-    margin-bottom: 15px;
-  }
-  
-  .subTitle {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin: 20px 0 10px;
-  }
-  
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .label {
-    margin-bottom: 5px;
-  }
-  
-  .input, .textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .textarea {
-    height: 100px;
-  }
-  
-  .submitButton {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .submitButton:hover {
-    background-color: #0056b3;
-  }
-  
+  background-color: #f9fafb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container for content */
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4c51bf;
+  margin-bottom: 20px;
+}
+
+.pTitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #cbd5e0;
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  font-size: 2rem;
+  color: #e2e8f0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.pPara {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Social links container */
+.socialLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.socialLink {
+  font-size: 1.1rem;
+  color: #4c51bf;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #ed8936;
+  transform: scale(1.05);
+}
+
+/* Hover effect */
+.socialLink:active {
+  transform: scale(0.98);
+}

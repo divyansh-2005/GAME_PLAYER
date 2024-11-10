@@ -33,7 +33,7 @@ const AddGamePage = () => {
   return (
     <>
       <Header />
-      <body className={styles.body}>
+      {/* <body className={styles.body}>
         <video id={styles.bgv} src={video} autoPlay muted loop></video>
         <div className={styles.container}>
           <div className={styles.Logo}>
@@ -89,7 +89,7 @@ const AddGamePage = () => {
             {message && <p className={styles.message}>{message}</p>}
           </div>
         </div>
-      </body>
+      </body> */}
     </>
   );
 };

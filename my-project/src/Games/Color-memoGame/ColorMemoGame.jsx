@@ -5,7 +5,7 @@ import Footer from "../../Components/Footer";
 function ColorMemoGame() {
   return (
     <div >
-        <Header />
+        <Header />z
         <ColorMemo/>
         <Footer />
     </div>
