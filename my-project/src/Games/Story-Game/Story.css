@@ -1,0 +1,131 @@
+/* Story.css */
+.animated-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% { color: #FF5733; }
+  25% { color: #33FF57; }
+  50% { color: #3357FF; }
+  75% { color: #F3FF33; }
+  100% { color: #FF5733; }
+}
+
+.gcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  max-width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Disable scrolling */
+  background-image: url("./assets/bg2.jpg");
+  background-size: cover;
+}
+.content-container {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure no internal scrolling */
+}
+
+.question {
+  max-width: 90%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.option-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: black;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #e6e6e6;
+}
+
+.option-button.selected {
+  background-color: #cce7ff;
+  border-color: #007bff;
+}
+
+.option-button.correct-answer {
+  background-color: #cce7ff;
+  border-color: #28a745;
+}
+
+.timer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: rgb(12, 12, 12);
+  background-color: #ecdddd;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-row .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button-row .btn:hover {
+  background-color: #0056b3;
+}
+
+.score {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.return-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.return-home-button {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #333333;
+}
