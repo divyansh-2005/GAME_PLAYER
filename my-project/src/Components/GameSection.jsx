@@ -51,6 +51,11 @@ const GameSection = () => {
       link: "/simon-says",
     },
     {
+      name:"Space shooter",
+      description:"A thrilling space shooter game where players pilot a spaceship through intense battles, dodging asteroids, and defeating waves of enemy aliens to save the galaxy.",
+      link:"/space-shooter"
+    },
+    {
       name: "Hangman",
       description:
         "Challenge your vocabulary in this exciting word guessing game! Guess letters or the whole word based on clues provided.",
