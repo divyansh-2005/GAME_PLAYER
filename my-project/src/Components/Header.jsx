@@ -26,6 +26,15 @@ const Header = () => {
             menuActive ? "active" : ""
           } items-center px-4 uppercase`}
         >
+          <div
+            onClick={toggleMenu}
+            className={`absolute top-10 right-4 cursor-pointer ${
+              menuActive ? "visible" : "hidden"
+            }`}
+          >
+            <span className="bar rotate-45"></span>
+            <span className="bar -rotate-45"></span>
+          </div>
           <li className="nav-item">
             <Link to={"/"} className="nav-link">
               <i className="fa fa-home" aria-hidden="true"></i> Home
