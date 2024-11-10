@@ -38,6 +38,7 @@ import WriteTypingGame from "./Games/Write-Typing-Game/src/WriteTypingGame";
 import ClickSpeedTest from "./Games/Click-speed-test/ClickSpeedTest";
 import TowerOfHanoi from "./Games/TowerOfHanoi/TowerOfHanoi";
 import DuckHunt from "./Games/DuckHunt/DuckHunt";
+import TicTacToe from "./Games/Tic-Tac-Toe/TicTacToe";
 import ConnectFour from "./Games/ConnectFour/ConnectFour";
 import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
@@ -130,6 +131,7 @@ const App = () => {
         <Route path="/slot-machine-game" element={<SlotMachineGame />} />
         <Route path="/typing-game" element={<WriteTypingGame />} />
         <Route path="/towerofhanoi" element={<TowerOfHanoi />} />
+        <Route path="/tictactoe" element={<TicTacToe />} />
         <Route path="/realmrush" element={<RealmRush />} />
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
