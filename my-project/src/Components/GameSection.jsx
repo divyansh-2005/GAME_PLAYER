@@ -236,6 +236,9 @@ const GameSection = () => {
         "Challenge to balance the ball.",
       link: "/rollingBall",
     },
+    { name: "Battleship", 
+      description: "Strategically sink your opponent's ships!", 
+      link: "/battleship" }
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
