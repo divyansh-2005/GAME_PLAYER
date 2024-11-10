@@ -1,0 +1,95 @@
+/* Board.css */
+.heading{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.content {
+    display: inline-block;
+    width: 668px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.sidebar {
+    float: left;
+    font-family: 'Doppio One', sans-serif;
+    color: #ccc;
+}
+
+h1 {
+    height: 68px;
+    line-height: 68px;
+    font-size: 40px;
+    text-align: right;
+    color: #fff;
+}
+
+.panel {
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #593f6b;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6b4f83;
+}
+
+.boardalign {
+    position: relative;
+    float: left;
+    width: 428px;
+    height: 428px;
+    padding: 0%;
+    margin-top: 68px;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/board.png');
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.column {
+    float: left;
+    width: 61px;
+    height: 428px;
+}
+
+.chip {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.p1 {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/p1-chip.png');
+}
+
+.p2 {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/p2-chip.png');
+}
+
+.dropped {
+    transition: bottom ease-in 0.3s;
+}
+
+.hover {
+    cursor: pointer;
+}

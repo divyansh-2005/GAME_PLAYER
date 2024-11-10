@@ -42,6 +42,7 @@ import ConnectFour from "./Games/ConnectFour/ConnectFour";
 import AnimatedCursor from "react-animated-cursor";
 import RealmRush from "./Games/RealmRush/RealmRush";
 import Crossword from "./Games/Crossword/Crossword";
+import Board from "./Games/Align4Game/Board";
 import PianoTiles from "./Games/pianogame/PianoTiles";
 import TileConquest from "./Games/Tile Conquest/TileConquest";
 import Othello from "./Games/Othello/Othello";
@@ -133,6 +134,7 @@ const App = () => {
         <Route path="/realmrush" element={<RealmRush />} />
         <Route path="/connectFour" element={<ConnectFour />} />
         <Route path="/crossword" element={<Crossword />} />
+        <Route path="/board" element={<Board/>} /> 
         <Route path="/tileConquest" element={<TileConquest />} />
         <Route path="/othello" element={<Othello />} />
         <Route path="/toppicks" element={<Toppicks />} />

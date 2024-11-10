@@ -209,6 +209,16 @@ const GameSection = () => {
       link: "/pianotiles",
     },
     {
+      "name": "Align 4 Game",
+      "description": "Align the 4 ball in a single row or column, then you will win the match.",
+      "link": "/board"
+    },
+    {
+      "name": "PianoTiles",
+      "description": "Piano Tiles is a fast-paced mobile game where players tap black tiles while avoiding white ones to simulate playing piano music.",
+      "link": "/pianotiles"
+    },
+    {
       name: "Tile Conquest",
       description:
         "Capture tiles with higher values to outscore your opponent and control the board.",
