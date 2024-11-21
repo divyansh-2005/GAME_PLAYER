@@ -186,6 +186,12 @@ const GameSection = () => {
       link: "/tetrisgame",
     },
     {
+      name: "Mario Jump",
+      description:
+        "Mario Jump is an endless running game inspired by the famous Google Chrome's T-Rex Dinosaur Game 🦖",
+      link: "/mariojump",
+    },
+    {
       name: "Write Typing Game",
       description:
         "Challenge yourself to improve your typing skills and speed in this engaging game where every word matters!",

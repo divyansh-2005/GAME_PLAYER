@@ -30,6 +30,9 @@ import ColorMemoGame from "./Games/Color-memoGame/ColorMemoGame";
 import AimShooterGame from "./Games/Aim-Shooter-Game/AimShooterGame";
 import CandyCrushGame from "./Games/Candy-crush-saga/src/CandyCrushGame";
 import DiceGameTenzi from "./Games/Dice-Game-Tenzi/src/DiceGameTenzi";
+import { Provider } from "react-redux";
+import { store } from "./Games/Mario-Jump-Game/src/config/redux/store";
+import Home from "./Games/Mario-Jump-Game/src/config/Routes/Routes"
 import MathQuiz from "./Games/Math-quiz/MathQuiz";
 import StackTowerGame from "./Games/Stack-tower-game/src/StackTowerGame";
 import TetrisGame from "./Games/3D-Tetris-Game/src/TetrisGame";
@@ -56,6 +59,7 @@ const App = () => {
   const { user, isLoading, isError } = useTma();
   return (
     <>
+        <Provider store={store}>
       <AnimatedCursor
         innerSize={8}
         outerSize={18}
@@ -123,6 +127,7 @@ const App = () => {
         <Route path="/aimshooter" element={<AimShooterGame />} />
         <Route path="/candycrush" element={<CandyCrushGame />} />
         <Route path="/dicegame" element={<DiceGameTenzi />} />
+        <Route path="/mariojump" element={<Home />} />
         <Route path="/math-quiz" element={<MathQuiz />} />
         <Route path="/stacktowergame" element={<StackTowerGame />} />
         <Route path="/click-speed-test" element={<ClickSpeedTest />} />
@@ -140,6 +145,7 @@ const App = () => {
         <Route path="/obstacle3D" element={<Obstacle3D />} />
         <Route path="/rollingBall" element={<RollingBall />} />
       </Routes>
+        </Provider>
     </>
   );
 };
